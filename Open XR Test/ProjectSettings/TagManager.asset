@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - projectile
+  - Minecart
+  - grappleable
+  - Rod
   layers:
   - Default
   - TransparentFX
