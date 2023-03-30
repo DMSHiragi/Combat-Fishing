@@ -175,17 +175,17 @@ public class Grappling : MonoBehaviour
         swingPoint = h.point;
         joint = h.rigidbody.gameObject.AddComponent<SpringJoint>();
         joint.autoConfigureConnectedAnchor = false;
-        joint.connectedAnchor = player.position;
+        //joint.connectedAnchor = player.position;
         joint.connectedBody = player.gameObject.GetComponent<Rigidbody>();
 
         float distanceFromPoint = Vector3.Distance(player.position, swingPoint);
 
-        joint.maxDistance = distanceFromPoint * 0.8f;
+        joint.maxDistance = distanceFromPoint * 0.5f;
         joint.minDistance = distanceFromPoint * 0.25f;
 
-        joint.spring = 4.5f;
-        joint.damper = 7f;
-        joint.massScale = 4.5f;
+        joint.spring = 10f;
+        joint.damper = 3f;
+        joint.massScale = 2.5f;
 
         Debug.Log("Start swing");
 
