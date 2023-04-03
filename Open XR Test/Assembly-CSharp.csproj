@@ -88,6 +88,7 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoCodeGrabbing.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\Fishing.cs" />
+     <Compile Include="Assets\Scripts\FishingTracker.cs" />
      <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\ItemCrystal.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
@@ -109,7 +110,6 @@
      <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\PostFXenabler.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoPassthroughSocket.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
-     <Compile Include="Assets\Scripts\FishingTracker.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\HurricaneVR\Framework\SFX\license.txt" />

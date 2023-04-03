@@ -9,8 +9,6 @@ public class WhaleSpawner : MonoBehaviour
     public float moveSpeed = 5f; // speed in units per second
     public float moveSpeed2 = 5f; // speed in units per second
 
-    private bool isMoving;
-    private bool isSwallowing;
 
     public FishingBobber bobber;
 
@@ -52,7 +50,6 @@ public class WhaleSpawner : MonoBehaviour
         // When finished dialogue, start swallow animation
         if(myDialogue.endTime == true){
             StartCoroutine(Swallow());
-            isSwallowing = true;
             myDialogue.endTime = false;
         }
     }
@@ -62,7 +59,6 @@ public class WhaleSpawner : MonoBehaviour
         var mistEmission = myMist.emission;
         mistEmission.rateOverTime = 30f;
         StartCoroutine(MoveUp());
-        isMoving = true;
         StartCoroutine(DelayedEmission());
 
     }
@@ -103,8 +99,6 @@ public class WhaleSpawner : MonoBehaviour
             yield return null;
         }
 
-
-        isMoving = false;
         
         myCanvas.enabled = true;
         myDialogue.startTime = true;
@@ -173,7 +167,6 @@ IEnumerator Swallow() {
         yield return null;
     }
 
-    isSwallowing = false;
 
 
         // CODE TO LOAD NEXT SCENE GOES HERE

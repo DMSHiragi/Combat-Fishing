@@ -30,8 +30,8 @@ public class GlowRaycast : MonoBehaviour
     {
         if(Physics.Raycast(cam.position, cam.forward, out hit, hitDistance, grappleable)){
             gc = hit.collider.gameObject.GetComponent<Outline>();
-        
-            gc.enabled  = true;
+            if(gc != null){
+            gc.enabled  = true;}
         }
 
         else if(Physics.Raycast(cam.position, cam.forward, out hit, hitDistance, swingable)){
