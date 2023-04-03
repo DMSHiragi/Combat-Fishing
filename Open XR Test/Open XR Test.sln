@@ -19,9 +19,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxophobic.SkyboxCubemapExt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{b32b2b5c-0de4-5603-c563-0dd3eaed9dcf}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sc.vegetationspawner.editor", "sc.vegetationspawner.editor.csproj", "{43f9de16-0945-8df7-3158-1265a180d4e6}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{163840fc-8366-1ec4-fe52-ff57992ffc38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sc.vegetationspawner.editor", "sc.vegetationspawner.editor.csproj", "{43f9de16-0945-8df7-3158-1265a180d4e6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,10 +46,10 @@ Global
 		{b3972024-a857-3802-7567-b15468e28c62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{b32b2b5c-0de4-5603-c563-0dd3eaed9dcf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{b32b2b5c-0de4-5603-c563-0dd3eaed9dcf}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43f9de16-0945-8df7-3158-1265a180d4e6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43f9de16-0945-8df7-3158-1265a180d4e6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{163840fc-8366-1ec4-fe52-ff57992ffc38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{163840fc-8366-1ec4-fe52-ff57992ffc38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43f9de16-0945-8df7-3158-1265a180d4e6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43f9de16-0945-8df7-3158-1265a180d4e6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

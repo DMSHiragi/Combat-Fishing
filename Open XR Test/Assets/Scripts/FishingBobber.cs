@@ -1,7 +1,5 @@
 using UnityEngine;
-
 using UnityEngine.XR;
-
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
@@ -13,10 +11,18 @@ public class FishingBobber : MonoBehaviour
 
     private Camera mainCamera;
     private GameObject ball;
-
-
     public GameObject fish1;
     public GameObject fish2;
+
+    public GameObject boundingBoxes;
+    public GameObject boundingBoxes2;
+    public GameObject boundingBoxes3;
+    public GameObject boundingBoxes4;
+    public GameObject boundingBoxes5;
+    public GameObject boundingBoxes6;
+    public GameObject boundingBoxes7C;
+    public GameObject boundingBoxes8C;
+    public GameObject boundingBoxes9C;
 
     public float minWaitTime = 3f;
     public float maxWaitTime = 6f;
@@ -24,16 +30,13 @@ public class FishingBobber : MonoBehaviour
     public int coolDownTimer = 0;
 
     public float ballReturnSpeed = 20f;
-
     private bool isBallReturning;
-
+    private bool fishCaught;
     public float heightLimit = 30;
     public float maxYSpeed = 5;
-
     public float maxXPosition = 510f;
-
+    public FishingTracker myTracker;
     public LineRenderer fishingLine;
-
     public GameObject waterSplashPrefab;
 
     private float timer;
@@ -161,6 +164,9 @@ public class FishingBobber : MonoBehaviour
                 isBallReturning = false;
                 Destroy(ball);
                 fishing = false;
+                if(fishCaught){
+                    myTracker.getFish(fishSize, redFish);
+                }
             }
         }
 
@@ -174,7 +180,7 @@ public class FishingBobber : MonoBehaviour
         {
             Destroy(ball);
         }
-        else
+        else    //Create sphere, Disable collision with bounding boxes & throw in direction of player cam
         {
             // Create a new ball object
             ball = GameObject.CreatePrimitive(PrimitiveType.Sphere);
@@ -192,6 +198,25 @@ public class FishingBobber : MonoBehaviour
             GameObject fishingPlayer = GameObject.Find("FishingPlayer");
             CapsuleCollider capsuleCollider = fishingPlayer.GetComponent<CapsuleCollider>();
             Physics.IgnoreCollision(ballCollider, capsuleCollider, true);
+
+            BoxCollider boxColliders = boundingBoxes.GetComponent<BoxCollider>();
+            Physics.IgnoreCollision(ballCollider, boxColliders, true);
+            BoxCollider boxColliders2 = boundingBoxes2.GetComponent<BoxCollider>();
+            Physics.IgnoreCollision(ballCollider, boxColliders2, true);
+            BoxCollider boxColliders3 = boundingBoxes3.GetComponent<BoxCollider>();
+            Physics.IgnoreCollision(ballCollider, boxColliders3, true);
+            BoxCollider boxColliders4 = boundingBoxes4.GetComponent<BoxCollider>();
+            Physics.IgnoreCollision(ballCollider, boxColliders4, true);
+            BoxCollider boxColliders5 = boundingBoxes5.GetComponent<BoxCollider>();
+            Physics.IgnoreCollision(ballCollider, boxColliders5, true);
+            BoxCollider boxColliders6 = boundingBoxes6.GetComponent<BoxCollider>();
+            Physics.IgnoreCollision(ballCollider, boxColliders6, true);
+            CapsuleCollider boxColliders7C = boundingBoxes7C.GetComponent<CapsuleCollider>();
+            Physics.IgnoreCollision(ballCollider, boxColliders7C, true);
+            CapsuleCollider boxColliders8C = boundingBoxes8C.GetComponent<CapsuleCollider>();
+            Physics.IgnoreCollision(ballCollider, boxColliders8C, true);
+            CapsuleCollider boxColliders9C = boundingBoxes9C.GetComponent<CapsuleCollider>();
+            Physics.IgnoreCollision(ballCollider, boxColliders9C, true);
 
             // Throw based on where the player is looking
             Vector3 throwDirection = mainCamera.transform.forward;
@@ -239,13 +264,13 @@ public class FishingBobber : MonoBehaviour
             if(fishScore >= 1){
                 whaleTime = true;
             }
+            fishCaught = true;
         }
 
-        else if (clickTime <= 0){
-            Debug.Log("early");}
+        else if (clickTime <= 0){   //Too early
+            fishCaught = false;}
 
-        else{   
-            Debug.Log("late");}
+        else{  fishCaught = false;}     //Too late
 
         // Reset the LineRenderer positions
         fishingLine.SetPosition(0, Vector3.zero);    
@@ -296,7 +321,7 @@ public class FishingBobber : MonoBehaviour
         }
 
         //Random size fish
-        float fishSize = Random.Range(0.5f, 2.5f);
+        fishSize = Random.Range(0.5f, 2.5f);
         Vector3 randomScale = new Vector3(fishSize, fishSize, fishSize);
         ball.transform.localScale = randomScale;
 
