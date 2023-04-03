@@ -13,6 +13,7 @@ public class Fishing : MonoBehaviour
 
     public float maxXPosition = 510f;
 
+    public FishingBobber fishingBobber;
 
     private float timer;
     private bool fishing;
@@ -26,12 +27,20 @@ public class Fishing : MonoBehaviour
         // Debug.Log("Start");
     }
 
+
+
+// THIS DOES NOTHING, IT HAS BEEN MOVED TO THE FISHING BOBBER SCRIPT
+
+
+
+
+
     private void Update()
     {
         hand = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
         hand.TryGetFeatureValue(CommonUsages.triggerButton, out bool isPressed);
 
-        if(isPressed){
+        if(isPressed && fishingBobber.coolDownTimer == 0){
 
             if (!fishing)
             {
@@ -45,12 +54,16 @@ public class Fishing : MonoBehaviour
                 float clickTime = Time.time - timer;
                 if (clickTime <= 1f && clickTime > 0)
                 {
+                    
+                    // fishingBobber.ReplaceBallMesh();
                     score++;
-                    // Debug.Log("Success: " + score);
+                    // Debug.Log("Perfect");
+
                 }
                 else if (clickTime <= 0)
                 {
                     // Debug.Log("Early");
+
                 }
                 else
                 {

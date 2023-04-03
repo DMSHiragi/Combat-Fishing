@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HurricaneVR.Framework", "HurricaneVR.Framework.csproj", "{dbd278aa-7bf6-7b72-68fc-9181ef63a88d}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{4065c68d-8cde-538e-638e-30c2bbc453ef}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{830fdfd5-edd7-5e59-2223-9a8a6116df8f}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxophobic.Utils.Scripts", "Boxophobic.Utils.Scripts.csproj", "{3758d0cd-ac07-56b9-b2f9-25e30dacbe62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sc.vegetationspawner.runtime", "sc.vegetationspawner.runtime.csproj", "{98568679-3747-c38d-d6a2-f407d2fa7158}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HurricaneVR.Editor", "HurricaneVR.Editor.csproj", "{61c8ab77-7805-8112-b9aa-a468a33e7b95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxophobic.Utils.Editor", "Boxophobic.Utils.Editor.csproj", "{350013eb-b0db-47cf-a920-7cbc27891ced}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxophobic.SkyboxCubemapExtended.Editor", "Boxophobic.SkyboxCubemapExtended.Editor.csproj", "{b3972024-a857-3802-7567-b15468e28c62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{b32b2b5c-0de4-5603-c563-0dd3eaed9dcf}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sc.vegetationspawner.editor", "sc.vegetationspawner.editor.csproj", "{43f9de16-0945-8df7-3158-1265a180d4e6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{163840fc-8366-1ec4-fe52-ff57992ffc38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{dbd278aa-7bf6-7b72-68fc-9181ef63a88d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{dbd278aa-7bf6-7b72-68fc-9181ef63a88d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4065c68d-8cde-538e-638e-30c2bbc453ef}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4065c68d-8cde-538e-638e-30c2bbc453ef}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{830fdfd5-edd7-5e59-2223-9a8a6116df8f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{830fdfd5-edd7-5e59-2223-9a8a6116df8f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3758d0cd-ac07-56b9-b2f9-25e30dacbe62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3758d0cd-ac07-56b9-b2f9-25e30dacbe62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98568679-3747-c38d-d6a2-f407d2fa7158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98568679-3747-c38d-d6a2-f407d2fa7158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61c8ab77-7805-8112-b9aa-a468a33e7b95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61c8ab77-7805-8112-b9aa-a468a33e7b95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350013eb-b0db-47cf-a920-7cbc27891ced}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350013eb-b0db-47cf-a920-7cbc27891ced}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b3972024-a857-3802-7567-b15468e28c62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b3972024-a857-3802-7567-b15468e28c62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b32b2b5c-0de4-5603-c563-0dd3eaed9dcf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b32b2b5c-0de4-5603-c563-0dd3eaed9dcf}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43f9de16-0945-8df7-3158-1265a180d4e6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43f9de16-0945-8df7-3158-1265a180d4e6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163840fc-8366-1ec4-fe52-ff57992ffc38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163840fc-8366-1ec4-fe52-ff57992ffc38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
