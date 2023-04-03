@@ -42,6 +42,7 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoValveHologram.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoKeypadButton.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoHolster.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoFullStabConfetti.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoKeypad.cs" />
@@ -73,7 +74,9 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoManualTeleport.cs" />
      <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\Footsteps.cs" />
      <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\ShootProjectile.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\Scripts\Grappling.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoHolsterOrientation.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSafeDoor.cs" />
      <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\ThrowObject.cs" />
@@ -85,11 +88,15 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoCodeGrabbing.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\Fishing.cs" />
+     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\ItemCrystal.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
      <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\ProjectileCrystal.cs" />
      <Compile Include="Assets\Scripts\TriggerSFX.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoHeavyDoor.cs" />
      <Compile Include="Assets\Scripts\Spinner.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
      <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\ControlsScreen.cs" />
      <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\LightIntensityRandom.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoGlassRotate.cs" />
@@ -97,10 +104,12 @@
      <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\Flashlight.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSocketFilter.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scenes\HandSqueezeDemo\DemoPoseSqueeze.cs" />
+     <Compile Include="Assets\Scripts\WhaleSpawner.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoDummyArm.cs" />
      <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\PostFXenabler.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoPassthroughSocket.cs" />
-     <Compile Include="Assets\Scripts\WhaleSpawner.cs" />
+     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\Scripts\FishingTracker.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\HurricaneVR\Framework\SFX\license.txt" />
@@ -135,6 +144,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
+     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
