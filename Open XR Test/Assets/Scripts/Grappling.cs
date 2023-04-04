@@ -103,7 +103,11 @@ public class Grappling : MonoBehaviour
             if (!isButtonPressed3) 
             {
                 Rigidbody swingRb = swingObject.GetComponent<Rigidbody>();
+<<<<<<< Updated upstream
                 swingRb.AddForce((rodEnd.position - swingObject.transform.position).normalized * 40f, ForceMode.Impulse);
+=======
+                swingRb.AddForce((transform.position - swingObject.transform.position).normalized * 10f, ForceMode.Impulse);
+>>>>>>> Stashed changes
             }
             isButtonPressed3 = true;
             }

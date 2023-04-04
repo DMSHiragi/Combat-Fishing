@@ -13,9 +13,10 @@ public class EnemyStateMachine : MonoBehaviour
     // Start is called before the first frame update
     private Transform myTransform;
 
+    float distanceBetweenObjects;
+
     void Awake()
     {
-
         myTransform = transform;
 
     }
@@ -57,6 +58,15 @@ public class EnemyStateMachine : MonoBehaviour
             maxDistance = 0;
 
             trigger = true;
+        }
+    }
+
+    private void OnTriggerStay(Collider other){
+        if(other.tag == "Player")
+        {
+            GameObject go = GameObject.FindGameObjectWithTag("Player");
+            distanceBetweenObjects = Vector3.Distance(transform.position, go.transform.position);
+            Debug.Log(distanceBetweenObjects);
         }
     }
 }
