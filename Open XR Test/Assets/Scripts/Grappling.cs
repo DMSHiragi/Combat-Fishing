@@ -103,7 +103,7 @@ public class Grappling : MonoBehaviour
             if (!isButtonPressed3) 
             {
                 Rigidbody swingRb = swingObject.GetComponent<Rigidbody>();
-                swingRb.AddForce((transform.position - swingObject.transform.position).normalized * 20f, ForceMode.Impulse);
+                swingRb.AddForce((rodEnd.position - swingObject.transform.position).normalized * 40f, ForceMode.Impulse);
             }
             isButtonPressed3 = true;
             }
@@ -217,11 +217,11 @@ public class Grappling : MonoBehaviour
 
         float distanceFromPoint = Vector3.Distance(player.position, swingPoint);
 
-        joint.maxDistance = distanceFromPoint * 0.5f;
-        joint.minDistance = distanceFromPoint * 0.25f;
+        joint.maxDistance = distanceFromPoint * .5f;
+        joint.minDistance = distanceFromPoint * 0f;
 
-        joint.spring = 10f;
-        joint.damper = 3f;
+        joint.spring = 1f;
+        joint.damper = 1f;
         joint.massScale = 2.5f;
 
         Debug.Log("Start swing");
