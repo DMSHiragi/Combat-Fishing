@@ -37,7 +37,7 @@ public class Dialogue : MonoBehaviour
         hand.TryGetFeatureValue(CommonUsages.primaryButton, out bool aPressed);
 
         
-        if (aPressed || bPressed) {
+        if (aPressed || bPressed || Input.GetMouseButtonDown(0)) {
             if (!isButtonPressed) {
                 if (textComponent.text == lines[index]) {
                     NextLine();
