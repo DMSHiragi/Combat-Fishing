@@ -72,30 +72,32 @@ namespace LowPolyWater
         /// </summary>
         void GenerateWaves()
         {
-            for (int i = 0; i < vertices.Length; i++)
-            {
-                Vector3 v = vertices[i];
+            if(mesh != null){
+                for (int i = 0; i < vertices.Length; i++)
+                {
+                    Vector3 v = vertices[i];
 
-                //Initially set the wave height to 0
-                v.y = 0.0f;
+                    //Initially set the wave height to 0
+                    v.y = 0.0f;
 
-                //Get the distance between wave origin position and the current vertex
-                float distance = Vector3.Distance(v, waveOriginPosition);
-                distance = (distance % waveLength) / waveLength;
+                    //Get the distance between wave origin position and the current vertex
+                    float distance = Vector3.Distance(v, waveOriginPosition);
+                    distance = (distance % waveLength) / waveLength;
 
-                //Oscilate the wave height via sine to create a wave effect
-                v.y = waveHeight * Mathf.Sin(Time.time * Mathf.PI * 2.0f * waveFrequency
-                + (Mathf.PI * 2.0f * distance));
-                
-                //Update the vertex
-                vertices[i] = v;
+                    //Oscilate the wave height via sine to create a wave effect
+                    v.y = waveHeight * Mathf.Sin(Time.time * Mathf.PI * 2.0f * waveFrequency
+                    + (Mathf.PI * 2.0f * distance));
+                    
+                    //Update the vertex
+                    vertices[i] = v;
+                }
+
+                //Update the mesh properties
+                mesh.vertices = vertices;
+                mesh.RecalculateNormals();
+                mesh.MarkDynamic();
+                meshFilter.mesh = mesh;
             }
-
-            //Update the mesh properties
-            mesh.vertices = vertices;
-            mesh.RecalculateNormals();
-            mesh.MarkDynamic();
-            meshFilter.mesh = mesh;
         }
     }
 }

@@ -102,12 +102,7 @@ public class Grappling : MonoBehaviour
         if (isPushed){
             if (!isButtonPressed3) 
             {
-                Rigidbody swingRb = swingObject.GetComponent<Rigidbody>();
-<<<<<<< Updated upstream
-                swingRb.AddForce((rodEnd.position - swingObject.transform.position).normalized * 40f, ForceMode.Impulse);
-=======
-                swingRb.AddForce((transform.position - swingObject.transform.position).normalized * 10f, ForceMode.Impulse);
->>>>>>> Stashed changes
+                YeetObject();
             }
             isButtonPressed3 = true;
             }
@@ -229,6 +224,15 @@ public class Grappling : MonoBehaviour
         joint.massScale = 2.5f;
 
         Debug.Log("Start swing");
+    }
+
+    private void YeetObject(){
+        if(swinging){
+            if(swingObject != null){
+                Rigidbody swingRb = swingObject.GetComponent<Rigidbody>();
+                swingRb.AddForce((rodEnd.position - swingObject.transform.position).normalized * 20f, ForceMode.Impulse);
+            }
+        }
     }
 
 
