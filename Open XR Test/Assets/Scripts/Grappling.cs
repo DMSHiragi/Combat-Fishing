@@ -32,6 +32,7 @@ public class Grappling : MonoBehaviour
     private Vector3 swingPoint;
     private SpringJoint joint;
     private bool swinging;
+    private GameObject swingObject;
 
     private Vector3 grapplePoint;
 
@@ -52,7 +53,7 @@ public class Grappling : MonoBehaviour
     private bool grappling;
     private bool isButtonPressed;
     private bool isButtonPressed2;
-
+    private bool isButtonPressed3;
 
 
     // Start is called before the first frame update
@@ -69,6 +70,7 @@ public class Grappling : MonoBehaviour
         hand = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
         hand.TryGetFeatureValue(CommonUsages.triggerButton, out bool isPressed);
         hand.TryGetFeatureValue(CommonUsages.gripButton, out bool isGripped);
+        hand.TryGetFeatureValue(CommonUsages.primaryButton, out bool isPushed);
 
         CheckForHitPoints();
 
@@ -95,6 +97,19 @@ public class Grappling : MonoBehaviour
         else
         {
             isButtonPressed2 = false;
+        }
+
+        if (isPushed){
+            if (!isButtonPressed3) 
+            {
+                Rigidbody swingRb = swingObject.GetComponent<Rigidbody>();
+                swingRb.AddForce((transform.position - swingObject.transform.position).normalized * 20f, ForceMode.Impulse);
+            }
+            isButtonPressed3 = true;
+            }
+        else
+        {
+            isButtonPressed3 = false;
         }
 
         if (grapplingCdTimer > 0)
@@ -194,6 +209,7 @@ public class Grappling : MonoBehaviour
         predictionPoint2.gameObject.SetActive(false);
 
         swingPoint = h.point;
+        swingObject = h.rigidbody.gameObject;
         joint = h.rigidbody.gameObject.AddComponent<SpringJoint>();
         joint.autoConfigureConnectedAnchor = false;
         //joint.connectedAnchor = player.position;

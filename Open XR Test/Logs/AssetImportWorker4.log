@@ -1,0 +1,342 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.11f1 (0a5ca18544bf) revision 679073'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 16243 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/Matthew/Documents/GitHub/Combat-Fishing/Open XR Test
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+50723
+Successfully changed project path to: C:/Users/Matthew/Documents/GitHub/Combat-Fishing/Open XR Test
+C:/Users/Matthew/Documents/GitHub/Combat-Fishing/Open XR Test
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 87.26 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Matthew/Documents/GitHub/Combat-Fishing/Open XR Test/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8050 MB
+    Driver:   31.0.15.1694
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56632
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004676 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 95.89 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.471 seconds
+Domain Reload Profiling:
+	ReloadAssembly (472ms)
+		BeginReloadAssembly (48ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (349ms)
+			LoadAssemblies (46ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (68ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (17ms)
+			SetupLoadedEditorAssemblies (228ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (96ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (94ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005822 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 83.52 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  0.899 seconds
+Domain Reload Profiling:
+	ReloadAssembly (899ms)
+		BeginReloadAssembly (72ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (12ms)
+		EndReloadAssembly (747ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (192ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (413ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (227ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.80 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4869 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 67 unused Assets / (1.6 MB). Loaded Objects now: 5314.
+Memory consumption went from 202.0 MB to 200.4 MB.
+Total: 2.747500 ms (FindLiveObjects: 0.209800 ms CreateObjectMapping: 0.119200 ms MarkObjects: 2.120200 ms  DeleteObjects: 0.297600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4773.009665 seconds.
+  path: Assets/Scenes/FishingScene.unity
+  artifactKey: Guid(f14a184f1347e3346b1143c35294084b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/FishingScene.unity using Guid(f14a184f1347e3346b1143c35294084b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74305b4da031df8278378af53c303a8b') in 0.009615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.632664 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Materials/FishingRodColored.fbx
+  artifactKey: Guid(1f8b55e0952461341925b259c04a7f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Materials/FishingRodColored.fbx using Guid(1f8b55e0952461341925b259c04a7f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd84c63a670fa2e5bb31a7b0c3cb38602') in 0.279829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.853156 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Models
+  artifactKey: Guid(4d073f0bbc4f46d47a6ceba6153c07dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Models using Guid(4d073f0bbc4f46d47a6ceba6153c07dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f071cb05bee19bb09e9f87b4086d117') in 0.004545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.069343 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Models/Fisher_Boat.fbx
+  artifactKey: Guid(67ba160de4f0b924dbdf3247202d3670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Models/Fisher_Boat.fbx using Guid(67ba160de4f0b924dbdf3247202d3670) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ad5a7661a5ff004b70e605fb1e8d74') in 0.025614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Models/Scout_Boat.fbx
+  artifactKey: Guid(9b7cc2e501ae9c546b416e06ed63191b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Models/Scout_Boat.fbx using Guid(9b7cc2e501ae9c546b416e06ed63191b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01ba3a931bf2354a0e04c568ef90c95') in 0.018569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Models/Speed_Boat.fbx
+  artifactKey: Guid(bd9a454e38c659042a64aed151907719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Models/Speed_Boat.fbx using Guid(bd9a454e38c659042a64aed151907719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8972265587247cc25e37a5dd41c6a40c') in 0.017998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Models/FishV4.fbx
+  artifactKey: Guid(ea93ead513f04c9478f78e3f40ba5b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Models/FishV4.fbx using Guid(ea93ead513f04c9478f78e3f40ba5b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1b827df33e990dcf6682fb9f92b973c') in 0.019545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Models/Paddle.fbx
+  artifactKey: Guid(e084d19dfb16d5048904de5a4f3c4f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Models/Paddle.fbx using Guid(e084d19dfb16d5048904de5a4f3c4f28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df7ce6e6c5a04bc6dc1e1b74a822579e') in 0.019605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Models/Wood_BoatV2.fbx
+  artifactKey: Guid(68a020305c237254693950ecc1f0ce5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Models/Wood_BoatV2.fbx using Guid(68a020305c237254693950ecc1f0ce5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ba83b5749d705811c926fc78102e08') in 0.019385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.251895 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack
+  artifactKey: Guid(2b8e16f3d9a634f4dbcca816cacc395c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack using Guid(2b8e16f3d9a634f4dbcca816cacc395c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc75ba7cbf841d550a5d9ca76985e31c') in 0.004653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.677883 seconds.
+  path: Assets/Scenes/CombatTest.unity
+  artifactKey: Guid(8882eaec5de354a4ca96d9058ac416f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CombatTest.unity using Guid(8882eaec5de354a4ca96d9058ac416f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13c66b86e3bae9e9773a72f79c248be5') in 0.001609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.144514 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Prefabs
+  artifactKey: Guid(011107e2e56b7e54488ec07820f78cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Prefabs using Guid(011107e2e56b7e54488ec07820f78cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2cda783bcf7cc35e721f480ce0b8aca') in 0.001690 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.049612 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Prefabs/Fisher_Boat.prefab
+  artifactKey: Guid(e505ad6aa92b701429ccea3dac7fece1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Prefabs/Fisher_Boat.prefab using Guid(e505ad6aa92b701429ccea3dac7fece1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c6895c6a4f510dc8685ea3dad2b8e98') in 0.011870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Prefabs/Wood_BoatV2.prefab
+  artifactKey: Guid(0579d96e52e9e7843a6c880ce44856ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Prefabs/Wood_BoatV2.prefab using Guid(0579d96e52e9e7843a6c880ce44856ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b0a6b18bf4b9409bb4e5c45841eedb9') in 0.010928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Prefabs/FishV3.prefab
+  artifactKey: Guid(de500f6b90f89bc4c87a6585b2dea01a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Prefabs/FishV3.prefab using Guid(de500f6b90f89bc4c87a6585b2dea01a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dadf4d639194781628282e4cbac79b11') in 0.009398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Prefabs/Speed_Boat.prefab
+  artifactKey: Guid(aa70f82ba6bc4e64f8b9d77004fde085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Prefabs/Speed_Boat.prefab using Guid(aa70f82ba6bc4e64f8b9d77004fde085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67573ffc559431dac2c5c0b56e14780d') in 0.009738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Prefabs/Scout_Boat.prefab
+  artifactKey: Guid(98db26e894714ab42a5329d6cd767c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Prefabs/Scout_Boat.prefab using Guid(98db26e894714ab42a5329d6cd767c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b2b17b2b740689abf56941755d80ba') in 0.010476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Prefabs/FishV4.prefab
+  artifactKey: Guid(a05072560c3476b4cb8dddf22f697392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Prefabs/FishV4.prefab using Guid(a05072560c3476b4cb8dddf22f697392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3adaf58666fe4a8816040f09424cd5a') in 0.012351 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Prefabs/FishV2.prefab
+  artifactKey: Guid(67de17aaa6711224f80123d9b1ef8cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Prefabs/FishV2.prefab using Guid(67de17aaa6711224f80123d9b1ef8cb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdf2f72d1b328891dcf58e15a2b21a97') in 0.011001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Prefabs/SharkV1.prefab
+  artifactKey: Guid(2fb93ff3c1250a74ca5f53a6bc162675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Prefabs/SharkV1.prefab using Guid(2fb93ff3c1250a74ca5f53a6bc162675) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35d22bd678f978464a3e9ad2d2c71ce6') in 0.010310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Prefabs/FishV1.prefab
+  artifactKey: Guid(94c015d94f6e5364e9b36b960bbe1b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Prefabs/FishV1.prefab using Guid(94c015d94f6e5364e9b36b960bbe1b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780da57a35a8dfa4afc5c042fa3c49c7') in 0.009988 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007616 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.797 seconds
+Domain Reload Profiling:
+	ReloadAssembly (797ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (617ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (190ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (299ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (203ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.79 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4789 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.6 MB). Loaded Objects now: 5363.
+Memory consumption went from 199.3 MB to 197.7 MB.
+Total: 2.744100 ms (FindLiveObjects: 0.218800 ms CreateObjectMapping: 0.112700 ms MarkObjects: 2.052400 ms  DeleteObjects: 0.359300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
