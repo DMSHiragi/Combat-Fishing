@@ -25,12 +25,14 @@ public class Grappling : MonoBehaviour
     [Header("Grappling")]
     public float maxGrappleDistance;
     public float grappleDelayTime;
+    private float grappleNoDelay = 0f;
     public float overShootYAxis;
 
     [Header("Swinging")]
     private Vector3 swingPoint;
     private SpringJoint joint;
-    public bool swinging;
+    private bool swinging;
+    private GameObject swingObject;
 
     private Vector3 grapplePoint;
 
@@ -49,7 +51,9 @@ public class Grappling : MonoBehaviour
 
     private InputDevice hand;
     private bool grappling;
-
+    private bool isButtonPressed;
+    private bool isButtonPressed2;
+    private bool isButtonPressed3;
 
 
     // Start is called before the first frame update
@@ -66,15 +70,45 @@ public class Grappling : MonoBehaviour
         hand = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
         hand.TryGetFeatureValue(CommonUsages.triggerButton, out bool isPressed);
         hand.TryGetFeatureValue(CommonUsages.gripButton, out bool isGripped);
+        hand.TryGetFeatureValue(CommonUsages.primaryButton, out bool isPushed);
 
         CheckForHitPoints();
 
+        //  Only take input from button when initially pressed. Holding down the trigger is not something we can do.
         if (isPressed){
-            StartGrapple();
+            if (!isButtonPressed) 
+            {
+                StartGrapple();
+            }
+            isButtonPressed = true;
+            }
+        else
+        {
+            isButtonPressed = false;
         }
 
         if (isGripped){
-            StopSwing();
+            if (!isButtonPressed2) 
+            {
+                StopSwing();
+            }
+            isButtonPressed2 = true;
+            }
+        else
+        {
+            isButtonPressed2 = false;
+        }
+
+        if (isPushed){
+            if (!isButtonPressed3) 
+            {
+                YeetObject();
+            }
+            isButtonPressed3 = true;
+            }
+        else
+        {
+            isButtonPressed3 = false;
         }
 
         if (grapplingCdTimer > 0)
@@ -93,11 +127,12 @@ public class Grappling : MonoBehaviour
         DrawRope();
     }
 
-    private void StartGrapple()
+    private void StartGrapple()     //When you press button
     {
+        Debug.Log("StartGrapple");
         RaycastHit hit2;
         if(Physics.Raycast(cam.position, cam.forward, out hit2, maxGrappleDistance, swingable) && swinging == false)
-        {
+        {       // If looking at swingable object and not swinging, Swing
            swinging = true;
            StartSwing(hit2);
         }
@@ -111,18 +146,16 @@ public class Grappling : MonoBehaviour
         RaycastHit hit;
 
         if(Physics.Raycast(cam.position, cam.forward, out hit, maxGrappleDistance, grappleable) && swinging == false)
-        {
+        {       // If looking at grapplable object and not swinging, Grapple
             grapplePoint = hit.point;
-
             Invoke(nameof(ExecuteGrapple), grappleDelayTime);
         }
 
 
         else
-        {
+        {       // If not looking at grapplable or swingable object, stop swinging
             grapplePoint = cam.position + cam.forward * maxGrappleDistance;
-
-            Invoke(nameof(StopGrapple), grappleDelayTime);
+            Invoke(nameof(StopGrapple), grappleNoDelay);    // Please not have delay when doing this ._.
         }
 
 
@@ -130,13 +163,14 @@ public class Grappling : MonoBehaviour
         {
             lr.enabled = true;
             lr.SetPosition(1, grapplePoint);
-
         }
     }
 
 
     private void ExecuteGrapple()
     {
+        Debug.Log("ExecuteGrapple");
+
         pc.freeze = false;
 
         Vector3 lowestPoint = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
@@ -152,7 +186,9 @@ public class Grappling : MonoBehaviour
    }
 
     public void StopGrapple()
-    {
+    {   
+
+        Debug.Log("StopGraple");
 
         grappling = false;
 
@@ -161,11 +197,10 @@ public class Grappling : MonoBehaviour
         grapplingCdTimer = grapplingCd;
 
         lr.enabled = false;
-
-
     }
 
     private void StartSwing(RaycastHit h){
+        Debug.Log("StartSwing");
 
         pc.freeze = false;
         lr2.enabled = true;
@@ -173,6 +208,7 @@ public class Grappling : MonoBehaviour
         predictionPoint2.gameObject.SetActive(false);
 
         swingPoint = h.point;
+        swingObject = h.rigidbody.gameObject;
         joint = h.rigidbody.gameObject.AddComponent<SpringJoint>();
         joint.autoConfigureConnectedAnchor = false;
         //joint.connectedAnchor = player.position;
@@ -180,18 +216,28 @@ public class Grappling : MonoBehaviour
 
         float distanceFromPoint = Vector3.Distance(player.position, swingPoint);
 
-        joint.maxDistance = distanceFromPoint * 0.5f;
-        joint.minDistance = distanceFromPoint * 0.25f;
+        joint.maxDistance = distanceFromPoint * .5f;
+        joint.minDistance = distanceFromPoint * 0f;
 
-        joint.spring = 10f;
-        joint.damper = 3f;
+        joint.spring = 1f;
+        joint.damper = 1f;
         joint.massScale = 2.5f;
 
         Debug.Log("Start swing");
-
     }
 
+    private void YeetObject(){
+        if(swinging){
+            if(swingObject != null){
+                Rigidbody swingRb = swingObject.GetComponent<Rigidbody>();
+                swingRb.AddForce((rodEnd.position - swingObject.transform.position).normalized * 20f, ForceMode.Impulse);
+            }
+        }
+    }
+
+
     private void StopSwing(){
+        Debug.Log("StopSwing");
 
         lr2.positionCount = 0;
         lr2.enabled = false;
@@ -284,5 +330,4 @@ public class Grappling : MonoBehaviour
         predictionHit2 = rayCastHit2.point == Vector3.zero ? sphereCastHit2 : rayCastHit2;
     }
 }
-
 

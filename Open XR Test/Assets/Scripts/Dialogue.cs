@@ -1,35 +1,55 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.XR;
 
 public class Dialogue : MonoBehaviour
-{
 
+
+{
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
+    public bool startTime;
+
+    public bool endTime;
+    private bool isButtonPressed = false;
+
+    private InputDevice hand;
 
     private int index;
     // Start is called before the first frame update
     void Start()
     {
         textComponent.text = string.Empty;
-        StartDialogue();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0)){
-            if(textComponent.text == lines[index]){
-                NextLine();
+        if(startTime){
+            StartDialogue();
+            startTime = false;
+        }
+
+        hand = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
+        hand.TryGetFeatureValue(CommonUsages.secondaryButton, out bool bPressed);
+        hand.TryGetFeatureValue(CommonUsages.primaryButton, out bool aPressed);
+
+        
+        if (aPressed || bPressed) {
+            if (!isButtonPressed) {
+                if (textComponent.text == lines[index]) {
+                    NextLine();
+                } else {
+                    StopAllCoroutines();
+                    textComponent.text = lines[index];
+                }
             }
 
-        else{
-        StopAllCoroutines();
-        textComponent.text = lines[index];
-        }
+            isButtonPressed = true;
+        } else {
+            isButtonPressed = false;
         }
     }
 
@@ -54,6 +74,7 @@ public class Dialogue : MonoBehaviour
         }
         else{
             gameObject.SetActive(false);
+            endTime = true;
         }
     }
 }
