@@ -89,8 +89,8 @@
      <Compile Include="Assets\HurricaneVR\Framework\Scripts\Core\Player\HVRTeleportMarkerBase.cs" />
      <Compile Include="Assets\HurricaneVR\Framework\Scripts\Core\Utils\DrawIfAttribute.cs" />
      <Compile Include="Assets\HurricaneVR\Framework\Scripts\Weapons\Guns\HVRGunPart.cs" />
-     <Compile Include="Assets\HurricaneVR\Framework\Scripts\Core\Player\HVRPhysicsHands.cs" />
      <Compile Include="Assets\HurricaneVR\Framework\Scripts\Core\Utils\HVRObjectCollisionDisabler.cs" />
+     <Compile Include="Assets\HurricaneVR\Framework\Scripts\Core\Player\HVRPhysicsHands.cs" />
      <Compile Include="Assets\HurricaneVR\Framework\Scripts\SteamVR\HVRSteamVRController.cs" />
      <Compile Include="Assets\HurricaneVR\Framework\Scripts\Components\HVRMeshRendererHighlight.cs" />
      <Compile Include="Assets\HurricaneVR\Framework\Scripts\Weapons\Bow\HVRArrowPassthrough.cs" />

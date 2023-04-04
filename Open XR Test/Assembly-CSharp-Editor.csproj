@@ -36,9 +36,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
-     <Compile Include="Assets\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
-     <None Include="Assets\EffectExamples\Editor\PackageManagerAssembly\PackageImportList.txt" />
+    <Analyzer Include="C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Assets\ImportedAssets\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll" />
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\ImportedAssets\EffectExamples\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+     <Compile Include="Assets\LowPolyAssets\LowPolyWater_Pack\Scripts\Editor\GeneratePlane.cs" />
+     <None Include="Assets\ImportedAssets\EffectExamples\Editor\PackageManagerAssembly\PackageImportList.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -327,11 +330,11 @@
     <Reference Include="unityplastic">
         <HintPath>C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.collab-proxy@1.17.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="PackageManagerAssembly">
-        <HintPath>C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Assets\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
         <HintPath>C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PackageManagerAssembly">
+        <HintPath>C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Assets\ImportedAssets\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -897,29 +900,29 @@
       <Project>{dbd278aa-7bf6-7b72-68fc-9181ef63a88d}</Project>
       <Name>HurricaneVR.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="Boxophobic.SkyboxCubemapExtended.Editor.csproj">
-      <Project>{b3972024-a857-3802-7567-b15468e28c62}</Project>
-      <Name>Boxophobic.SkyboxCubemapExtended.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="sc.vegetationspawner.editor.csproj">
-      <Project>{43f9de16-0945-8df7-3158-1265a180d4e6}</Project>
-      <Name>sc.vegetationspawner.editor</Name>
-    </ProjectReference>
     <ProjectReference Include="HurricaneVR.Editor.csproj">
       <Project>{61c8ab77-7805-8112-b9aa-a468a33e7b95}</Project>
       <Name>HurricaneVR.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
+      <Project>{3758d0cd-ac07-56b9-b2f9-25e30dacbe62}</Project>
+      <Name>Boxophobic.Utils.Scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.SkyboxCubemapExtended.Editor.csproj">
+      <Project>{b3972024-a857-3802-7567-b15468e28c62}</Project>
+      <Name>Boxophobic.SkyboxCubemapExtended.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
       <Project>{350013eb-b0db-47cf-a920-7cbc27891ced}</Project>
       <Name>Boxophobic.Utils.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="sc.vegetationspawner.editor.csproj">
+      <Project>{43f9de16-0945-8df7-3158-1265a180d4e6}</Project>
+      <Name>sc.vegetationspawner.editor</Name>
+    </ProjectReference>
     <ProjectReference Include="sc.vegetationspawner.runtime.csproj">
       <Project>{98568679-3747-c38d-d6a2-f407d2fa7158}</Project>
       <Name>sc.vegetationspawner.runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
-      <Project>{3758d0cd-ac07-56b9-b2f9-25e30dacbe62}</Project>
-      <Name>Boxophobic.Utils.Scripts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -36,23 +36,27 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Assets\ImportedAssets\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll" />
+  </ItemGroup>
+  <ItemGroup>
      <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
-     <Compile Include="Assets\Scripts\Dialogue.cs" />
+     <Compile Include="Assets\Scripts\DialogueSpam\Dialogue.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoLockedDoor.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoValveHologram.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoKeypadButton.cs" />
-     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+     <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoHolster.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoFullStabConfetti.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoKeypad.cs" />
      <Compile Include="Assets\Scripts\BossBattle.cs" />
      <Compile Include="Assets\Scripts\FishingBobber.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\Projectile.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Projectile.cs" />
+     <Compile Include="Assets\PatrolState.cs" />
      <Compile Include="Assets\Scripts\GlowRaycast.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSocketables.cs" />
-     <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+     <Compile Include="Assets\LowPolyAssets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoHatchDoor.cs" />
      <Compile Include="Assets\EugeneAsset\collisionSound1.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoPowerUnit.cs" />
@@ -60,101 +64,106 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoLeverDisplay.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoLock.cs" />
      <Compile Include="Assets\EugeneAsset\CollisionSound.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\Item.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Item.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSlidingDoor.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\Minecart.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\RailCheckpoint.cs" />
-     <Compile Include="Assets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Minecart.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\RailCheckpoint.cs" />
+     <Compile Include="Assets\ImportedAssets\ModularFirstPersonController\FirstPersonController\FirstPersonController.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoHelper.cs" />
-     <Compile Include="Assets\LowPolyDungeon\Demo Scenes\ScreenshotMaker.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\LadderClimber.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\Respawner.cs" />
+     <Compile Include="Assets\IdleState.cs" />
+     <Compile Include="Assets\LowPolyAssets\LowPolyDungeon\Demo Scenes\ScreenshotMaker.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\LadderClimber.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Respawner.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoValveLock.cs" />
-     <Compile Include="Assets\LowPolyDungeon\Demo Scenes\PlayerMovement.cs" />
+     <Compile Include="Assets\LowPolyAssets\LowPolyDungeon\Demo Scenes\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\EnemyStateMachine.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\ChestOpen.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\ChestOpen.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoManualTeleport.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\Footsteps.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\ShootProjectile.cs" />
-     <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Footsteps.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\ShootProjectile.cs" />
+     <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\Scripts\Grappling.cs" />
-     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+     <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoHolsterOrientation.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSafeDoor.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\ThrowObject.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\Explosion.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\ThrowObject.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Explosion.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSafeDial.cs" />
-     <Compile Include="Assets\LowPolyDungeon\Demo Scenes\MouseCamLook.cs" />
+     <Compile Include="Assets\LowPolyAssets\LowPolyDungeon\Demo Scenes\MouseCamLook.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoUIManager.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoBackpack.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoCodeGrabbing.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\Fishing.cs" />
      <Compile Include="Assets\Scripts\FishingTracker.cs" />
-     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\ItemCrystal.cs" />
-     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\ProjectileCrystal.cs" />
+     <Compile Include="Assets\ImportedAssets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\ItemCrystal.cs" />
+     <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\ProjectileCrystal.cs" />
      <Compile Include="Assets\Scripts\TriggerSFX.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoHeavyDoor.cs" />
+     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
      <Compile Include="Assets\Scripts\Spinner.cs" />
      <Compile Include="Assets\Scripts\collisionTrigger.cs" />
-     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
+     <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
      <Compile Include="Assets\Scripts\LevelChanger.cs" />
-     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\ControlsScreen.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\LightIntensityRandom.cs" />
+     <Compile Include="Assets\ChaseState.cs" />
+     <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\ControlsScreen.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\LightIntensityRandom.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoGlassRotate.cs" />
      <Compile Include="Assets\EugeneAsset\testTrigger.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\Flashlight.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Flashlight.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSocketFilter.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scenes\HandSqueezeDemo\DemoPoseSqueeze.cs" />
      <Compile Include="Assets\Scripts\WhaleSpawner.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoDummyArm.cs" />
-     <Compile Include="Assets\Low Poly Cave Environment\Assets\Scripts\PostFXenabler.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\PostFXenabler.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoPassthroughSocket.cs" />
-     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <Compile Include="Assets\AttackState.cs" />
+     <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\GunAim.cs" />
+     <Compile Include="Assets\Scripts\DamagePlayer.cs" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\HurricaneVR\Framework\SFX\license.txt" />
-     <None Include="Assets\HurricaneVR\Third-Party Notices.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\ImportedAssets\HurricaneVR\Third-Party Notices.txt" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\ImportedAssets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />
-     <None Include="Assets\BrokenVector\LowPolyShaders\README.txt" />
+     <None Include="Assets\LowPolyAssets\BrokenVector\LowPolyShaders\README.txt" />
      <None Include="Assets\HurricaneVR\TechDemo\Shaders\Hologram Simple.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
-     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Blend.shader" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\LowPolyAssets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
+     <None Include="Assets\ImportedAssets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Blend.shader" />
      <None Include="Assets\HurricaneVR\Documentation\ReleaseNotes.txt" />
      <None Include="Assets\HurricaneVR\Framework\Models\OculusCustomHands\license.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-     <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
-     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\BrokenVector\LowPolyShaders\Shaders\LowPolyUnlitShader.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\LowPolyAssets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\LowPolyAssets\BrokenVector\LowPolyShaders\Shaders\LowPolyUnlitShader.shader" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\QuickOutline\Readme.txt" />
-     <None Include="Assets\BrokenVector\LowPolyShaders\Shaders\LowPolyPBRShader.shader" />
-     <None Include="Assets\Low Poly Cave Environment\Assets\Fonts\Yanone_Kaffeesatz\OFL.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\HurricaneVR\Framework\Resources\HVRLatestReleaseNotes.txt" />
-     <None Include="Assets\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\SimpleLowPolyNature\Shaders\SimpleWater.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\LowPolyAssets\BrokenVector\LowPolyShaders\Shaders\LowPolyPBRShader.shader" />
+     <None Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Fonts\Yanone_Kaffeesatz\OFL.txt" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\ImportedAssets\HurricaneVR\Framework\Resources\HVRLatestReleaseNotes.txt" />
+     <None Include="Assets\ImportedAssets\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\LowPolyAssets\SimpleLowPolyNature\Shaders\SimpleWater.shader" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\QuickOutline\Resources\Shaders\OutlineFill.shader" />
-     <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
-     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\ImportedAssets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -948,29 +957,29 @@
       <Project>{dbd278aa-7bf6-7b72-68fc-9181ef63a88d}</Project>
       <Name>HurricaneVR.Framework</Name>
     </ProjectReference>
-    <ProjectReference Include="Boxophobic.SkyboxCubemapExtended.Editor.csproj">
-      <Project>{b3972024-a857-3802-7567-b15468e28c62}</Project>
-      <Name>Boxophobic.SkyboxCubemapExtended.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="sc.vegetationspawner.editor.csproj">
-      <Project>{43f9de16-0945-8df7-3158-1265a180d4e6}</Project>
-      <Name>sc.vegetationspawner.editor</Name>
-    </ProjectReference>
     <ProjectReference Include="HurricaneVR.Editor.csproj">
       <Project>{61c8ab77-7805-8112-b9aa-a468a33e7b95}</Project>
       <Name>HurricaneVR.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
+      <Project>{3758d0cd-ac07-56b9-b2f9-25e30dacbe62}</Project>
+      <Name>Boxophobic.Utils.Scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="Boxophobic.SkyboxCubemapExtended.Editor.csproj">
+      <Project>{b3972024-a857-3802-7567-b15468e28c62}</Project>
+      <Name>Boxophobic.SkyboxCubemapExtended.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Boxophobic.Utils.Editor.csproj">
       <Project>{350013eb-b0db-47cf-a920-7cbc27891ced}</Project>
       <Name>Boxophobic.Utils.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="sc.vegetationspawner.editor.csproj">
+      <Project>{43f9de16-0945-8df7-3158-1265a180d4e6}</Project>
+      <Name>sc.vegetationspawner.editor</Name>
+    </ProjectReference>
     <ProjectReference Include="sc.vegetationspawner.runtime.csproj">
       <Project>{98568679-3747-c38d-d6a2-f407d2fa7158}</Project>
       <Name>sc.vegetationspawner.runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
-      <Project>{3758d0cd-ac07-56b9-b2f9-25e30dacbe62}</Project>
-      <Name>Boxophobic.Utils.Scripts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

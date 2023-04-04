@@ -36,15 +36,18 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\VegetationSpawner\Runtime\PoissonDisc.cs" />
-     <Compile Include="Assets\VegetationSpawner\Runtime\VegetationSpawner.Collision.cs" />
-     <Compile Include="Assets\VegetationSpawner\Runtime\SpawnerBase.cs" />
-     <Compile Include="Assets\VegetationSpawner\Runtime\TerrainSampler.cs" />
-     <Compile Include="Assets\VegetationSpawner\Runtime\VegetationSpawner.cs" />
-     <Compile Include="Assets\VegetationSpawner\Runtime\VegetationSpawner.Trees.cs" />
-     <Compile Include="Assets\VegetationSpawner\Runtime\Cell.cs" />
-     <Compile Include="Assets\VegetationSpawner\Runtime\VegetationSpawner.Grass.cs" />
-     <None Include="Assets\VegetationSpawner\Runtime\sc.vegetationspawner.runtime.asmdef" />
+    <Analyzer Include="C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Assets\ImportedAssets\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll" />
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\ImportedAssets\VegetationSpawner\Runtime\PoissonDisc.cs" />
+     <Compile Include="Assets\ImportedAssets\VegetationSpawner\Runtime\VegetationSpawner.Collision.cs" />
+     <Compile Include="Assets\ImportedAssets\VegetationSpawner\Runtime\SpawnerBase.cs" />
+     <Compile Include="Assets\ImportedAssets\VegetationSpawner\Runtime\TerrainSampler.cs" />
+     <Compile Include="Assets\ImportedAssets\VegetationSpawner\Runtime\VegetationSpawner.cs" />
+     <Compile Include="Assets\ImportedAssets\VegetationSpawner\Runtime\VegetationSpawner.Trees.cs" />
+     <Compile Include="Assets\ImportedAssets\VegetationSpawner\Runtime\Cell.cs" />
+     <Compile Include="Assets\ImportedAssets\VegetationSpawner\Runtime\VegetationSpawner.Grass.cs" />
+     <None Include="Assets\ImportedAssets\VegetationSpawner\Runtime\sc.vegetationspawner.runtime.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -330,11 +333,11 @@
     <Reference Include="unityplastic">
         <HintPath>C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.collab-proxy@1.17.7\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="PackageManagerAssembly">
-        <HintPath>C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Assets\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
         <HintPath>C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PackageManagerAssembly">
+        <HintPath>C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Assets\ImportedAssets\EffectExamples\Editor\PackageManagerAssembly\PackageManagerAssembly.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.13f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>

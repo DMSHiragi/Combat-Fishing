@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossBattle : MonoBehaviour
-{
+{   
+
+    List<Coroutine> runningCoroutines = new List<Coroutine>();
+
     [Header("Configurable Stats")]
     public int health = 100;
     public float waitTime;
@@ -12,8 +15,10 @@ public class BossBattle : MonoBehaviour
     [Header("References")]
     public GameObject player;
     public GameObject playerVR;
-    public Dialogue myDialogue;
+    public Dialogue startDialogue;
+    public Dialogue deathDialogue;
     public Canvas myCanvas;
+    public Canvas myCanvas2;
     public GameObject myWater;
     public GameObject myJaw;
     public GameObject waterHitbox;
@@ -24,6 +29,8 @@ public class BossBattle : MonoBehaviour
     private bool splashPlayed;
     private bool spoutPlayed;
     private bool waterRise;
+    private bool dead;
+    private bool allCoroutinesFinished;
 
     private Vector3 startPos;
     private Quaternion startRot;
@@ -60,108 +67,162 @@ public class BossBattle : MonoBehaviour
     [Header("Spout Animation")]
     public float waterDuration;
 
-    void Start()  // Disable canvas, log start position
+    void Start()
     {
         myCanvas.enabled = false;
+        myCanvas2.enabled = false;
         startPos = transform.position;
         startRot = transform.rotation;
         waterHitbox.SetActive(false);
     }
 
+
+        /* 
+        
+        TODO
+        
+        Someone:
+            Minion spawner
+            Some way to damage Boss with weapons
+
+
+        Zak:
+            Make realistic spout attack
+            Particle effects everywhere
+            50% HP / Death
+            Voice lines during battle
+
+
+
+        */
+
+
     void Update()
     {
-        switch ((int)battleStage)
+        allCoroutinesFinished = true;
+        foreach (Coroutine coroutine in runningCoroutines)
+        {
+            if (coroutine != null)
+            {
+                allCoroutinesFinished = false;
+                break;
+            }
+        }
+
+
+        switch ((int)battleStage)       //This controls what the boss is currently doing
         {
             case 0: // Start dialogue when approached
-                if(player.transform.position.z < -560f)
+                if(player.transform.position.z < -560f) //Only if nearby
                 {
-                    StartConversation();
+                    startConvo1();
                 }
                 break;
 
-            case 1: // Whale stops talking, battle begins
-                if(myDialogue.endTime)
-                {
-                    EndConversation();
+            case 1: // When dialogue finished, battle begins
+                if(startDialogue != null){
+                    if(startDialogue.endTime)
+                    {
+                        endConvo1();
+                    }
                 }
                 break;
 
 
-            case 2: // idle state, do nothing
-
-                // Do this once every X seconds
+            case 2: // idle state, do nothing for X few seconds. Returns to this state after each attack.
 
                 if(!idleOnce){ 
-                    StartCoroutine(PerformIdleState());
+                    Coroutine c1 = StartCoroutine(PerformIdleState());
+                    runningCoroutines.Add(c1);
+
                 }
 
                 // Do this every update
-                CheckHealth(); // Check if health drops below threshold
+                CheckHealth(); // Check if health drops below threshold, 
 
                 break;
 
 
-            case 3: // Splash attack
-
-                if (!splashPlayed)
+            case 3: // Splash attack, jumps up and floods the cave
+                if (!splashPlayed)  // This prevents the animation from playing twice
                 {
-                    StartCoroutine(SplashAnimation());
+                    Coroutine c2 = StartCoroutine(SplashAnimation());
+                    runningCoroutines.Add(c2);
                 }
-
                 break;
 
-            case 4: // Swallow attack
-                
+
+            case 4: // Swallow attack, looks at player then lunges
                 if (!swallowPlayed)
                 {
-                    StartCoroutine(SwallowAnimation());
-
+                    
+                    Coroutine c3 = StartCoroutine(SwallowAnimation());
+                    runningCoroutines.Add(c3);
                 }
-
                 break;
 
 
-            case 5: // Blow hole attack
-                
+            case 5: // Blow hole attack, shoots water at airborne enemies
                 if(!spoutPlayed){
-                    StartCoroutine(SpoutAnimation());
+                    Coroutine c4 = StartCoroutine(SpoutAnimation());
+                    runningCoroutines.Add(c4);
                 }
-
-
                 break;
 
 
-            case 6: // Spawn small enemies
+            case 6: // Spawn enemies, spawns a bunch of minions. 
+
                 //I can't do this part
 
                 break;
 
 
-            case 7: // Boss hits half HP
-                
+            case 7: // When Boss hits half HP, play a cutscene
 
                 break;
 
 
-            case 8: // Death outro
-                
+            case 8: // Death outro, dialogue before death
+
+            
+                Debug.Log("Die");
+
+                // if(allCoroutinesFinished){
+                    startConvoDie();
+                // }
+
 
                 break;
 
 
-            case 9: // Death 
-                
+            case 9: // Death animation
+                if(deathDialogue.endTime)
+                    {
+                        endConvo2();
+                    }
+
 
                 break;
         }
+
+
+        if (Input.GetMouseButtonDown(1)){
+            health -= 50;
+            Debug.Log(health);
+        }
+
     }
 
-    // CASE 0
-                                                // StartConversation TODO
-    private void StartConversation(){
-        myCanvas.enabled = true;
-        myDialogue.startTime = true;
 
+
+
+    // CASE 0
+                                                // startConvo1, need to lock playermovement
+    private void startConvo1(){
+        myCanvas.enabled = true;
+        if(startDialogue !=  null){
+            startDialogue.startTime = true;
+        }
         // Lock player movement
 
         Debug.Log("1 - EndDialogue");
@@ -170,71 +231,70 @@ public class BossBattle : MonoBehaviour
 
 
     // CASE 1
-                                                // EndConversation TODO
-    private void EndConversation(){
+                                                // endConvo1 TODO
+    private void endConvo1(){
+        
         myCanvas.enabled = false;
 
         // Unlock player movement
 
-        // Spawn a bunch of enemies
-
         Debug.Log("Battle Start");
         battleStage = 3;
+        // change to battle stage = 6 once minion summon attack is done.
     }
 
     // CASE 2
-
-
                                                 // PerformIdleState
     IEnumerator PerformIdleState()
     {
-        // Code here is called when idle starts
+        // Only when idle initially starts
         Debug.Log("Idle Start");
 
         idleOnce = true;
 
         // Say a random voiceline sometimes
-        Debug.Log("Voice");
 
-        // Wait for 2 seconds
+        // Wait for X seconds (attack spam not fun)
         yield return new WaitForSeconds(waitTime);
 
-
         // Hide voiceline
-        Debug.Log("Hide Voice");
 
-
-        // Cycle new attack
+        // Cycle to a new attack
         attackPhase += 1;
-        if (attackPhase > 5) { // Repeat attack cycle
+        if (attackPhase == 6) { // Repeat attack cycle when done (change to 6 once minion is done)
             attackPhase = 3;
         }
-        battleStage = attackPhase;
+        if(!dead){
+            battleStage = attackPhase;
+        }
+        else{
+            battleStage = 8;
+        }
         idleOnce = false;
 
         Debug.Log("Idle End");
     }
 
-                                                // CheckHealth
-    // When health goes down, change phase if true
+        // When health first goes below 50% / 0%, do a thing
     private void CheckHealth(){
-        if (health < 50) {
-            if (HPcount == 0) { // Only do when first reaching 50%
+        if (health < 51) {
+            if (HPcount == 0) { // When 50% HP
                 battleStage = 7;
                 HPcount = 1;
             }
             if (health < 1) { // When killed
                 battleStage = 8;
                 HPcount = 2;
+                Debug.Log("Boss Killed");
+                dead = true;
             }
         }
     }
-
-
     
 
     //CASE 3
-        // Animate the whale jump, hell if you don't have a rig to animate
+        // Animate the whale jump
+        // Do not look inside there's no reason to
     private IEnumerator SplashAnimation(){
         splashPlayed = true;
         attackPhase = 3;
@@ -280,7 +340,8 @@ public class BossBattle : MonoBehaviour
         Vector3 newPos = new Vector3(startPos.x, startPos.y - 10f, startPos.z);
         if(!waterRise)
         {
-            StartCoroutine(MoveWaterCoroutine());
+            Coroutine c5 = StartCoroutine(MoveWaterCoroutine());
+            runningCoroutines.Add(c5);
         }
 
         //Fall & sink
@@ -309,7 +370,7 @@ public class BossBattle : MonoBehaviour
         splashPlayed = false;
     }
 
-        // Move water up then down, simple.
+        // Move water up then down
     private IEnumerator MoveWaterCoroutine()
     {
         waterRise = true;
@@ -342,8 +403,7 @@ public class BossBattle : MonoBehaviour
 
 
     //CASE 4
-
-//Animate swallowing
+        // Animate swallowing
     private IEnumerator SwallowAnimation(){
         swallowPlayed = true;
         attackPhase = 4;
@@ -479,8 +539,9 @@ public class BossBattle : MonoBehaviour
 
     
     //CASE 5
+        // Animate spout
 
-
+        //Still needs work
     private IEnumerator SpoutAnimation(){
         spoutPlayed = true;
         attackPhase = 5;
@@ -560,11 +621,8 @@ public class BossBattle : MonoBehaviour
 
 
 
-
-
     
     //CASE 7
-
 
 
 
@@ -572,9 +630,30 @@ public class BossBattle : MonoBehaviour
     //CASE 8
 
 
+    private void startConvoDie(){
+        
+        myCanvas2.enabled = true;
+        if(deathDialogue !=  null){
+            deathDialogue.startTime = true;
+            battleStage = 9;
+        }
+        // Lock player movement
+
+        Debug.Log("1 - EndDialogue");
+        
+    }
 
 
     
     //CASE 9
+    private void endConvo2(){
+        
+        myCanvas2.enabled = false;
+
+        // Unlock player movement
+
+        Debug.Log("Convo Death");
+
+    }
 
 }
