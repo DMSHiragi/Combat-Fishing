@@ -18,6 +18,7 @@ public class EnemyHealth : MonoBehaviour
         curHealth = maxHealth;
         psys = GetComponent<ParticleSystem>();
         rb = GetComponent<Rigidbody>();
+        grappling = GameObject.FindGameObjectWithTag("Player").GetComponent<Grappling>();
     }
 
     // Update is called once per frame

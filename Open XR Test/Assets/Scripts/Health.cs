@@ -34,15 +34,14 @@ public class Health : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Rod")){
-            if(grappling.swinging == true){
+        if (grappling.swinging == true && other.gameObject.layer == 18){
                 Damage(100);
                 psys.Play();
                 Debug.Log("Damage 100");
-            }else {
+        }else if (other.gameObject.CompareTag("Rod")) {
                 Damage(10);
                 psys.Play();
-            }
+          }
         } 
     }
-}
+

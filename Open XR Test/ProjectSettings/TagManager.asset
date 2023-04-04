@@ -10,6 +10,7 @@ TagManager:
   - Rod
   - Fire
   - Waypoints
+  - 'Swingable '
   layers:
   - Default
   - TransparentFX

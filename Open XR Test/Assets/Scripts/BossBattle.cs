@@ -22,12 +22,14 @@ public class BossBattle : MonoBehaviour
     public GameObject myWater;
     public GameObject myJaw;
     public GameObject waterHitbox;
+    public EnemySpawner eSpawner;
 
     private int attackPhase = 3;
     private bool idleOnce;
     private int HPcount = 0;
     private bool splashPlayed;
     private bool spoutPlayed;
+    private bool spawnPlayed;
     private bool waterRise;
     private bool dead;
     private bool allCoroutinesFinished;
@@ -67,6 +69,14 @@ public class BossBattle : MonoBehaviour
     [Header("Spout Animation")]
     public float waterDuration;
 
+    [Header("Enemy Spawner")]
+    [SerializeField] 
+    private GameObject enemyPrefab;
+    [SerializeField] 
+    private float enemyInterval = 3.5f;
+    [SerializeField] 
+    private Transform spawnPosition;
+
     void Start()
     {
         myCanvas.enabled = false;
@@ -82,8 +92,8 @@ public class BossBattle : MonoBehaviour
         TODO
         
         Someone:
-            Minion spawner
-            Some way to damage Boss with weapons
+            Minion spawner - In place now, just need to mess with states
+            Some way to damage Boss with weapons - Works externally from this script, not sure if that'll be a problem
 
 
         Zak:
@@ -173,7 +183,12 @@ public class BossBattle : MonoBehaviour
             case 6: // Spawn enemies, spawns a bunch of minions. 
 
                 //I can't do this part
+                //But I can
 
+                if(!spawnPlayed){
+                    Coroutine c5 = StartCoroutine(spawnEnemies(enemyInterval, enemyPrefab));
+                    runningCoroutines.Add(c5);
+                }
                 break;
 
 
@@ -239,7 +254,7 @@ public class BossBattle : MonoBehaviour
         // Unlock player movement
 
         Debug.Log("Battle Start");
-        battleStage = 3;
+        battleStage = 6;
         // change to battle stage = 6 once minion summon attack is done.
     }
 
@@ -618,7 +633,19 @@ public class BossBattle : MonoBehaviour
     
     //CASE 6
 
+    private IEnumerator spawnEnemies(float interval, GameObject enemy){
+        spawnPlayed = true;
+        //Spawn new enemy at spawnpoint
+        GameObject newEnemy = Instantiate(enemy, spawnPosition.position, Quaternion.identity);
+        yield return new WaitForSeconds(interval);
+        //Spawn new enemy at spawnpoint again
+        GameObject newEnemy2 = Instantiate(enemy, spawnPosition.position, Quaternion.identity);
+        //Back to idle
+        battleStage = 2;
+        yield return new WaitForSeconds(6f);
+        spawnPlayed = false;
 
+    }
 
 
     

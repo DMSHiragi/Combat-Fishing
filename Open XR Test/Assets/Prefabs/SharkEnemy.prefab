@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grappling: {fileID: 0}
   curHealth: 0
-  maxHealth: 100
+  maxHealth: 50
   psys: {fileID: 4056034274927632398}
   animator: {fileID: 4056034274927632387}
   rb: {fileID: 0}
