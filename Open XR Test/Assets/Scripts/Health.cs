@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-
+    public Grappling grappling;
     public int curHealth = 0;
     public int maxHealth = 100;
     public ParticleSystem psys;
@@ -19,7 +19,6 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
- 
     }
 
     public void Damage(int d)
@@ -34,10 +33,15 @@ public class Health : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Rod"))
-        {
-            Damage(10);
-            psys.Play();
-        }
+        if (other.gameObject.CompareTag("Rod")){
+            if(grappling.swinging == true){
+                Damage(100);
+                psys.Play();
+                Debug.Log("Damage 100");
+            }else {
+                Damage(10);
+                psys.Play();
+            }
+        } 
     }
 }

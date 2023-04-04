@@ -30,7 +30,7 @@ public class Grappling : MonoBehaviour
     [Header("Swinging")]
     private Vector3 swingPoint;
     private SpringJoint joint;
-    private bool swinging;
+    public bool swinging;
 
     private Vector3 grapplePoint;
 
