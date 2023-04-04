@@ -167,6 +167,283 @@ Received Import Request.
   path: Assets/WhaleV5.fbx
   artifactKey: Guid(f7eb59a86f6038347a8eea843b217b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/WhaleV5.fbx using Guid(f7eb59a86f6038347a8eea843b217b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acf71254a53b8fb487f8707ede85c472') in 0.399061 seconds 
+  Time since last request: 17798.029175 seconds.
+  path: Assets/EffectExamples/Readme.asset
+  artifactKey: Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/EffectExamples/Readme.asset using Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ca2b3a3fe62ec43dcb46ffe6ac8490d') in 0.027851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.304589 seconds.
+  path: Assets/Drip Material.mat
+  artifactKey: Guid(fa4dc180d3a92da47a40cb0733c18c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Drip Material.mat using Guid(fa4dc180d3a92da47a40cb0733c18c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43adbe71a396ca6d4e0a0c6e567799f7') in 0.057099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.025156 seconds.
+  path: Assets/Grass.jpg
+  artifactKey: Guid(1985b95f83caa6f4f9ae04828c51db1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Grass.jpg using Guid(1985b95f83caa6f4f9ae04828c51db1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6e8c8efe0eff837284e3a4d26bd26a2') in 0.037769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(de37227b5aa41bd40b9ed34a57583572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(de37227b5aa41bd40b9ed34a57583572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b854fb30ef8bd5257fc2e17fa7d3e96') in 0.016876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.896651 seconds.
+  path: Assets/Characters
+  artifactKey: Guid(3b83f862669a5c74ab10ebfd7acbc8bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters using Guid(3b83f862669a5c74ab10ebfd7acbc8bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '077e55a1d4899040d8d215e4aa15aed8') in 0.004553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.062840 seconds.
+  path: Assets/Characters/Fish_Enemy_Animation.fbx
+  artifactKey: Guid(31756baa522956e4986968e2be9e9609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Fish_Enemy_Animation.fbx using Guid(31756baa522956e4986968e2be9e9609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97ce9108b581a98421287e3fc2bcc6da') in 0.228675 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005992 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.815 seconds
+Domain Reload Profiling:
+	ReloadAssembly (816ms)
+		BeginReloadAssembly (104ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (2ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (638ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (189ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (318ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (217ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.30 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5153 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 60 unused Assets / (2.2 MB). Loaded Objects now: 5737.
+Memory consumption went from 216.6 MB to 214.5 MB.
+Total: 3.399000 ms (FindLiveObjects: 0.307800 ms CreateObjectMapping: 0.199700 ms MarkObjects: 2.360700 ms  DeleteObjects: 0.529700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006210 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.817 seconds
+Domain Reload Profiling:
+	ReloadAssembly (818ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (633ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (202ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (284ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.46 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5153 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (1.7 MB). Loaded Objects now: 5741.
+Memory consumption went from 216.1 MB to 214.5 MB.
+Total: 2.591900 ms (FindLiveObjects: 0.231900 ms CreateObjectMapping: 0.140000 ms MarkObjects: 1.913300 ms  DeleteObjects: 0.306100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005994 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.837 seconds
+Domain Reload Profiling:
+	ReloadAssembly (838ms)
+		BeginReloadAssembly (112ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (656ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (226ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (292ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (198ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.40 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5153 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (1.7 MB). Loaded Objects now: 5745.
+Memory consumption went from 216.1 MB to 214.5 MB.
+Total: 3.055300 ms (FindLiveObjects: 0.276800 ms CreateObjectMapping: 0.181400 ms MarkObjects: 2.274300 ms  DeleteObjects: 0.322000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1327.593502 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Materials/Main PolyPack.mat
+  artifactKey: Guid(add612cfd0b428a49ac1fed73a33d3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Materials/Main PolyPack.mat using Guid(add612cfd0b428a49ac1fed73a33d3d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d42450eca6ae3cd7dbc3aaf18f928b') in 0.082061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Alstra Infinite/Fish - PolyPack/Materials/Main.mat
+  artifactKey: Guid(284830dd46ce77c4696ef63853c7cf5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Alstra Infinite/Fish - PolyPack/Materials/Main.mat using Guid(284830dd46ce77c4696ef63853c7cf5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c649fd6bee538650eef0f80806ffe126') in 0.011360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.038927 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  8.mat
+  artifactKey: Guid(3b1c024cee8a7a5438eed595a8f62dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  8.mat using Guid(3b1c024cee8a7a5438eed595a8f62dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '102f1c5b093b5063962b7a30fd68717e') in 0.057371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  17.mat
+  artifactKey: Guid(835bd773e47fb5f499a31aa29079f2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  17.mat using Guid(835bd773e47fb5f499a31aa29079f2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7898b64ed092259be374a5dccf31e96a') in 0.012342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  10.mat
+  artifactKey: Guid(7e2a001bc0cf96d4e84b3069df7dd5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  10.mat using Guid(7e2a001bc0cf96d4e84b3069df7dd5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7086e553b788578c0e5b37b21b223b0') in 0.012050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  12.mat
+  artifactKey: Guid(fda6fbe573d701049abb2e6f2fbbce6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  12.mat using Guid(fda6fbe573d701049abb2e6f2fbbce6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4441a47acbf1a40deb63b597b16fde23') in 0.011267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  15.mat
+  artifactKey: Guid(dd177f2c7d03f3a4e93efcfe8615ce82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  15.mat using Guid(dd177f2c7d03f3a4e93efcfe8615ce82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14a4a66b66a5ef513a5cd8c2b36490f9') in 0.011366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric .mat
+  artifactKey: Guid(f3da7514fc7807c4b8ed80b2700c72be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric .mat using Guid(f3da7514fc7807c4b8ed80b2700c72be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27ba3f53d46e3f27af38b2be75226c19') in 0.192832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  13.mat
+  artifactKey: Guid(7011dafbf476a1a4b917ac9edc7f1e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  13.mat using Guid(7011dafbf476a1a4b917ac9edc7f1e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bf8e3e73f4cb1a432525402b976668d') in 0.011712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.886406 seconds.
+  path: Assets/Materials/New Material.mat
+  artifactKey: Guid(90e7d3a987d22724282bdf59c503fbaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material.mat using Guid(90e7d3a987d22724282bdf59c503fbaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66f6a5026cbbca3a066e060bd7c8f514') in 0.011817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  4.mat
+  artifactKey: Guid(51e6aa53b1bbde44aafcfded2ef95e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  4.mat using Guid(51e6aa53b1bbde44aafcfded2ef95e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76671d1e411283505d044015e30b759e') in 0.011764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  5.mat
+  artifactKey: Guid(aed88a891db7a6940bd65da392e3a0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  5.mat using Guid(aed88a891db7a6940bd65da392e3a0cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '293dc870abb591e17d3dc6e6211e05f3') in 0.011697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  6.mat
+  artifactKey: Guid(b09c390c36884234ba42ccccb671205a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  6.mat using Guid(b09c390c36884234ba42ccccb671205a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8836a2d098a49c5e8f4861ce309a0616') in 0.012552 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

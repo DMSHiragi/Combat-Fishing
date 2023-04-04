@@ -8,6 +8,8 @@ TagManager:
   - Minecart
   - grappleable
   - Rod
+  - Fire
+  - Waypoints
   layers:
   - Default
   - TransparentFX

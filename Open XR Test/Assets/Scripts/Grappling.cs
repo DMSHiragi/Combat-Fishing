@@ -102,7 +102,9 @@ public class Grappling : MonoBehaviour
         if (isPushed){
             if (!isButtonPressed3) 
             {
+
                 YeetObject();
+
             }
             isButtonPressed3 = true;
             }

@@ -2,18 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     public Grappling grappling;
     public int curHealth = 0;
     public int maxHealth = 100;
     public ParticleSystem psys;
+    public Animator animator;
+    public Rigidbody rb;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         curHealth = maxHealth;
         psys = GetComponent<ParticleSystem>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -24,10 +28,15 @@ public class Health : MonoBehaviour
     public void Damage(int d)
     {
         curHealth -= d;
-        
+        rb.AddForce((transform.position - grappling.gameObject.transform.position).normalized * 10f, ForceMode.Impulse);
         if (curHealth <= 0)
         {
-            Destroy(gameObject);
+            animator.SetTrigger("Defeat");
+            StartCoroutine(waiter());
+        }
+
+        else{
+            animator.SetTrigger("Damage");
         }
 
     }
@@ -44,5 +53,11 @@ public class Health : MonoBehaviour
                 psys.Play();
             }
         } 
+    }
+
+    IEnumerator waiter(){
+        yield return new WaitForSeconds(1);
+
+        Destroy(gameObject);
     }
 }
