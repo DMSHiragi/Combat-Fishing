@@ -14,6 +14,11 @@ public class EnemyStateMachine : MonoBehaviour
     private Transform myTransform;
 
     float distanceBetweenObjects;
+    public GameObject hitBox;
+
+    int timer = 0;
+    int attackCooldwonTimer = 0;
+    bool timerOn = false;
 
     void Awake()
     {
@@ -46,6 +51,16 @@ public class EnemyStateMachine : MonoBehaviour
 
             }
         }
+
+        if (timerOn){
+            timer++;
+        }
+
+        if (timer > 60){
+            timer = 0;
+            timerOn = false;
+            hitBox.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -66,7 +81,16 @@ public class EnemyStateMachine : MonoBehaviour
         {
             GameObject go = GameObject.FindGameObjectWithTag("Player");
             distanceBetweenObjects = Vector3.Distance(transform.position, go.transform.position);
-            Debug.Log(distanceBetweenObjects);
+            if(distanceBetweenObjects < 5){
+                Attack();
+            }
         }
+    }
+
+
+
+    private void Attack(){
+        hitBox.SetActive(true);
+        timerOn = true;
     }
 }
