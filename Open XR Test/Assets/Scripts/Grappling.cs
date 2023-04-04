@@ -31,7 +31,7 @@ public class Grappling : MonoBehaviour
     [Header("Swinging")]
     private Vector3 swingPoint;
     private SpringJoint joint;
-    private bool swinging;
+    public bool swinging;
     private GameObject swingObject;
 
     private Vector3 grapplePoint;
@@ -102,9 +102,8 @@ public class Grappling : MonoBehaviour
         if (isPushed){
             if (!isButtonPressed3) 
             {
-                Rigidbody swingRb = swingObject.GetComponent<Rigidbody>();
 
-                swingRb.AddForce((rodEnd.position - swingObject.transform.position).normalized * 20f, ForceMode.Impulse);
+                YeetObject();
 
             }
             isButtonPressed3 = true;
@@ -229,6 +228,15 @@ public class Grappling : MonoBehaviour
         Debug.Log("Start swing");
     }
 
+    private void YeetObject(){
+        if(swinging){
+            if(swingObject != null){
+                Rigidbody swingRb = swingObject.GetComponent<Rigidbody>();
+                swingRb.AddForce((rodEnd.position - swingObject.transform.position).normalized * 20f, ForceMode.Impulse);
+            }
+        }
+    }
+
 
     private void StopSwing(){
         Debug.Log("StopSwing");
@@ -324,5 +332,4 @@ public class Grappling : MonoBehaviour
         predictionHit2 = rayCastHit2.point == Vector3.zero ? sphereCastHit2 : rayCastHit2;
     }
 }
-
 

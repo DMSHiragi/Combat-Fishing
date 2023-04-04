@@ -13,7 +13,7 @@ using HurricaneVR.Framework.Core.Grabbers;
 public class PlayerController : MonoBehaviour
 {
 
-    public float speed = 1;
+    public float speed = 10;
     private CharacterController characterController;
     private Rigidbody rb;
     public bool freeze;

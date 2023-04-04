@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Stomach.unity
+    guid: b86b3e74eafa2f84f9b19ec08d12fea2
+  - enabled: 1
+    path: Assets/Scenes/CaveScene.unity
+    guid: fb073bf458f2efb46b29a9271f9bf790
+  - enabled: 1
+    path: Assets/Scenes/TestScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2f37b9b8c198b21469ea91fa5ee63bad, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: affa43091866ade4db73f528a5f532a9, type: 2}
