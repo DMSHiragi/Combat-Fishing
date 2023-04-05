@@ -1,0 +1,386 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.15f1 (e8e88683f834) revision 15263878'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 32469 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.15f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+63024
+Successfully changed project path to: C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test
+C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [33800] Host "[IP] 192.168.1.90 [Port] 0 [Flags] 2 [Guid] 2420212583 [EditorId] 2420212583 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2VVLPT9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [33800] Host "[IP] 192.168.1.90 [Port] 0 [Flags] 2 [Guid] 2420212583 [EditorId] 2420212583 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2VVLPT9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 153.33 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.15f1 (e8e88683f834)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU (ID=0x24a0)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   31.0.15.3141
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007654 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 134.39 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.732 seconds
+Domain Reload Profiling:
+	ReloadAssembly (732ms)
+		BeginReloadAssembly (80ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (533ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (101ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (344ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (134ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (150ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.010344 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 141.30 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  1.486 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1487ms)
+		BeginReloadAssembly (102ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (1255ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (322ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (687ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (141ms)
+				BeforeProcessingInitializeOnLoad (130ms)
+				ProcessInitializeOnLoadAttributes (371ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.97 ms, found 9 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5279 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 68 unused Assets / (1.7 MB). Loaded Objects now: 5736.
+Memory consumption went from 292.5 MB to 290.8 MB.
+Total: 4.209900 ms (FindLiveObjects: 0.257600 ms CreateObjectMapping: 0.412300 ms MarkObjects: 3.144000 ms  DeleteObjects: 0.395200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 262943.654334 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/MeleeWeapons/SpartanShield.fbx
+  artifactKey: Guid(9d49f246709e81d4ea5ba0f06cb731fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/MeleeWeapons/SpartanShield.fbx using Guid(9d49f246709e81d4ea5ba0f06cb731fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd263203e2f3793f12f9c370cbb36c3') in 0.244334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Environment/PowerUnit/power_unit_cell.fbx
+  artifactKey: Guid(2aa315e56ab0bd14c9b228ea838dc97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Environment/PowerUnit/power_unit_cell.fbx using Guid(2aa315e56ab0bd14c9b228ea838dc97f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25653c0a81d220404dbec079278fb886') in 0.021940 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/Props/Backpack/keyring.fbx
+  artifactKey: Guid(b7d78e47f7a66fa4b862d698e74a98dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/Props/Backpack/keyring.fbx using Guid(b7d78e47f7a66fa4b862d698e74a98dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f70dc717a405bf0d842aa562b309c5c9') in 0.036741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Environment/Pipes/pipe_straight3.fbx
+  artifactKey: Guid(e5d8bf089db46c647b295458bf766003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Environment/Pipes/pipe_straight3.fbx using Guid(e5d8bf089db46c647b295458bf766003) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa53e98a7ae411d6e86bf598183f83db') in 0.039496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Environment/DemoScene/exterior.fbx
+  artifactKey: Guid(257125d9f452e3c48a4fc01abae65002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Environment/DemoScene/exterior.fbx using Guid(257125d9f452e3c48a4fc01abae65002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f3374a4a50e16c853f5235d3ff5931') in 0.021363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/Props/Backpack/BackPack.fbx
+  artifactKey: Guid(512b8a393fa182940bbb3e140b3635ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/Props/Backpack/BackPack.fbx using Guid(512b8a393fa182940bbb3e140b3635ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfbdc532107c343c79ac3d80e40b6f2e') in 0.022152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/HurricaneVR/Framework/Models/FilledCircle.fbx
+  artifactKey: Guid(72de5c85114dd594a9b5466f7735e42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/Framework/Models/FilledCircle.fbx using Guid(72de5c85114dd594a9b5466f7735e42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0c71d9f6305aeb3b637703eec24e43') in 0.021578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/MeleeWeapons/BroadSword.fbx
+  artifactKey: Guid(b7f7fdaa1a1b9264b93e0b4339c51494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/MeleeWeapons/BroadSword.fbx using Guid(b7f7fdaa1a1b9264b93e0b4339c51494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b13e11ad15980eb8ec1a3e371baf1b3') in 0.036160 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Environment/DemoScene/pipe_floor_to_roof.fbx
+  artifactKey: Guid(1b947b7ebf5ebb342a88ab8c536b2973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Environment/DemoScene/pipe_floor_to_roof.fbx using Guid(1b947b7ebf5ebb342a88ab8c536b2973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aba5530c119e01ad8077bc4210b0d8f') in 0.045091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Standard Assets/Standard Assets/Vehicles/Car/Materials/ParticleSmokeWhite.mat
+  artifactKey: Guid(c617e7cbee0d2344a9b5e53116c43a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/Vehicles/Car/Materials/ParticleSmokeWhite.mat using Guid(c617e7cbee0d2344a9b5e53116c43a2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d1f99e00525794f35d28c82c8746c21') in 0.041780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyAssets/PurePoly/Mining_Free_Assets/Materials/PP_Ground.mat
+  artifactKey: Guid(552c07fcf7c5d3245b3d64c6be39a7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/PurePoly/Mining_Free_Assets/Materials/PP_Ground.mat using Guid(552c07fcf7c5d3245b3d64c6be39a7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ef4d4c1b264d9b83c0acb03f13f32d') in 0.018616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleFirework.mat
+  artifactKey: Guid(9f3080141f1f64197825663e067f94f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleFirework.mat using Guid(9f3080141f1f64197825663e067f94f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '269cf14397ad56088601673040151bf1') in 0.021932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/Props/basic_target.fbx
+  artifactKey: Guid(7df4b68d18f9d564795a7cb6425b2acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/Props/basic_target.fbx using Guid(7df4b68d18f9d564795a7cb6425b2acd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b09c160174c50d5a27c854b28eb8ba') in 0.019887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Environment/Pipes/pipe_straight_drain.fbx
+  artifactKey: Guid(69b547ea8de0a604191a0b7c1f490b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Environment/Pipes/pipe_straight_drain.fbx using Guid(69b547ea8de0a604191a0b7c1f490b6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f276b10fc9757d442667d3c2f747df6') in 0.052508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/Doors/swinging_door.fbx
+  artifactKey: Guid(6dfcade0071336d478d528bf09ede877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/Doors/swinging_door.fbx using Guid(6dfcade0071336d478d528bf09ede877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb5f38a42ce228352aa4e056ef760c7') in 0.067955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSmokeBlack.mat
+  artifactKey: Guid(fc626cffedc907848a7b47b87aa5e34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSmokeBlack.mat using Guid(fc626cffedc907848a7b47b87aa5e34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a74edfe1d941c3bad0bfcbc0d09540') in 0.040132 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/Guns/ShotgunShell.fbx
+  artifactKey: Guid(f7105b5eeca0c774ba33ec48a965f311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/Guns/ShotgunShell.fbx using Guid(f7105b5eeca0c774ba33ec48a965f311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3de396e9d1454969beaf16f43edf1d83') in 0.019887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/MeleeWeapons/mjolnir.fbx
+  artifactKey: Guid(b81dd3137b15bc445b170671b58279f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/MeleeWeapons/mjolnir.fbx using Guid(b81dd3137b15bc445b170671b58279f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6678a944703831f3e02860c9cac058a7') in 0.046475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/Props/Dummy/head.fbx
+  artifactKey: Guid(7cdd629da9aacae4ca1e5c535180c4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/Props/Dummy/head.fbx using Guid(7cdd629da9aacae4ca1e5c535180c4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb2dd7a3ce2190fc41aa4e69161cbd1b') in 0.235440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/HurricaneVR/Framework/Materials/OculusTouchForQuestAndRiftS_Material.mat
+  artifactKey: Guid(01ac879f6ce09924e9c26663f798beaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/Framework/Materials/OculusTouchForQuestAndRiftS_Material.mat using Guid(01ac879f6ce09924e9c26663f798beaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b1d3e910e2b3061935aa140f38a47bc') in 0.020870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/MeleeWeapons/Spear.fbx
+  artifactKey: Guid(58e451f8b482a6c41b101694b389cb85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/MeleeWeapons/Spear.fbx using Guid(58e451f8b482a6c41b101694b389cb85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f048d97982a13023e805942a2d2554ca') in 0.029630 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/Props/Lock.fbx
+  artifactKey: Guid(d3e2e592e4c1a8c4f9f71a6ecbc23707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/Props/Lock.fbx using Guid(d3e2e592e4c1a8c4f9f71a6ecbc23707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3d5bb212db8f8db5a125dccc2304bd9') in 0.027047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSmokeWhite.mat
+  artifactKey: Guid(c50d77affeb31e14c9c062c282f13fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSmokeWhite.mat using Guid(c50d77affeb31e14c9c062c282f13fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41dae71b03710e13702d91647dca2a80') in 0.012925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/HurricaneVR/Framework/Models/Ring.fbx
+  artifactKey: Guid(139a1d2404f43d640bbe1edb9c53b7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/Framework/Models/Ring.fbx using Guid(139a1d2404f43d640bbe1edb9c53b7bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c1f67b6b4800efbb5913251b627da03') in 0.019737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/PullLevers/PullLever4.fbx
+  artifactKey: Guid(4b3a8ad9878d01f459c8a44bf288e2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/PullLevers/PullLever4.fbx using Guid(4b3a8ad9878d01f459c8a44bf288e2cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a154b66e3a842cdc58df9bd29118fd') in 0.067143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/KeyPad/KeyPad.fbx
+  artifactKey: Guid(5890caae121d760489e04b0cd1f74962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/KeyPad/KeyPad.fbx using Guid(5890caae121d760489e04b0cd1f74962) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9051e972688ac1c951d1e1b20d6eeb2') in 0.264329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleFirecloud.mat
+  artifactKey: Guid(77d08210df254d845885518314593544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleFirecloud.mat using Guid(77d08210df254d845885518314593544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af81c50e38b017a1205a5e29e0eabd36') in 0.021374 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Fish - PolyPack/Models/1.2 Version/JetskiV1.fbx
+  artifactKey: Guid(bb4e271d4c3affa45bd027ab7d1b1e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Fish - PolyPack/Models/1.2 Version/JetskiV1.fbx using Guid(bb4e271d4c3affa45bd027ab7d1b1e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd6141c82d0659c4f846143f2842074') in 0.024480 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ImportedAssets/EffectExamples/Shared/Models/Materials/No Name.mat
+  artifactKey: Guid(451ddf5f145f097438c920eb68fc6397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/EffectExamples/Shared/Models/Materials/No Name.mat using Guid(451ddf5f145f097438c920eb68fc6397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6537818ac0c17ebad2dfb07e5a6f8c51') in 0.017683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Standard Assets/Standard Assets/Vehicles/Aircraft/Materials/ParticleContrail.mat
+  artifactKey: Guid(6f57e3384acd5dc45bb4df479f10466b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/Vehicles/Aircraft/Materials/ParticleContrail.mat using Guid(6f57e3384acd5dc45bb4df479f10466b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f039f53cbb1f6916034623430fcbca82') in 0.047675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSmokeVertlit.mat
+  artifactKey: Guid(225843b6084e75440a6ea970a17c93aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSmokeVertlit.mat using Guid(225843b6084e75440a6ea970a17c93aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f9aa7e96dffa5be04497a44fe8b389') in 0.044805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/Buttons/ResetButton1.fbx
+  artifactKey: Guid(4f12e8db696c1344886715f3f466144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/Buttons/ResetButton1.fbx using Guid(4f12e8db696c1344886715f3f466144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52933bfe49f194b9ba25bc2b8ced6799') in 0.038227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/QuickOutline/Samples/Materials/Plane.mat
+  artifactKey: Guid(f58cf65ea995c4b45be95713bdea8134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/QuickOutline/Samples/Materials/Plane.mat using Guid(f58cf65ea995c4b45be95713bdea8134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '430c4967cdd64cd87c193a7f96d95dfa') in 0.019916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/LowPolyAssets/PurePoly/Mining_Free_Assets/Materials/PP_Standard_Material.mat
+  artifactKey: Guid(e74ba8446dfb56c478c015016ae5e316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/PurePoly/Mining_Free_Assets/Materials/PP_Standard_Material.mat using Guid(e74ba8446dfb56c478c015016ae5e316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '019fd82bb2aea3690443df23604a109e') in 0.015721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Environment/Pipes/pipe_90bend.fbx
+  artifactKey: Guid(1cf65f26b2cd16b4e83630404e1da97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Environment/Pipes/pipe_90bend.fbx using Guid(1cf65f26b2cd16b4e83630404e1da97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6214e814d3d945f34ccff8609e3d8fd') in 0.042130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSpark.mat
+  artifactKey: Guid(f63c576739a709747a1a571260d4fabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSpark.mat using Guid(f63c576739a709747a1a571260d4fabd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d444b3af93beb41f8b088c95078d3ba') in 0.024139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/Guns/shotgun.fbx
+  artifactKey: Guid(18dbbc3b41f71ba46877ed3b25d16d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/Guns/shotgun.fbx using Guid(18dbbc3b41f71ba46877ed3b25d16d57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a447c2156bfdd55cc013fb2e385a0506') in 0.062584 seconds 

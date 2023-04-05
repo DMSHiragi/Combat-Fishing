@@ -17,6 +17,8 @@ public class Dialogue : MonoBehaviour
 
     private InputDevice hand;
 
+    bool inputEnabled;
+
     private int index;
     // Start is called before the first frame update
     void Start()
@@ -36,6 +38,7 @@ public class Dialogue : MonoBehaviour
         hand.TryGetFeatureValue(CommonUsages.secondaryButton, out bool bPressed);
         hand.TryGetFeatureValue(CommonUsages.primaryButton, out bool aPressed);
 
+<<<<<<< Updated upstream:Open XR Test/Assets/Scripts/Dialogue.cs
         
         if (aPressed || bPressed) {
             if (!isButtonPressed) {
@@ -44,19 +47,30 @@ public class Dialogue : MonoBehaviour
                 } else {
                     StopAllCoroutines();
                     textComponent.text = lines[index];
+=======
+        if(inputEnabled){
+            if (aPressed || bPressed || Input.GetMouseButtonDown(0)) {
+                if (!isButtonPressed) {
+                    if (textComponent.text == lines[index]) {
+                        NextLine();
+                    } else {
+                        StopAllCoroutines();
+                        textComponent.text = lines[index];
+                    }
+>>>>>>> Stashed changes:Open XR Test/Assets/Scripts/DialogueSpam/Dialogue.cs
                 }
-            }
 
-            isButtonPressed = true;
-        } else {
-            isButtonPressed = false;
+                isButtonPressed = true;
+            } else {
+                isButtonPressed = false;
+            }
         }
     }
 
     void StartDialogue(){
         index = 0;
         StartCoroutine(TypeLine());
-
+        inputEnabled = true;
     }
 
     IEnumerator TypeLine(){
@@ -73,6 +87,7 @@ public class Dialogue : MonoBehaviour
             StartCoroutine(TypeLine());
         }
         else{
+            inputEnabled = false;
             gameObject.SetActive(false);
             endTime = true;
         }

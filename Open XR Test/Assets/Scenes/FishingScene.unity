@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.11464225, g: 0.3301195, b: 0.71255356, a: 1}
+  m_IndirectSpecularColor: {r: 0.11464222, g: 0.3301195, b: 0.7125536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18212,6 +18212,86 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 522459008932552855, guid: 23bd600a3424d9e44ac451d447977c93, type: 3}
   m_PrefabInstance: {fileID: 1176899704}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!1001 &2990048561496603834
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2720069184181589010, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: m_Name
+      value: Whale
+      objectReference: {fileID: 0}
+    - target: {fileID: 2990048561135905094, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: bobber
+      value: 
+      objectReference: {fileID: 2137510985}
+    - target: {fileID: 2990048561135905094, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: myMist
+      value: 
+      objectReference: {fileID: 1574721225}
+    - target: {fileID: 2990048561135905094, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: myRain
+      value: 
+      objectReference: {fileID: 94080167}
+    - target: {fileID: 2990048561135905094, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: myParticleSystem
+      value: 
+      objectReference: {fileID: 667369403}
+    - target: {fileID: 2990048562921677663, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: startTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383452564896943784, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383452564896943784, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 473.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383452564896943784, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383452564896943784, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 373.5515
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383452564896943784, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7338191
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383452564896943784, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.028714007
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383452564896943784, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.678026
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383452564896943784, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.031076847
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383452564896943784, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383452564896943784, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 85.474
+      objectReference: {fileID: 0}
+    - target: {fileID: 3383452564896943784, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -4.85
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
+>>>>>>> Stashed changes
 --- !u!1001 &6192100929886856857
 PrefabInstance:
   m_ObjectHideFlags: 0

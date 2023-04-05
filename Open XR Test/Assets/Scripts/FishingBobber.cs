@@ -166,6 +166,7 @@ public class FishingBobber : MonoBehaviour
                 fishing = false;
                 if(fishCaught){
                     myTracker.getFish(fishSize, redFish);
+                    fishCaught = false;
                 }
             }
         }
@@ -256,6 +257,8 @@ public class FishingBobber : MonoBehaviour
         // Debug.Log("END: " + Time.time);
 
         // If within 1 second, reward, otherwise miss
+        fishCaught = false;
+
         if (clickTime <= 1f && clickTime > 0)
         {
             // Replace ball with fish model if success
@@ -268,9 +271,11 @@ public class FishingBobber : MonoBehaviour
         }
 
         else if (clickTime <= 0){   //Too early
-            fishCaught = false;}
+            }
 
-        else{  fishCaught = false;}     //Too late
+        else{  
+                //Too late
+        }     
 
         // Reset the LineRenderer positions
         fishingLine.SetPosition(0, Vector3.zero);    
