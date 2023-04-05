@@ -22,7 +22,13 @@ public class BossBattle : MonoBehaviour
     public GameObject myWater;
     public GameObject myJaw;
     public GameObject waterHitbox;
+<<<<<<< Updated upstream
     public EnemySpawner eSpawner;
+=======
+    // public EnemySpawner eSpawner;
+    public ParticleSystem spout;
+
+>>>>>>> Stashed changes
 
     private int attackPhase = 3;
     private bool idleOnce;
