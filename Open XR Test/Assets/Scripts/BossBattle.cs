@@ -22,13 +22,9 @@ public class BossBattle : MonoBehaviour
     public GameObject myWater;
     public GameObject myJaw;
     public GameObject waterHitbox;
-<<<<<<< Updated upstream
     public EnemySpawner eSpawner;
-=======
-    // public EnemySpawner eSpawner;
     public ParticleSystem spout;
 
->>>>>>> Stashed changes
 
     private int attackPhase = 3;
     private bool idleOnce;
@@ -90,6 +86,7 @@ public class BossBattle : MonoBehaviour
         startPos = transform.position;
         startRot = transform.rotation;
         waterHitbox.SetActive(false);
+        spout.Pause();
     }
 
 
@@ -567,6 +564,8 @@ public class BossBattle : MonoBehaviour
         spoutPlayed = true;
         attackPhase = 5;
 
+
+
         float spoutDown = 10f;
         float length = 3f;
         float rotateS = 40f;
@@ -604,6 +603,8 @@ public class BossBattle : MonoBehaviour
         elapsedTime = 0f;
         float length2 = 4f;
         
+        spout.Play();
+
         while(elapsedTime < length2){   //Move side to side
             float t = inOut.Evaluate(elapsedTime / length2);
             float curveT = slowIn.Evaluate(t);
@@ -617,6 +618,7 @@ public class BossBattle : MonoBehaviour
 
         elapsedTime = 0f;
 
+        spout.Stop();
         
         while(elapsedTime < length){    // Return to start
             float t = inOut.Evaluate(elapsedTime / length);
@@ -634,6 +636,8 @@ public class BossBattle : MonoBehaviour
         yield return new WaitForSeconds(6f);
         spoutPlayed = false;
     }
+
+
 
 
     
