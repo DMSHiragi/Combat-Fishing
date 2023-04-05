@@ -36,6 +36,7 @@ public class Dialogue : MonoBehaviour
         hand.TryGetFeatureValue(CommonUsages.secondaryButton, out bool bPressed);
         hand.TryGetFeatureValue(CommonUsages.primaryButton, out bool aPressed);
 
+<<<<<<< Updated upstream:Open XR Test/Assets/Scripts/DialogueSpam/Dialogue.cs
         
         if (aPressed || bPressed || Input.GetMouseButtonDown(0)) {
             if (!isButtonPressed) {
@@ -44,6 +45,17 @@ public class Dialogue : MonoBehaviour
                 } else {
                     StopAllCoroutines();
                     textComponent.text = lines[index];
+=======
+        if(inputEnabled){
+            if (aPressed || bPressed || Input.GetMouseButtonDown(0)) {
+                if (!isButtonPressed) {
+                    if (textComponent.text == lines[index]) {
+                        NextLine();
+                    } else {
+                        StopAllCoroutines();
+                        textComponent.text = lines[index];
+                    }
+>>>>>>> Stashed changes:Open XR Test/Assets/Scripts/Dialogue.cs
                 }
             }
 
