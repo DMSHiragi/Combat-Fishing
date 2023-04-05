@@ -14,7 +14,7 @@ public class LevelChanger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        FadeToLevel(2);
+        FadeToLevel(1);
     }
 
     public void FadeToLevel(int levelIndex)
@@ -27,6 +27,6 @@ public class LevelChanger : MonoBehaviour
 
     public void OnFadeComplete(){
         // Debug.Log("Loading Scene: " + levelToLoad);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 }

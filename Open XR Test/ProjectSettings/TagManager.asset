@@ -11,6 +11,12 @@ TagManager:
   - Fire
   - Waypoints
   - 'Swingable '
+  - Wood
+  - Water
+  - Deep Water
+  - Sand
+  - Cave
+  - Flesh
   layers:
   - Default
   - TransparentFX
