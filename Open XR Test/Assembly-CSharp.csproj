@@ -62,6 +62,7 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoManualTeleport.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Footsteps.cs" />
      <Compile Include="Assets\Scripts\Grappling.cs" />
+     <Compile Include="Assets\Scripts\LevelChangerFishing.cs" />
      <Compile Include="Assets\Scripts\spawnGarbage.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSafeDoor.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoUIManager.cs" />
