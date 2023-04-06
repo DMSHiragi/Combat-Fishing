@@ -747,6 +747,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 1159982776034272, guid: 5b65229b0864ac148a1c8d29e8475579, type: 3}
+      propertyPath: m_TagString
+      value: Cave
+      objectReference: {fileID: 0}
     - target: {fileID: 4206392888712558, guid: 5b65229b0864ac148a1c8d29e8475579, type: 3}
       propertyPath: m_RootOrder
       value: 82
@@ -1045,6 +1049,10 @@ PrefabInstance:
     - target: {fileID: 1308941464437418, guid: 1fad4adf953d1a148a758c89852b5301, type: 3}
       propertyPath: m_Layer
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308941464437418, guid: 1fad4adf953d1a148a758c89852b5301, type: 3}
+      propertyPath: m_TagString
+      value: Cave
       objectReference: {fileID: 0}
     - target: {fileID: 4306241696169992, guid: 1fad4adf953d1a148a758c89852b5301, type: 3}
       propertyPath: m_RootOrder
@@ -7465,6 +7473,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar-B15
       objectReference: {fileID: 0}
+    - target: {fileID: 1001263117996276, guid: fed07859189a5dc45a2bd753c21f050a, type: 3}
+      propertyPath: m_TagString
+      value: Cave
+      objectReference: {fileID: 0}
     - target: {fileID: 4840536443200514, guid: fed07859189a5dc45a2bd753c21f050a, type: 3}
       propertyPath: m_RootOrder
       value: 61
@@ -7684,6 +7696,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 43ee757e6d4e733469e710178cf7e322, type: 3}
   m_PrefabInstance: {fileID: 317189289}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &319406346
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3555135542030662976, guid: 3d0a8f65761eef04d815153e0cb90b41, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3555135542030662976, guid: 3d0a8f65761eef04d815153e0cb90b41, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 287
+      objectReference: {fileID: 0}
+    - target: {fileID: 3555135542030662976, guid: 3d0a8f65761eef04d815153e0cb90b41, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -158.87671
+      objectReference: {fileID: 0}
+    - target: {fileID: 3555135542030662976, guid: 3d0a8f65761eef04d815153e0cb90b41, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -277
+      objectReference: {fileID: 0}
+    - target: {fileID: 3555135542030662976, guid: 3d0a8f65761eef04d815153e0cb90b41, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3555135542030662976, guid: 3d0a8f65761eef04d815153e0cb90b41, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3555135542030662976, guid: 3d0a8f65761eef04d815153e0cb90b41, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3555135542030662976, guid: 3d0a8f65761eef04d815153e0cb90b41, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3555135542030662976, guid: 3d0a8f65761eef04d815153e0cb90b41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3555135542030662976, guid: 3d0a8f65761eef04d815153e0cb90b41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3555135542030662976, guid: 3d0a8f65761eef04d815153e0cb90b41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3555135542030663006, guid: 3d0a8f65761eef04d815153e0cb90b41, type: 3}
+      propertyPath: m_Name
+      value: BGM
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d0a8f65761eef04d815153e0cb90b41, type: 3}
 --- !u!1001 &322106047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8289,7 +8358,7 @@ GameObject:
   - component: {fileID: 370538826}
   m_Layer: 0
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Cave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -8387,6 +8456,10 @@ PrefabInstance:
     - target: {fileID: 1008121069948426, guid: 83126e5b88bf62c4a8352ff3739e7812, type: 3}
       propertyPath: m_Name
       value: Boulder-B02 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008121069948426, guid: 83126e5b88bf62c4a8352ff3739e7812, type: 3}
+      propertyPath: m_TagString
+      value: Cave
       objectReference: {fileID: 0}
     - target: {fileID: 4766397643187030, guid: 83126e5b88bf62c4a8352ff3739e7812, type: 3}
       propertyPath: m_RootOrder
@@ -9143,6 +9216,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 1888276539899970, guid: 6258fbb34051d7f4f8c47ce131dfd060, type: 3}
+      propertyPath: m_TagString
+      value: Cave
+      objectReference: {fileID: 0}
     - target: {fileID: 4481841112792116, guid: 6258fbb34051d7f4f8c47ce131dfd060, type: 3}
       propertyPath: m_RootOrder
       value: 62
@@ -9848,6 +9925,10 @@ PrefabInstance:
     - target: {fileID: 1273341893490094, guid: 12003f75cf4439a48aafb9d9b39a1ff2, type: 3}
       propertyPath: m_Layer
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1273341893490094, guid: 12003f75cf4439a48aafb9d9b39a1ff2, type: 3}
+      propertyPath: m_TagString
+      value: Cave
       objectReference: {fileID: 0}
     - target: {fileID: 4915050336984362, guid: 12003f75cf4439a48aafb9d9b39a1ff2, type: 3}
       propertyPath: m_RootOrder
@@ -10829,6 +10910,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 1804605696631750, guid: d01d9407de5024e4c92741c45b822e70, type: 3}
+      propertyPath: m_TagString
+      value: Cave
+      objectReference: {fileID: 0}
     - target: {fileID: 4879509141743202, guid: d01d9407de5024e4c92741c45b822e70, type: 3}
       propertyPath: m_RootOrder
       value: 70
@@ -11013,6 +11098,10 @@ PrefabInstance:
     - target: {fileID: 1280138095074532, guid: 27392a8ea8e64fe49bf0a39a167ba1e2, type: 3}
       propertyPath: m_Layer
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280138095074532, guid: 27392a8ea8e64fe49bf0a39a167ba1e2, type: 3}
+      propertyPath: m_TagString
+      value: Cave
       objectReference: {fileID: 0}
     - target: {fileID: 4979702366843090, guid: 27392a8ea8e64fe49bf0a39a167ba1e2, type: 3}
       propertyPath: m_RootOrder
@@ -13450,6 +13539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar-A15 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1628932015813986, guid: 42edbbe2fea87f44a9f7547e3404172d, type: 3}
+      propertyPath: m_TagString
+      value: Cave
+      objectReference: {fileID: 0}
     - target: {fileID: 4067557532633284, guid: 42edbbe2fea87f44a9f7547e3404172d, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -13984,6 +14077,10 @@ PrefabInstance:
     - target: {fileID: 1578551721398932, guid: cc32e39e56c16e34899d7648e14c9c84, type: 3}
       propertyPath: m_Name
       value: Pillar-B01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578551721398932, guid: cc32e39e56c16e34899d7648e14c9c84, type: 3}
+      propertyPath: m_TagString
+      value: Cave
       objectReference: {fileID: 0}
     - target: {fileID: 4776323384226128, guid: cc32e39e56c16e34899d7648e14c9c84, type: 3}
       propertyPath: m_RootOrder
@@ -14533,6 +14630,10 @@ PrefabInstance:
     - target: {fileID: 1413912115884504, guid: 8ba84c8e3fd246f4182fd3945ee89921, type: 3}
       propertyPath: m_Name
       value: Pillar-A13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1413912115884504, guid: 8ba84c8e3fd246f4182fd3945ee89921, type: 3}
+      propertyPath: m_TagString
+      value: Cave
       objectReference: {fileID: 0}
     - target: {fileID: 4872793494388660, guid: 8ba84c8e3fd246f4182fd3945ee89921, type: 3}
       propertyPath: m_RootOrder
@@ -15904,6 +16005,10 @@ PrefabInstance:
     - target: {fileID: 1008121069948426, guid: 83126e5b88bf62c4a8352ff3739e7812, type: 3}
       propertyPath: m_Name
       value: Boulder-B02 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008121069948426, guid: 83126e5b88bf62c4a8352ff3739e7812, type: 3}
+      propertyPath: m_TagString
+      value: Cave
       objectReference: {fileID: 0}
     - target: {fileID: 4766397643187030, guid: 83126e5b88bf62c4a8352ff3739e7812, type: 3}
       propertyPath: m_RootOrder
@@ -18102,6 +18207,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 1387379416172382, guid: 196a5ae01ca43f8479ade3eaf9cce9bb, type: 3}
+      propertyPath: m_TagString
+      value: Cave
+      objectReference: {fileID: 0}
     - target: {fileID: 4195761196363620, guid: 196a5ae01ca43f8479ade3eaf9cce9bb, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -18409,6 +18518,10 @@ PrefabInstance:
     - target: {fileID: 1277374128098682, guid: 9e7efc6a1d53cb343b24fefef0aa2347, type: 3}
       propertyPath: m_Layer
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1277374128098682, guid: 9e7efc6a1d53cb343b24fefef0aa2347, type: 3}
+      propertyPath: m_TagString
+      value: Cave
       objectReference: {fileID: 0}
     - target: {fileID: 4094446156351926, guid: 9e7efc6a1d53cb343b24fefef0aa2347, type: 3}
       propertyPath: m_RootOrder
@@ -19582,6 +19695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boulder-B03 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1615367811150534, guid: 129b28ef6bbffd243b2ced51cd846690, type: 3}
+      propertyPath: m_TagString
+      value: Cave
+      objectReference: {fileID: 0}
     - target: {fileID: 4036452674214552, guid: 129b28ef6bbffd243b2ced51cd846690, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -20276,6 +20393,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 1581042913892984, guid: 7c78c2f0051ea9648a908e05d008b952, type: 3}
+      propertyPath: m_TagString
+      value: Cave
+      objectReference: {fileID: 0}
     - target: {fileID: 4400226263272158, guid: 7c78c2f0051ea9648a908e05d008b952, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -20353,6 +20474,10 @@ PrefabInstance:
     - target: {fileID: 1426199380736874, guid: dfce9c1356732e2428cb20872625520b, type: 3}
       propertyPath: m_Layer
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1426199380736874, guid: dfce9c1356732e2428cb20872625520b, type: 3}
+      propertyPath: m_TagString
+      value: Cave
       objectReference: {fileID: 0}
     - target: {fileID: 4079453613184924, guid: dfce9c1356732e2428cb20872625520b, type: 3}
       propertyPath: m_RootOrder
@@ -26466,6 +26591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar-A15 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1628932015813986, guid: 42edbbe2fea87f44a9f7547e3404172d, type: 3}
+      propertyPath: m_TagString
+      value: Cave
+      objectReference: {fileID: 0}
     - target: {fileID: 4067557532633284, guid: 42edbbe2fea87f44a9f7547e3404172d, type: 3}
       propertyPath: m_RootOrder
       value: 86
@@ -26544,6 +26673,10 @@ PrefabInstance:
     - target: {fileID: 1628932015813986, guid: 42edbbe2fea87f44a9f7547e3404172d, type: 3}
       propertyPath: m_Name
       value: Pillar-A15 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1628932015813986, guid: 42edbbe2fea87f44a9f7547e3404172d, type: 3}
+      propertyPath: m_TagString
+      value: Cave
       objectReference: {fileID: 0}
     - target: {fileID: 4067557532633284, guid: 42edbbe2fea87f44a9f7547e3404172d, type: 3}
       propertyPath: m_RootOrder
@@ -26652,7 +26785,7 @@ GameObject:
   m_IsActive: 0
 --- !u!95 &1703312068
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -26669,7 +26802,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!111 &1703312069
 Animation:
   m_ObjectHideFlags: 0
@@ -26730,6 +26863,10 @@ PrefabInstance:
     - target: {fileID: 1581042913892984, guid: 7c78c2f0051ea9648a908e05d008b952, type: 3}
       propertyPath: m_Layer
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581042913892984, guid: 7c78c2f0051ea9648a908e05d008b952, type: 3}
+      propertyPath: m_TagString
+      value: Cave
       objectReference: {fileID: 0}
     - target: {fileID: 4400226263272158, guid: 7c78c2f0051ea9648a908e05d008b952, type: 3}
       propertyPath: m_RootOrder
@@ -27241,7 +27378,7 @@ GameObject:
   - component: {fileID: 1769675628}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Cave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -30172,6 +30309,10 @@ PrefabInstance:
     - target: {fileID: 1412309089597484, guid: dd59c8e67babe5c4d9c2c987910b18f5, type: 3}
       propertyPath: m_Layer
       value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1412309089597484, guid: dd59c8e67babe5c4d9c2c987910b18f5, type: 3}
+      propertyPath: m_TagString
+      value: Cave
       objectReference: {fileID: 0}
     - target: {fileID: 4309203316682142, guid: dd59c8e67babe5c4d9c2c987910b18f5, type: 3}
       propertyPath: m_RootOrder
