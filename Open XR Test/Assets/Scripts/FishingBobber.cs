@@ -138,7 +138,6 @@ public class FishingBobber : MonoBehaviour
 
             //If there isn't one, cast out a ball
             else{
-                fishCaught = false;
                 createBall();
                 coolDownTimer = 40;
             }
@@ -229,7 +228,6 @@ public class FishingBobber : MonoBehaviour
         // Debug.Log("END: " + Time.time);
 
         // If within 1 second, reward, otherwise miss
-        fishCaught = false;
         if (clickTime <= 1f && clickTime > 0)
         {
             // Replace ball with fish model if success

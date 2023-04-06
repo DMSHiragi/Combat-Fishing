@@ -39,7 +39,6 @@
      <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoLockedDoor.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\AudioManager\AudioManager.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoKeypadButton.cs" />
      <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
@@ -47,12 +46,12 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoFullStabConfetti.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoKeypad.cs" />
      <Compile Include="Assets\Scripts\BossBattle.cs" />
-     <Compile Include="Assets\AudioManager\Sound.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Projectile.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSocketables.cs" />
      <Compile Include="Assets\LowPolyAssets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoPowerUnit.cs" />
+     <Compile Include="Assets\Scripts\spawnGarbage.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoLock.cs" />
      <Compile Include="Assets\EugeneAsset\CollisionSound.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Item.cs" />
@@ -119,6 +118,7 @@
      <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\GunShoot.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\ControlsScreen.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\LightIntensityRandom.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low poly Garbage Pack\Scripts\Rotator.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoGlassRotate.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Flashlight.cs" />
      <Compile Include="Assets\Scripts\DamagePlayer.cs" />

@@ -22,7 +22,6 @@ public class IdleState : StateMachineBehaviour
             animator.SetBool("isPatrolling", true);
         }
         float distance = Vector3.Distance(player.position, animator.transform.position);
-        Debug.Log(distance);
         if(distance < chaseRange){
             animator.SetBool("isChasing", true);
         }

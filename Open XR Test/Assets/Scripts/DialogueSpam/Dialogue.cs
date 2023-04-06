@@ -14,9 +14,9 @@ public class Dialogue : MonoBehaviour
 
     public bool endTime;
     private bool isButtonPressed = false;
-
-    private InputDevice hand;
     private bool inputEnabled;
+    private InputDevice hand;
+
     private int index;
     // Start is called before the first frame update
     void Start()
@@ -47,19 +47,17 @@ public class Dialogue : MonoBehaviour
                         textComponent.text = lines[index];
                     }
                 }
+            }
+
             isButtonPressed = true;
-
-            }
-
-            else {
+        } else {
             isButtonPressed = false;
-            }
-        } 
+        }
     }
 
     void StartDialogue(){
         index = 0;
-        
+        inputEnabled = true;
         StartCoroutine(TypeLine());
 
     }
@@ -78,9 +76,9 @@ public class Dialogue : MonoBehaviour
             StartCoroutine(TypeLine());
         }
         else{
+            inputEnabled = false;
             gameObject.SetActive(false);
             endTime = true;
-            inputEnabled = false;
         }
     }
 }

@@ -17,7 +17,6 @@ public class DamagePlayer : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            phealth.Damage(damageValue);
             Debug.Log("Damage");
         }
     }
