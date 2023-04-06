@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\EnemyStateMachine.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\ChestOpen.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoManualTeleport.cs" />
+     <Compile Include="Assets\Scripts\DestroyGarbage.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Footsteps.cs" />
      <Compile Include="Assets\Scripts\Grappling.cs" />
      <Compile Include="Assets\Scripts\LevelChangerFishing.cs" />
