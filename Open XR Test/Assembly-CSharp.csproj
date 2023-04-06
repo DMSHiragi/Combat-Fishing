@@ -92,6 +92,7 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSlidingDoor.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Minecart.cs" />
      <Compile Include="Assets\Animations\AnimationStates\IdleState.cs" />
+     <Compile Include="Assets\Scripts\FishTalk.cs" />
      <Compile Include="Assets\LowPolyAssets\LowPolyDungeon\Demo Scenes\ScreenshotMaker.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\LadderClimber.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Respawner.cs" />
@@ -126,7 +127,6 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoDummyArm.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoPassthroughSocket.cs" />
      <Compile Include="Assets\Animations\AnimationStates\AttackState.cs" />
-     <Compile Include="Assets\Scripts\FishTalk.cs" />
      <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\HurricaneVR\Framework\SFX\license.txt" />
