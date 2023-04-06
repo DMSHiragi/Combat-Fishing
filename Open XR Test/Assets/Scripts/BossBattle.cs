@@ -691,14 +691,14 @@ public class BossBattle : MonoBehaviour
         spawnPlayed = true;
         //Spawn new enemy at spawnpoint
         GameObject newEnemy = Instantiate(enemy, spawnPosition.position, Quaternion.identity);
-
+        newEnemy.GetComponent<Rigidbody>().AddForce(newEnemy.transform.forward * 20f, ForceMode.Impulse);
 
 
 
         yield return new WaitForSeconds(interval);
         //Spawn new enemy at spawnpoint again
         GameObject newEnemy2 = Instantiate(enemy, spawnPosition.position, Quaternion.identity);
-
+        newEnemy2.GetComponent<Rigidbody>().AddForce(newEnemy2.transform.forward * 20f, ForceMode.Impulse);
 
 
 
