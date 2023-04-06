@@ -43,6 +43,7 @@ public class EnemyStateMachine : MonoBehaviour
 
             //look at target
             myTransform.rotation = Quaternion.Slerp(myTransform.rotation, Quaternion.LookRotation(target.position - myTransform.position), rotationSpeed * Time.deltaTime);
+            myTransform.rotation *= Quaternion.Euler(0, 90, 0); // Correct for initial rotation
 
             //move towards target
             if (Vector3.Distance(target.position, myTransform.position) > maxDistance)

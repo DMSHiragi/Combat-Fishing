@@ -243,13 +243,11 @@ public class BossBattle : MonoBehaviour
 
 
     // CASE 0
-                                                // startConvo1, need to lock playermovement
     private void startConvo1(){
         myCanvas.enabled = true;
         if(startDialogue !=  null){
             startDialogue.startTime = true;
         }
-        // Lock player movement
 
         Debug.Log("1 - EndDialogue");
         battleStage = 1;
@@ -257,16 +255,13 @@ public class BossBattle : MonoBehaviour
 
 
     // CASE 1
-                                                // endConvo1 TODO
     private void endConvo1(){
         
         myCanvas.enabled = false;
 
-        // Unlock player movement
 
         Debug.Log("Battle Start");
         battleStage = 6;
-        // change to battle stage = 6 once minion summon attack is done.
     }
 
     // CASE 2

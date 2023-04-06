@@ -190,7 +190,6 @@ public class FishingBobber : MonoBehaviour
             CapsuleCollider capsuleCollider = fishingPlayer.GetComponent<CapsuleCollider>();
             Physics.IgnoreCollision(ballCollider, capsuleCollider, true);
 
-
             // Throw based on where the player is looking
             Vector3 throwDirection = mainCamera.transform.forward;
             ballRb.AddForce(throwDirection * throwForce, ForceMode.Impulse);
