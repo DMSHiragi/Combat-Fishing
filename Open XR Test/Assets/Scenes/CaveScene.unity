@@ -3265,7 +3265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phealth: {fileID: 939648715}
-  damageValue: 0
+  damageValue: 0.1
 --- !u!54 &521707033
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3571,13 +3571,14 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1750404969}
+  - {fileID: 1990418821}
   - {fileID: 2040331105}
   m_Father: {fileID: 921156655}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -6.802, y: -87.69, z: -89.678}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.0338, y: 0.0089}
+  m_AnchoredPosition: {x: 0.0338, y: 0.0039}
   m_SizeDelta: {x: 800, y: 1100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &553209321
@@ -17735,7 +17736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   phealth: {fileID: 939648715}
-  damageValue: 0
+  damageValue: 0.2
 --- !u!64 &1911521686
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18076,6 +18077,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1576488453971394810, guid: a778b631c6253a04899cb31bad047c81, type: 3}
   m_PrefabInstance: {fileID: 56703592}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1990418820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1990418821}
+  - component: {fileID: 1990418823}
+  - component: {fileID: 1990418822}
+  m_Layer: 21
+  m_Name: HealthBar (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1990418821
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990418820}
+  m_LocalRotation: {x: -0, y: -0, z: 0.000000059604638, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.33637628}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 553209320}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3.3314016, y: 0.35183713}
+  m_SizeDelta: {x: 710.6, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1990418822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990418820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7482667652216324306, guid: 45b391419cb0df9458f95a3f0f818bac, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1990418823
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1990418820}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1994864935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18581,7 +18658,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 553209320}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -19114,6 +19191,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7319858963904834662, guid: 0be1c3a3049fcf84daaf17646c934538, type: 3}
+      propertyPath: grapplingCd
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319858963904834662, guid: 0be1c3a3049fcf84daaf17646c934538, type: 3}
       propertyPath: fishingLineBall
       value: 
       objectReference: {fileID: 123479584}
@@ -19434,6 +19515,10 @@ PrefabInstance:
       propertyPath: phealth
       value: 
       objectReference: {fileID: 939648715}
+    - target: {fileID: 225687011624851259, guid: 9973a09acbc34664f971d5b7e0ff8956, type: 3}
+      propertyPath: damageValue
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 225687011624851261, guid: 9973a09acbc34664f971d5b7e0ff8956, type: 3}
       propertyPath: m_Name
       value: BeachWater
