@@ -180,8 +180,8 @@ public class Grappling : MonoBehaviour
     {
         Debug.Log("ExecuteGrapple");
 
-        sfx.clip = sfxClips[0];
-        sfx.Play();
+        // sfx.clip = sfxClips[0];
+        // sfx.Play();
 
         pc.freeze = false;
 
@@ -214,8 +214,8 @@ public class Grappling : MonoBehaviour
     private void StartSwing(RaycastHit h){
         Debug.Log("StartSwing");
 
-        sfx.clip = sfxClips[1];
-        sfx.Play();
+        // sfx.clip = sfxClips[1];
+        // sfx.Play();
 
         pc.freeze = false;
         lr2.enabled = true;
