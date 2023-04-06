@@ -21,12 +21,15 @@ public class Grappling : MonoBehaviour
     public LayerMask everything;
     public LineRenderer lr;
     public LineRenderer lr2;
+    public GameObject fishingLineBallPrefab;
+    public GameObject fishingLineBall;
 
     [Header("Grappling")]
     public float maxGrappleDistance;
     public float grappleDelayTime;
     private float grappleNoDelay = 0f;
     public float overShootYAxis;
+    private bool currentlyGrappling;
 
     [Header("Swinging")]
     private Vector3 swingPoint;
@@ -65,6 +68,11 @@ public class Grappling : MonoBehaviour
     {
         pc = GetComponent<PlayerController>();
         rb = GetComponent<Rigidbody>();
+
+        lr2.startWidth = 0.007f;
+        lr2.endWidth = 0.010f;
+        lr.startWidth = 0.007f;
+        lr.endWidth = 0.010f;
 
         sfx = gameObject.GetComponent<AudioSource>();
         sfx.clip = sfxClips[0];
@@ -157,16 +165,33 @@ public class Grappling : MonoBehaviour
         if(Physics.Raycast(cam.position, cam.forward, out hit, maxGrappleDistance, grappleable) && swinging == false)
         {       // If looking at grapplable object and not swinging, Grapple
             grapplePoint = hit.point;
+            
+
+            fishingLineBallPrefab.transform.position = rodEnd.position;
+
+            LineRenderer lineRenderer = fishingLineBall.AddComponent<LineRenderer>();
+            lineRenderer.SetPosition(0, rodEnd.position);
+            lineRenderer.SetPosition(1, rodEnd.position);
+
+            Material lineMaterial = new Material(Shader.Find("Unlit/Color"));
+            lineMaterial.color = Color.black;
+            lineRenderer.material = lineMaterial;
+
+            lineRenderer.startWidth = 0.007f;
+            lineRenderer.endWidth = 0.010f;
+
+            StartCoroutine(CastFishingLine(grapplePoint, lineRenderer));
+
+            
             Invoke(nameof(ExecuteGrapple), grappleDelayTime);
         }
-
+        
 
         else
         {       // If not looking at grapplable or swingable object, stop swinging
             grapplePoint = cam.position + cam.forward * maxGrappleDistance;
             Invoke(nameof(StopGrapple), grappleNoDelay);    // Please not have delay when doing this ._.
         }
-
 
         if (swinging == false)
         {
@@ -175,6 +200,38 @@ public class Grappling : MonoBehaviour
         }
     }
 
+
+
+    IEnumerator CastFishingLine(Vector3 targetPosition, LineRenderer lineRenderer)
+    {
+        float duration = grappleDelayTime;
+        float elapsedTime = 0f;
+        currentlyGrappling = true;
+
+        Vector3 startPosition = fishingLineBall.transform.position;
+
+        while (elapsedTime < duration)
+        {
+            lr.enabled = false;
+            elapsedTime += Time.deltaTime;
+            fishingLineBall.transform.position = Vector3.Lerp(startPosition, targetPosition, elapsedTime / duration);
+
+
+            // Update line renderer positions
+            lineRenderer.SetPosition(0, rodEnd.position);
+            lineRenderer.SetPosition(1, fishingLineBall.transform.position);
+
+            yield return null;
+        }
+
+
+        lr.enabled = true;
+
+        // Set the ball's position to the target position at the end of the animation
+
+        // Remove the ball and line renderer after reaching the goal
+        Destroy(lineRenderer);
+    }
 
     private void ExecuteGrapple()
     {
@@ -194,8 +251,13 @@ public class Grappling : MonoBehaviour
 
         pc.JumpToPosition(grapplePoint, highestPointOnArc);
 
+
+
         Invoke(nameof(StopGrapple), 1f);
    }
+
+   
+
 
     public void StopGrapple()
     {   
@@ -209,6 +271,8 @@ public class Grappling : MonoBehaviour
         grapplingCdTimer = grapplingCd;
 
         lr.enabled = false;
+        
+        currentlyGrappling = false;
     }
 
     private void StartSwing(RaycastHit h){
@@ -238,8 +302,11 @@ public class Grappling : MonoBehaviour
         joint.damper = 1f;
         joint.massScale = 2.5f;
 
-        Debug.Log("Start swing");
-    }
+
+    Debug.Log("Start swing");
+}
+
+    
 
     private void YeetObject(){
         if(swinging){
@@ -249,6 +316,8 @@ public class Grappling : MonoBehaviour
             }
         }
     }
+
+
 
 
     private void StopSwing(){
