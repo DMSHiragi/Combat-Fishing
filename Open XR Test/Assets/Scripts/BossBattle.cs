@@ -628,9 +628,9 @@ public class BossBattle : MonoBehaviour
         spoutPlayed = true;
         attackPhase = 5;
 
-        float spoutDown = 35f;
+        float spoutDown = 10f;
         float length = 3f;
-        float rotateS = 40f;
+        float rotateS = 45f;
 
         bool leftToRight = false;
                 int LR = Random.Range(0,2);
@@ -644,7 +644,7 @@ public class BossBattle : MonoBehaviour
         if(leftToRight){
             moveSpout *= -1;
         }
-        Vector3 endPos = new Vector3(startPos.x + moveSpout, startPos.y - spoutDown, startPos.z + 5f);
+        Vector3 endPos = new Vector3(startPos.x + moveSpout, startPos.y - spoutDown, startPos.z - 5f);
         Quaternion midRot = Quaternion.Euler(startRot.eulerAngles.x, startRot.eulerAngles.y, startRot.eulerAngles.z + rotateS/4);
 
         float elapsedTime = 0f;
@@ -660,7 +660,7 @@ public class BossBattle : MonoBehaviour
 
         }
 
-        Vector3 nextPos = new Vector3(startPos.x - moveSpout, startPos.y - spoutDown, startPos.z + 5f);
+        Vector3 nextPos = new Vector3(startPos.x - moveSpout, startPos.y - spoutDown, startPos.z - 5f);
 
         elapsedTime = 0f;
         float length2 = 4f;
