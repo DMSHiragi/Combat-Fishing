@@ -1262,15 +1262,22 @@ MonoBehaviour:
   swingable:
     serializedVersion: 2
     m_Bits: 262144
+  everything:
+    serializedVersion: 2
+    m_Bits: 1
   lr: {fileID: 5514596812031979908}
   lr2: {fileID: 7319858963840164485}
-  maxGrappleDistance: 25
+  maxGrappleDistance: 50
   grappleDelayTime: 0.25
   overShootYAxis: 2
+  swinging: 0
   predictionSphereCastRadius: 0
   predictionPoint: {fileID: 0}
   predictionPoint2: {fileID: 0}
+  predictionPoint3: {fileID: 0}
   grapplingCd: 1
+  sfx: {fileID: 0}
+  sfxClips: []
 --- !u!114 &7319858963904834661
 MonoBehaviour:
   m_ObjectHideFlags: 0
