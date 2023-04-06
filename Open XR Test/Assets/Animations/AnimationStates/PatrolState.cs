@@ -23,7 +23,7 @@ public class PatrolState : StateMachineBehaviour
 
         agent.SetDestination(wayPoints[Random.Range(0, wayPoints.Count)].position);
 
-        agent.speed = 1.5f;
+        agent.speed = 3.5f;
     }
 
      //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

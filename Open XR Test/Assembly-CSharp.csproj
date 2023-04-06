@@ -47,7 +47,6 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoKeypad.cs" />
      <Compile Include="Assets\Scripts\BossBattle.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Projectile.cs" />
-     <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSocketables.cs" />
      <Compile Include="Assets\LowPolyAssets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoPowerUnit.cs" />
@@ -115,7 +114,6 @@
      <Compile Include="Assets\Scripts\TriggerSFX.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoHeavyDoor.cs" />
      <Compile Include="Assets\Scripts\EnemyHealth.cs" />
-     <Compile Include="Assets\Scripts\LevelChanger.cs" />
      <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\GunShoot.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\ControlsScreen.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\LightIntensityRandom.cs" />

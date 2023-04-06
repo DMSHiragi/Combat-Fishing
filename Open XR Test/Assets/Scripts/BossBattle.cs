@@ -19,6 +19,7 @@ public class BossBattle : MonoBehaviour
     public Dialogue deathDialogue;
     public Canvas myCanvas;
     public Canvas myCanvas2;
+    public Canvas myCanvas3;
     public GameObject myWater;
     public GameObject myJaw;
     public GameObject waterHitbox;
@@ -84,6 +85,7 @@ public class BossBattle : MonoBehaviour
     {
         myCanvas.enabled = false;
         myCanvas2.enabled = false;
+        myCanvas3.enabled = false;
         startPos = transform.position;
         startRot = transform.rotation;
         waterHitbox.SetActive(false);
@@ -275,9 +277,12 @@ public class BossBattle : MonoBehaviour
         idleOnce = true;
 
         // Say a random voiceline sometimes
+        myCanvas3.enabled = true;
         
         // Wait for X seconds (if whale constantly attacks it's too much)
         yield return new WaitForSeconds(waitTime);
+
+        myCanvas3.enabled = false;
 
         // Hide voiceline after wait
 
