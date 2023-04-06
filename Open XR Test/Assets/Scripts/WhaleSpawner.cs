@@ -7,9 +7,14 @@ using UnityEngine.SceneManagement;
 public class WhaleSpawner : MonoBehaviour
 {
 
+    public AudioClip rainSound;
+    public AudioClip emergeSound;
+    private AudioSource audioSource;
+
+
     public float value;
-    public float moveSpeed = 5f; // speed in units per second
-    public float moveSpeed2 = 5f; // speed in units per second
+    public float moveSpeed = 3f; // speed in units per second
+    public float moveSpeed2 = 3f; // speed in units per second
 
 
     public FishingBobber bobber;
@@ -31,6 +36,7 @@ public class WhaleSpawner : MonoBehaviour
 
     void Start() {
         myCanvas.enabled = false;
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
 
@@ -43,7 +49,8 @@ public class WhaleSpawner : MonoBehaviour
             var emission = myParticleSystem.emission;
             emission.rateOverTime = 10f;
             var rain = myRain.emission;
-            rain.rateOverTime = 2000f;
+            rain.rateOverTime = 3000f;
+            audioSource.PlayOneShot(rainSound);
 
             // Delay whale appearing 3s
             StartCoroutine(DelayedMoveUp());
@@ -61,13 +68,14 @@ public class WhaleSpawner : MonoBehaviour
         yield return new WaitForSeconds(delayTime);
         var mistEmission = myMist.emission;
         mistEmission.rateOverTime = 30f;
+        audioSource.PlayOneShot(emergeSound);
         StartCoroutine(MoveUp());
         StartCoroutine(DelayedEmission());
 
     }
 
     IEnumerator DelayedEmission(){
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         var emission = myParticleSystem.emission;
         emission.rateOverTime = 0f;
         var mistEmission = myMist.emission;
@@ -78,6 +86,7 @@ public class WhaleSpawner : MonoBehaviour
 
 
     IEnumerator MoveUp() {      // Emerges from water
+            yield return new WaitForSeconds(1);
         float startY = transform.position.y;
         float endY = startY + 30f;
         

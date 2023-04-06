@@ -29,6 +29,8 @@ public class FishingBobber : MonoBehaviour
     public FishingTracker myTracker;
     public LineRenderer fishingLine;
     public GameObject waterSplashPrefab;
+public AudioClip sfxClip;
+private AudioSource audioSource;
 
     private float timer;
     private bool fishing;
@@ -48,6 +50,8 @@ public class FishingBobber : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.volume = 0.2f;
 
         //Initialise fishing line
         fishingLine.positionCount = 2;
@@ -87,6 +91,7 @@ public class FishingBobber : MonoBehaviour
         if (ball != null && ball.transform.position.y <= 20.7f) // If ball is at sea level
         {
             if(!fishing && !isBallReturning){   // When ball first hits water
+            
                 startFishing();
             }
 
@@ -107,6 +112,7 @@ public class FishingBobber : MonoBehaviour
                     splash3.transform.rotation = Quaternion.LookRotation(Vector3.up);
                     splash3.transform.localScale *= 2f;
                     Destroy(splash3, 1f);
+
 
                     //Move ball down & disable gravity to act like water
                     Vector3 forceDirection = Vector3.down * 4f;
@@ -202,9 +208,10 @@ public class FishingBobber : MonoBehaviour
         fishing = true;
         // Set random delay for fish to appear
         timer = Time.time + Random.Range(minWaitTime, maxWaitTime); 
-
+        
         // Splash effect
         GameObject splash = Instantiate(waterSplashPrefab, ball.transform.position, Quaternion.identity);
+        audioSource.PlayOneShot(sfxClip);
         splash.transform.rotation = Quaternion.LookRotation(Vector3.up);
         splash.transform.localScale *= 2f;
         Destroy(splash, 1f); 
@@ -217,6 +224,7 @@ public class FishingBobber : MonoBehaviour
     private void stopFishing(){     // Called when you first reel in bobber
         //Splash effect
         GameObject splash2 = Instantiate(waterSplashPrefab, ball.transform.position, Quaternion.identity);
+
         splash2.transform.rotation = Quaternion.LookRotation(Vector3.up);
         splash2.transform.localScale *= 2f;
         Destroy(splash2, 1f);
