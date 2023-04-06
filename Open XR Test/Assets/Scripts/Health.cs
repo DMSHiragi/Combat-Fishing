@@ -9,12 +9,15 @@ public class Health : MonoBehaviour
     public int curHealth = 0;
     public int maxHealth = 100;
     public ParticleSystem psys;
+    public AudioSource hitSfx;
 
     // Start is called before the first frame update
     void Start()
     {
         curHealth = maxHealth;
         psys = GetComponent<ParticleSystem>();
+        hitSfx = gameObject.GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -37,11 +40,13 @@ public class Health : MonoBehaviour
     {
         if (grappling.swinging == true && other.gameObject.layer == 18){
                 Damage(100);
+                hitSfx.Play();
                 psys.Play();
                 Debug.Log("Damage 100");
         }else if (other.gameObject.CompareTag("Rod")) {
                 Damage(10);
                 psys.Play();
+                hitSfx.Play();
           }
         } 
     }

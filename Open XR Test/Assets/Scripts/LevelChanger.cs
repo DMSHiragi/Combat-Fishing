@@ -7,9 +7,12 @@ public class LevelChanger : MonoBehaviour
 {
     public Animator animator;
     private int levelToLoad;
+    public string sceneName;
 
     private void Start()
     {
+        Scene currentScene = SceneManager.GetActiveScene ();
+        sceneName = currentScene.name;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -21,12 +24,17 @@ public class LevelChanger : MonoBehaviour
     {
         levelToLoad = levelIndex;   
         animator.SetTrigger("FadeOut");
-        // Debug.Log(levelToLoad);
 
     }
 
     public void OnFadeComplete(){
-        // Debug.Log("Loading Scene: " + levelToLoad);
-        SceneManager.LoadScene(1);
+        if (sceneName == "FishingScene")
+        {
+            SceneManager.LoadScene("Stomach");
+        }
+        else if (sceneName == "Stomach")
+        {
+            SceneManager.LoadScene("CaveScene");
+        }
     }
 }
