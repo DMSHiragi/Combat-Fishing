@@ -19,6 +19,7 @@ public class Grappling : MonoBehaviour
     public Transform player;
     public LayerMask grappleable;
     public LayerMask swingable;
+    public LayerMask everything;
     public LineRenderer lr;
     public LineRenderer lr2;
 
@@ -39,10 +40,11 @@ public class Grappling : MonoBehaviour
     [Header("Prediction")]
     public RaycastHit predictionHit;
     public RaycastHit predictionHit2;
+    public RaycastHit predictionHit3;
     public float predictionSphereCastRadius;
     public Transform predictionPoint;
     public Transform predictionPoint2;
-
+    public Transform predictionPoint3;
     [Header("Cooldown")]
     public float grapplingCd;
     private float grapplingCdTimer;
@@ -271,6 +273,12 @@ public class Grappling : MonoBehaviour
         RaycastHit rayCastHit2;
         Physics.Raycast(cam.position, cam.forward, out rayCastHit2, maxGrappleDistance, swingable);
 
+        RaycastHit sphereCastHit3;
+        Physics.SphereCast(cam.position, predictionSphereCastRadius, cam.forward, out sphereCastHit3, maxGrappleDistance);
+
+        RaycastHit rayCastHit3;
+        Physics.Raycast(cam.position, cam.forward, out rayCastHit3, maxGrappleDistance, everything);
+
 
         Vector3 realHitPoint;
 
@@ -293,6 +301,9 @@ public class Grappling : MonoBehaviour
         {
             predictionPoint.gameObject.SetActive(true);
             predictionPoint.position = realHitPoint;
+            predictionPoint2.gameObject.SetActive(false);
+            predictionPoint3.gameObject.SetActive(false);
+            return;
         }
 
         else
@@ -321,6 +332,9 @@ public class Grappling : MonoBehaviour
         {
             predictionPoint2.gameObject.SetActive(true);
             predictionPoint2.position = realHitPoint2;
+            predictionPoint.gameObject.SetActive(false);
+            predictionPoint3.gameObject.SetActive(false);
+            return;
         }
 
         else
@@ -328,8 +342,40 @@ public class Grappling : MonoBehaviour
             predictionPoint2.gameObject.SetActive(false);
         }
 
+        Vector3 realHitPoint3;
+
+        if (rayCastHit3.point != Vector3.zero)
+        {
+            realHitPoint3 = rayCastHit3.point;
+        }
+
+        else if (sphereCastHit2.point != Vector3.zero)
+        {
+            realHitPoint3 = sphereCastHit3.point;
+        }
+
+        else
+        {
+            realHitPoint3 = Vector3.zero;
+        }
+
+        if (realHitPoint3 != Vector3.zero)
+        {
+            predictionPoint3.gameObject.SetActive(true);
+            predictionPoint3.position = realHitPoint3;
+            predictionPoint.gameObject.SetActive(false);
+            predictionPoint2.gameObject.SetActive(false);
+            return;
+        }
+
+        else
+        {
+            predictionPoint3.gameObject.SetActive(false);
+        }
+
         predictionHit = rayCastHit.point == Vector3.zero ? sphereCastHit : rayCastHit;
         predictionHit2 = rayCastHit2.point == Vector3.zero ? sphereCastHit2 : rayCastHit2;
+        predictionHit3 = rayCastHit3.point == Vector3.zero ? sphereCastHit3 : rayCastHit3;
     }
 }
 

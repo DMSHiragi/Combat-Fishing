@@ -37,7 +37,7 @@ public class Dialogue : MonoBehaviour
         hand.TryGetFeatureValue(CommonUsages.secondaryButton, out bool bPressed);
         hand.TryGetFeatureValue(CommonUsages.primaryButton, out bool aPressed);
 
-        if(inputEnabled){
+       if(inputEnabled){
             if (aPressed || bPressed || Input.GetMouseButtonDown(0)) {
                 if (!isButtonPressed) {
                     if (textComponent.text == lines[index]) {
@@ -47,12 +47,13 @@ public class Dialogue : MonoBehaviour
                         textComponent.text = lines[index];
                     }
                 }
-            }
+                isButtonPressed = true;
 
-            isButtonPressed = true;
-        } else {
+            }
+            else {
             isButtonPressed = false;
-        }
+            }
+            }
     }
 
     void StartDialogue(){
