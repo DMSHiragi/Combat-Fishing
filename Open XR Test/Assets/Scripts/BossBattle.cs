@@ -20,6 +20,9 @@ public class BossBattle : MonoBehaviour
     public Canvas myCanvas;
     public Canvas myCanvas2;
     public Canvas myCanvas3;
+    public Canvas myCanvas4;
+    public Canvas myCanvas5;
+    public Canvas myCanvas6;
     public GameObject myWater;
     public GameObject myJaw;
     public GameObject waterHitbox;
@@ -28,7 +31,7 @@ public class BossBattle : MonoBehaviour
     public spawnGarbage myGarbage;
 
 
-    private int attackPhase = 3;
+    private int attackPhase = 5;
     private bool idleOnce;
     private int HPcount = 0;
     private bool splashPlayed;
@@ -36,7 +39,9 @@ public class BossBattle : MonoBehaviour
     private bool spawnPlayed;
     private bool waterRise;
     private bool dead;
+    private bool deathPlayed;
     private bool allCoroutinesFinished;
+    private int dialogueCounter;
 
     private Vector3 startPos;
     private Quaternion startRot;
@@ -83,13 +88,16 @@ public class BossBattle : MonoBehaviour
 
     void Start()
     {
+        spout.Stop();
         myCanvas.enabled = false;
         myCanvas2.enabled = false;
         myCanvas3.enabled = false;
+        myCanvas4.enabled = false;
+        myCanvas5.enabled = false;
+        myCanvas6.enabled = false;
         startPos = transform.position;
         startRot = transform.rotation;
         waterHitbox.SetActive(false);
-        spout.Stop();
     }
 
 
@@ -192,9 +200,6 @@ public class BossBattle : MonoBehaviour
 
             case 6: // Spawn enemies, spawns a bunch of minions. 
 
-                //I can't do this part
-                //But I can
-
                 if(!spawnPlayed){
                     Coroutine c5 = StartCoroutine(spawnEnemies(enemyInterval, enemyPrefab));
                     runningCoroutines.Add(c5);
@@ -212,9 +217,8 @@ public class BossBattle : MonoBehaviour
             
                 Debug.Log("Die");
 
-                // if(allCoroutinesFinished){
-                    startConvoDie();
-                // }
+                startConvoDie();
+                battleStage = 9;
 
 
                 break;
@@ -226,6 +230,16 @@ public class BossBattle : MonoBehaviour
                         endConvo2();
                     }
 
+
+                break;
+
+            case 10:
+
+                if (!deathPlayed)
+                {
+                    Coroutine c6 = StartCoroutine(DeathAnimation());
+                    runningCoroutines.Add(c6);
+                }
 
                 break;
         }
@@ -264,7 +278,7 @@ public class BossBattle : MonoBehaviour
 
 
         Debug.Log("Battle Start");
-        battleStage = 6;
+        battleStage = 2;
     }
 
     // CASE 2
@@ -277,18 +291,43 @@ public class BossBattle : MonoBehaviour
         idleOnce = true;
 
         // Say a random voiceline sometimes
-        myCanvas3.enabled = true;
-        
+
+
+        switch((int)dialogueCounter){
+            
+            case 0:
+                myCanvas6.enabled = true;
+            break;
+            case 1:
+                myCanvas3.enabled = true;
+            break;
+
+            case 2:
+                myCanvas4.enabled = true;
+            break;
+
+            case 3:
+                myCanvas5.enabled = true;
+            break;
+        }
+
+        dialogueCounter += 1;
+        if(dialogueCounter == 3){
+            dialogueCounter = 0;
+        }
+
         // Wait for X seconds (if whale constantly attacks it's too much)
         yield return new WaitForSeconds(waitTime);
 
         myCanvas3.enabled = false;
+        myCanvas4.enabled = false;
+        myCanvas5.enabled = false;
+        myCanvas6.enabled = false;
 
-        // Hide voiceline after wait
 
         // Cycle to a new attack
         attackPhase += 1;
-        if (attackPhase == 6) { // Repeat attack cycle when reaching last attack phase
+        if (attackPhase == 7) { // Repeat attack cycle when reaching last attack phase
             attackPhase = 3;
         }
         if(!dead){
@@ -652,13 +691,22 @@ public class BossBattle : MonoBehaviour
         spawnPlayed = true;
         //Spawn new enemy at spawnpoint
         GameObject newEnemy = Instantiate(enemy, spawnPosition.position, Quaternion.identity);
+
+
+
+
         yield return new WaitForSeconds(interval);
         //Spawn new enemy at spawnpoint again
         GameObject newEnemy2 = Instantiate(enemy, spawnPosition.position, Quaternion.identity);
+
+
+
+
         //Back to idle
         battleStage = 2;
         yield return new WaitForSeconds(6f);
         spawnPlayed = false;
+
 
     }
 
@@ -677,9 +725,7 @@ public class BossBattle : MonoBehaviour
         myCanvas2.enabled = true;
         if(deathDialogue !=  null){
             deathDialogue.startTime = true;
-            battleStage = 9;
         }
-        // Lock player movement
 
         Debug.Log("1 - EndDialogue");
         
@@ -691,11 +737,35 @@ public class BossBattle : MonoBehaviour
     private void endConvo2(){
         
         myCanvas2.enabled = false;
+        battleStage = 10;
 
-        // Unlock player movement
+    }
 
-        Debug.Log("Convo Death");
+    
+    private IEnumerator DeathAnimation(){
+        deathPlayed = true;
 
+        float originalY = up - down;
+        // Calculate target position and rotation
+        Vector3 targetPos = new Vector3(startPos.x, startPos.y - down, startPos.z);
+        Quaternion targetRot = Quaternion.Euler(startRot.eulerAngles.x, startRot.eulerAngles.y, startRot.eulerAngles.z + rotate);
+        Quaternion midRot = Quaternion.Euler(startRot.eulerAngles.x, startRot.eulerAngles.y, startRot.eulerAngles.z + rotate/4);
+
+        // Move object down and rotate
+        float elapsedTime = 0f;
+        AnimationCurve diveCurve = AnimationCurve.EaseInOut(0f, 0f, diveTime, 1f);
+
+
+        //Dive down
+        while (elapsedTime < diveTime)
+        {
+            float t = elapsedTime / diveTime;
+            float curveT = slowIn.Evaluate(t);
+            transform.position = new Vector3(startPos.x, Mathf.Lerp(startPos.y, targetPos.y, curveT),  startPos.z);
+            transform.rotation = Quaternion.Lerp(startRot, targetRot, t);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
     }
 
 }

@@ -29,8 +29,9 @@ public class Dialogue : MonoBehaviour
     {
         if(startTime){
             inputEnabled = true;
-            StartDialogue();
             startTime = false;
+            endTime = false;
+            StartDialogue();
         }
 
         hand = InputDevices.GetDeviceAtXRNode(XRNode.RightHand);
@@ -61,7 +62,9 @@ public class Dialogue : MonoBehaviour
 
     void StartDialogue(){
         index = 0;
+        textComponent.text = string.Empty;
         inputEnabled = true;
+        StopAllCoroutines(); 
         StartCoroutine(TypeLine());
 
     }
@@ -80,6 +83,7 @@ public class Dialogue : MonoBehaviour
             StartCoroutine(TypeLine());
         }
         else{
+            index = 0;
             inputEnabled = false;
             gameObject.SetActive(false);
             endTime = true;

@@ -28,9 +28,10 @@ public class EnemyStateMachine : MonoBehaviour
 
     void Start()
     {
+
         moveSpeed = 3;
         rotationSpeed = 3;
-
+        
     }
 
     // Update is called once per frame
