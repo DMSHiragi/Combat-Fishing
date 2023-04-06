@@ -74,8 +74,8 @@ public class Grappling : MonoBehaviour
         lr.startWidth = 0.007f;
         lr.endWidth = 0.010f;
 
-        //sfx = gameObject.GetComponent<AudioSource>();
-        //sfx.clip = sfxClips[0];
+        sfx = gameObject.GetComponent<AudioSource>();
+        sfx.clip = sfxClips[0];
     }
 
     // Update is called once per frame
@@ -226,6 +226,7 @@ public class Grappling : MonoBehaviour
 
 
         lr.enabled = true;
+        lr2.enabled = false;
 
         // Set the ball's position to the target position at the end of the animation
 
@@ -237,8 +238,8 @@ public class Grappling : MonoBehaviour
     {
         Debug.Log("ExecuteGrapple");
 
-        // sfx.clip = sfxClips[0];
-        // sfx.Play();
+         sfx.clip = sfxClips[0];
+         sfx.Play();
 
         pc.freeze = false;
 
@@ -278,8 +279,8 @@ public class Grappling : MonoBehaviour
     private void StartSwing(RaycastHit h){
         Debug.Log("StartSwing");
 
-        // sfx.clip = sfxClips[1];
-        // sfx.Play();
+         sfx.clip = sfxClips[1];
+         sfx.Play();
 
         pc.freeze = false;
         lr2.enabled = true;
@@ -320,7 +321,7 @@ public class Grappling : MonoBehaviour
 
 
 
-    private void StopSwing(){
+    public void StopSwing(){
         Debug.Log("StopSwing");
 
         lr2.positionCount = 0;

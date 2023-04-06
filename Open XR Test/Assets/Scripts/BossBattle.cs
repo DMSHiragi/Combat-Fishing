@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossBattle : MonoBehaviour
 {   
@@ -29,6 +30,7 @@ public class BossBattle : MonoBehaviour
     // public EnemySpawner eSpawner;
     public ParticleSystem spout;
     public spawnGarbage myGarbage;
+    public Grappling grappling;
 
 
     private int attackPhase = 5;
@@ -250,11 +252,18 @@ public class BossBattle : MonoBehaviour
             Debug.Log(health);
         }
 
+
     }
 
 
 
-
+     private void OnTriggerEnter(Collider other)
+    {
+        if (grappling.swinging == true && other.gameObject.layer == 18 && other.gameObject.GetComponent<SpringJoint>() != null){
+                health -= 10;
+                Debug.Log("Damage 100");
+        }
+    }
 
 
 
@@ -771,6 +780,8 @@ public class BossBattle : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+
+        SceneManager.LoadScene("CreditsRoom");
     }
 
 }

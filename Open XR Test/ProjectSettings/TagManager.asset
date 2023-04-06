@@ -18,6 +18,7 @@ TagManager:
   - Cave
   - Flesh
   - Weapon
+  - Whale
   layers:
   - Default
   - TransparentFX

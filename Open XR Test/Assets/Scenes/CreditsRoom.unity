@@ -6278,6 +6278,7 @@ MonoBehaviour:
   myTracker: {fileID: 0}
   fishingLine: {fileID: 457776509}
   waterSplashPrefab: {fileID: 6192100931547645917, guid: c8e1f47e51843024b9ff44628b5ee608, type: 3}
+  sfxClip: {fileID: 0}
   fishScore: 0
   redFish: 0
   fishSize: 0
@@ -16415,6 +16416,10 @@ PrefabInstance:
       value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 7319858965339630247, guid: 0be1c3a3049fcf84daaf17646c934538, type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
+      objectReference: {fileID: -8679921383154817045, guid: dedcc96941918bc40b00cac7126833bf, type: 3}
+    - target: {fileID: 7319858965339630247, guid: 0be1c3a3049fcf84daaf17646c934538, type: 3}
       propertyPath: m_SelectAction.m_Reference
       value: 
       objectReference: {fileID: -1277054153949319361, guid: c348712bda248c246b8c49b3db54643f, type: 3}
@@ -16446,6 +16451,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 7319858965595065094, guid: 0be1c3a3049fcf84daaf17646c934538, type: 3}
+      propertyPath: m_ModelPrefab
+      value: 
+      objectReference: {fileID: -8679921383154817045, guid: df11e23dffb65284db892103c771434c, type: 3}
     - target: {fileID: 7319858965648198135, guid: 0be1c3a3049fcf84daaf17646c934538, type: 3}
       propertyPath: m_Layer
       value: 8
