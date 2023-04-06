@@ -87,6 +87,7 @@ public class BossBattle : MonoBehaviour
         startPos = transform.position;
         startRot = transform.rotation;
         waterHitbox.SetActive(false);
+        spout.Stop();
     }
 
 
@@ -605,6 +606,7 @@ public class BossBattle : MonoBehaviour
 
         elapsedTime = 0f;
         float length2 = 4f;
+        spout.Play();
         
         while(elapsedTime < length2){   //Move side to side
             float t = inOut.Evaluate(elapsedTime / length2);
@@ -618,7 +620,7 @@ public class BossBattle : MonoBehaviour
         }
 
         elapsedTime = 0f;
-
+        spout.Stop();
         
         while(elapsedTime < length){    // Return to start
             float t = inOut.Evaluate(elapsedTime / length);

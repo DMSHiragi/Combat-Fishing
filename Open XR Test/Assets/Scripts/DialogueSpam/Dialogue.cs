@@ -49,11 +49,14 @@ public class Dialogue : MonoBehaviour
                 }
                 isButtonPressed = true;
 
+
             }
             else {
             isButtonPressed = false;
             }
+
             }
+
     }
 
     void StartDialogue(){

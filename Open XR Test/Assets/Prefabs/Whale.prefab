@@ -519,20 +519,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2990048562921677657}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb0371dcc38817e4dba2e330c6bae1c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c0d228e5ac124240b5269b30a292e2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2990048561052471876}
-  lines:
-  - You dare to take my food, human? I am the ruler of these waters, and I will not
-    tolerate such disrespect.
-  - 'Your fishing has made it difficult for me to eat and survive. '
-  - Your actions have consequences, and now you will face them.
-  - You have taken from me for the last time. I will not allow you to continue to
-    harm my ecosystem.
-  - You will now become my food, and I will feast upon your flesh to show you the
-    true cost of your actions.
-  textSpeed: 0.011
+  lines: []
+  textSpeed: 0
   startTime: 0
   endTime: 0
 --- !u!1001 &2990048562537769824

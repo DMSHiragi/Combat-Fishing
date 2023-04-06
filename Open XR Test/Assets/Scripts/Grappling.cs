@@ -10,7 +10,6 @@ using UnityEngine.XR.Interaction.Toolkit.Inputs;
 
 public class Grappling : MonoBehaviour
 {
-
     [Header("References")]
     private PlayerController pc;
     private Rigidbody rb;
@@ -57,12 +56,18 @@ public class Grappling : MonoBehaviour
     private bool isButtonPressed2;
     private bool isButtonPressed3;
 
+    public AudioSource sfx;
+    public AudioClip[] sfxClips;
+
 
     // Start is called before the first frame update
     void Start()
     {
         pc = GetComponent<PlayerController>();
         rb = GetComponent<Rigidbody>();
+
+        sfx = gameObject.GetComponent<AudioSource>();
+        sfx.clip = sfxClips[0];
     }
 
     // Update is called once per frame
@@ -175,6 +180,9 @@ public class Grappling : MonoBehaviour
     {
         Debug.Log("ExecuteGrapple");
 
+        sfx.clip = sfxClips[0];
+        sfx.Play();
+
         pc.freeze = false;
 
         Vector3 lowestPoint = new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z);
@@ -205,6 +213,9 @@ public class Grappling : MonoBehaviour
 
     private void StartSwing(RaycastHit h){
         Debug.Log("StartSwing");
+
+        sfx.clip = sfxClips[1];
+        sfx.Play();
 
         pc.freeze = false;
         lr2.enabled = true;
