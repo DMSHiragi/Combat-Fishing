@@ -16454,6 +16454,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 21
       objectReference: {fileID: 0}
+    - target: {fileID: 7751567283969644255, guid: 0be1c3a3049fcf84daaf17646c934538, type: 3}
+      propertyPath: m_TurnSpeed
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 7913120221016792183, guid: 0be1c3a3049fcf84daaf17646c934538, type: 3}
       propertyPath: m_Layer
       value: 21

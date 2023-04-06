@@ -74,8 +74,8 @@ public class Grappling : MonoBehaviour
         lr.startWidth = 0.007f;
         lr.endWidth = 0.010f;
 
-        sfx = gameObject.GetComponent<AudioSource>();
-        sfx.clip = sfxClips[0];
+        //sfx = gameObject.GetComponent<AudioSource>();
+        //sfx.clip = sfxClips[0];
     }
 
     // Update is called once per frame
@@ -253,7 +253,7 @@ public class Grappling : MonoBehaviour
 
 
 
-        Invoke(nameof(StopGrapple), 1f);
+        Invoke(nameof(StopGrapple), 0);
    }
 
    

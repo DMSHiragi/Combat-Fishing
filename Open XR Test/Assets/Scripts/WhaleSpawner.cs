@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class WhaleSpawner : MonoBehaviour
 {
@@ -24,6 +26,7 @@ public class WhaleSpawner : MonoBehaviour
     public ParticleSystem myRain;
     public ParticleSystem myMist;
     public float delayTime = 5f;
+    public Image image;
 
 
     void Start() {
@@ -157,6 +160,10 @@ IEnumerator Swallow() {
         float newY = Mathf.Lerp(startY, endY, t);
         float newZ = Mathf.Lerp(startZ, endZ, t);
 
+        float newAlpha = Mathf.Lerp(0, 2, t);
+        image.color = new Color(0, 0, 0, newAlpha);
+
+
         transform.position = new Vector3(transform.position.x, newY, newZ);
 
         float newJawRotation = Mathf.Lerp(jawRotate, 0f, t);
@@ -165,8 +172,12 @@ IEnumerator Swallow() {
 
         elapsedTime += Time.deltaTime;
         yield return null;
+
     }
 
+    yield return new WaitForSeconds(3);
+
+    SceneManager.LoadScene("Stomach");
 
 
         // CODE TO LOAD NEXT SCENE GOES HERE

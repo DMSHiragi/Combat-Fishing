@@ -92,6 +92,7 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSlidingDoor.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Minecart.cs" />
      <Compile Include="Assets\Animations\AnimationStates\IdleState.cs" />
+     <Compile Include="Assets\Scripts\FishTalk.cs" />
      <Compile Include="Assets\LowPolyAssets\LowPolyDungeon\Demo Scenes\ScreenshotMaker.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\LadderClimber.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Respawner.cs" />
@@ -100,6 +101,7 @@
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\ShootProjectile.cs" />
      <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
+     <Compile Include="Assets\Scripts\uponLoadScene.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoHolsterOrientation.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\ThrowObject.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Explosion.cs" />
