@@ -290,6 +290,36 @@ public class Grappling : MonoBehaviour
         RaycastHit rayCastHit3;
         Physics.Raycast(cam.position, cam.forward, out rayCastHit3, maxGrappleDistance, everything);
 
+              Vector3 realHitPoint2;
+
+        if (rayCastHit2.point != Vector3.zero)
+        {
+            realHitPoint2 = rayCastHit2.point;
+        }
+
+        else if (sphereCastHit2.point != Vector3.zero)
+        {
+            realHitPoint2 = sphereCastHit2.point;
+        }
+
+        else
+        {
+            realHitPoint2 = Vector3.zero;
+        }
+
+        if (realHitPoint2 != Vector3.zero)
+        {
+            predictionPoint2.gameObject.SetActive(true);
+            predictionPoint2.position = realHitPoint2;
+            predictionPoint.gameObject.SetActive(false);
+            predictionPoint3.gameObject.SetActive(false);
+            return;
+        }
+
+        else
+        {
+            predictionPoint2.gameObject.SetActive(false);
+        }
 
         Vector3 realHitPoint;
 
@@ -322,36 +352,7 @@ public class Grappling : MonoBehaviour
             predictionPoint.gameObject.SetActive(false);
         }
 
-        Vector3 realHitPoint2;
-
-        if (rayCastHit2.point != Vector3.zero)
-        {
-            realHitPoint2 = rayCastHit2.point;
-        }
-
-        else if (sphereCastHit2.point != Vector3.zero)
-        {
-            realHitPoint2 = sphereCastHit2.point;
-        }
-
-        else
-        {
-            realHitPoint2 = Vector3.zero;
-        }
-
-        if (realHitPoint2 != Vector3.zero)
-        {
-            predictionPoint2.gameObject.SetActive(true);
-            predictionPoint2.position = realHitPoint2;
-            predictionPoint.gameObject.SetActive(false);
-            predictionPoint3.gameObject.SetActive(false);
-            return;
-        }
-
-        else
-        {
-            predictionPoint2.gameObject.SetActive(false);
-        }
+  
 
         Vector3 realHitPoint3;
 
