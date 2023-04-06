@@ -6,8 +6,6 @@ using UnityEngine;
 public class DamagePlayer : MonoBehaviour
 {
     private Collider myCollider;
-    public PlayerHealth phealth;
-    public float damageValue;
     void Start()
     {
     }
@@ -17,7 +15,6 @@ public class DamagePlayer : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            phealth.Damage(damageValue);
             Debug.Log("Damage");
         }
     }

@@ -22,8 +22,9 @@ public class BossBattle : MonoBehaviour
     public GameObject myWater;
     public GameObject myJaw;
     public GameObject waterHitbox;
-    public EnemySpawner eSpawner;
+    // public EnemySpawner eSpawner;
     public ParticleSystem spout;
+    public spawnGarbage myGarbage;
 
 
     private int attackPhase = 3;
@@ -86,7 +87,6 @@ public class BossBattle : MonoBehaviour
         startPos = transform.position;
         startRot = transform.rotation;
         waterHitbox.SetActive(false);
-        spout.Pause();
     }
 
 
@@ -120,6 +120,10 @@ public class BossBattle : MonoBehaviour
                 allCoroutinesFinished = false;
                 break;
             }
+        }
+
+        if(Input.GetMouseButtonDown(0)){
+            myGarbage.createGarbage();
         }
 
 
@@ -234,6 +238,10 @@ public class BossBattle : MonoBehaviour
 
 
 
+
+
+
+
     // CASE 0
                                                 // startConvo1, need to lock playermovement
     private void startConvo1(){
@@ -271,21 +279,21 @@ public class BossBattle : MonoBehaviour
         idleOnce = true;
 
         // Say a random voiceline sometimes
-
-        // Wait for X seconds (attack spam not fun)
+        
+        // Wait for X seconds (if whale constantly attacks it's too much)
         yield return new WaitForSeconds(waitTime);
 
-        // Hide voiceline
+        // Hide voiceline after wait
 
         // Cycle to a new attack
         attackPhase += 1;
-        if (attackPhase == 6) { // Repeat attack cycle when done (change to 6 once minion is done)
+        if (attackPhase == 6) { // Repeat attack cycle when reaching last attack phase
             attackPhase = 3;
         }
         if(!dead){
             battleStage = attackPhase;
         }
-        else{
+        else{   //If dead, go to 8
             battleStage = 8;
         }
         idleOnce = false;
@@ -404,6 +412,8 @@ public class BossBattle : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+
+        myGarbage.createGarbage();
 
         elapsedTime = 0f;
         while (elapsedTime < fallDuration) {
@@ -564,8 +574,6 @@ public class BossBattle : MonoBehaviour
         spoutPlayed = true;
         attackPhase = 5;
 
-
-
         float spoutDown = 10f;
         float length = 3f;
         float rotateS = 40f;
@@ -603,8 +611,6 @@ public class BossBattle : MonoBehaviour
         elapsedTime = 0f;
         float length2 = 4f;
         
-        spout.Play();
-
         while(elapsedTime < length2){   //Move side to side
             float t = inOut.Evaluate(elapsedTime / length2);
             float curveT = slowIn.Evaluate(t);
@@ -618,7 +624,6 @@ public class BossBattle : MonoBehaviour
 
         elapsedTime = 0f;
 
-        spout.Stop();
         
         while(elapsedTime < length){    // Return to start
             float t = inOut.Evaluate(elapsedTime / length);
@@ -636,8 +641,6 @@ public class BossBattle : MonoBehaviour
         yield return new WaitForSeconds(6f);
         spoutPlayed = false;
     }
-
-
 
 
     
