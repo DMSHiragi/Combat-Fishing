@@ -47,12 +47,13 @@ public class Dialogue : MonoBehaviour
                         textComponent.text = lines[index];
                     }
                 }
-            }
-
             isButtonPressed = true;
-        } else {
+
+            }
+            else {
             isButtonPressed = false;
-        }
+            }
+        } 
     }
 
     void StartDialogue(){

@@ -51,7 +51,6 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSocketables.cs" />
      <Compile Include="Assets\LowPolyAssets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoPowerUnit.cs" />
-     <Compile Include="Assets\Scripts\spawnGarbage.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoLock.cs" />
      <Compile Include="Assets\EugeneAsset\CollisionSound.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Item.cs" />
@@ -63,6 +62,7 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoManualTeleport.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Footsteps.cs" />
      <Compile Include="Assets\Scripts\Grappling.cs" />
+     <Compile Include="Assets\Scripts\spawnGarbage.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSafeDoor.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoUIManager.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoBackpack.cs" />
@@ -126,8 +126,6 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoDummyArm.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoPassthroughSocket.cs" />
      <Compile Include="Assets\Animations\AnimationStates\AttackState.cs" />
-     <Compile Include="Assets\LowPolyAssets\Low poly Garbage Pack\Scripts\Rotator.cs" />
-     <Compile Include="Assets\Scripts\spawnGarbage.cs" />
      <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\HurricaneVR\Framework\SFX\license.txt" />
