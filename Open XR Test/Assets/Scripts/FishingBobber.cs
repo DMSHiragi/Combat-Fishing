@@ -14,7 +14,7 @@ public class FishingBobber : MonoBehaviour
     public GameObject fish1;
     public GameObject fish2;
 
-
+    public int fishRequired = 3;
     public float minWaitTime = 3f;
     public float maxWaitTime = 6f;
 
@@ -241,7 +241,7 @@ private AudioSource audioSource;
             // Replace ball with fish model if success
             ReplaceBallMesh();
             fishScore++;
-            if(fishScore >= 1){
+            if(fishScore >= fishRequired){
                 whaleTime = true;
             }
             fishCaught = true;

@@ -17967,8 +17967,9 @@ MonoBehaviour:
   ballScale: {x: 0.2, y: 0.2, z: 0.2}
   fish1: {fileID: 104517609856167801, guid: 94c015d94f6e5364e9b36b960bbe1b77, type: 3}
   fish2: {fileID: 7770584863604633872, guid: 67de17aaa6711224f80123d9b1ef8cb7, type: 3}
-  minWaitTime: 0
-  maxWaitTime: 1
+  fishRequired: 3
+  minWaitTime: 2
+  maxWaitTime: 5
   coolDownTimer: 50
   ballReturnSpeed: 20
   heightLimit: 26

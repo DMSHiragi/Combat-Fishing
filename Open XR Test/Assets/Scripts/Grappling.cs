@@ -76,6 +76,11 @@ public class Grappling : MonoBehaviour
 
         sfx = gameObject.GetComponent<AudioSource>();
         sfx.clip = sfxClips[0];
+        Material lineMaterial = new Material(Shader.Find("Unlit/Color"));
+        lineMaterial.color = Color.black;
+        lr.material = lineMaterial;
+        lr2.material = lineMaterial;
+
     }
 
     // Update is called once per frame
@@ -131,7 +136,9 @@ public class Grappling : MonoBehaviour
         if (grapplingCdTimer > 0)
         {
             grapplingCdTimer -= Time.deltaTime;
-        }
+        }else{lr.enabled = false;}
+
+        lr.SetPosition(0, rodEnd.position);
     }
 
     private void LateUpdate()
@@ -167,20 +174,8 @@ public class Grappling : MonoBehaviour
             grapplePoint = hit.point;
             
 
-            fishingLineBallPrefab.transform.position = rodEnd.position;
 
-            LineRenderer lineRenderer = fishingLineBall.AddComponent<LineRenderer>();
-            lineRenderer.SetPosition(0, rodEnd.position);
-            lineRenderer.SetPosition(1, rodEnd.position);
-
-            Material lineMaterial = new Material(Shader.Find("Unlit/Color"));
-            lineMaterial.color = Color.black;
-            lineRenderer.material = lineMaterial;
-
-            lineRenderer.startWidth = 0.007f;
-            lineRenderer.endWidth = 0.010f;
-
-            StartCoroutine(CastFishingLine(grapplePoint, lineRenderer));
+            StartCoroutine(CastFishingLine(grapplePoint, lr));
 
             
             Invoke(nameof(ExecuteGrapple), grappleDelayTime);
@@ -195,31 +190,30 @@ public class Grappling : MonoBehaviour
 
         if (swinging == false)
         {
-            lr.enabled = true;
-            lr.SetPosition(1, grapplePoint);
+            // lr.SetPosition(1, grapplePoint);
         }
     }
 
 
 
-    IEnumerator CastFishingLine(Vector3 targetPosition, LineRenderer lineRenderer)
+    IEnumerator CastFishingLine(Vector3 targetPosition, LineRenderer myRenderer)
     {
         float duration = grappleDelayTime;
         float elapsedTime = 0f;
         currentlyGrappling = true;
 
-        Vector3 startPosition = fishingLineBall.transform.position;
+        Vector3 startPosition = rodEnd.transform.position;
 
         while (elapsedTime < duration)
         {
-            lr.enabled = false;
+            lr.enabled = true;
             elapsedTime += Time.deltaTime;
             fishingLineBall.transform.position = Vector3.Lerp(startPosition, targetPosition, elapsedTime / duration);
 
 
             // Update line renderer positions
-            lineRenderer.SetPosition(0, rodEnd.position);
-            lineRenderer.SetPosition(1, fishingLineBall.transform.position);
+            lr.SetPosition(0, rodEnd.position);
+            lr.SetPosition(1, fishingLineBall.transform.position);
 
             yield return null;
         }
@@ -231,7 +225,6 @@ public class Grappling : MonoBehaviour
         // Set the ball's position to the target position at the end of the animation
 
         // Remove the ball and line renderer after reaching the goal
-        Destroy(lineRenderer);
     }
 
     private void ExecuteGrapple()

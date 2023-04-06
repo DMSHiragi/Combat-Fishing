@@ -31,9 +31,10 @@ public class BossBattle : MonoBehaviour
     public ParticleSystem spout;
     public spawnGarbage myGarbage;
     public Grappling grappling;
+    public GameObject particles;
 
 
-    private int attackPhase = 5;
+    private int attackPhase = 2;
     private bool idleOnce;
     private int HPcount = 0;
     private bool splashPlayed;
@@ -258,6 +259,13 @@ public class BossBattle : MonoBehaviour
         if (grappling.swinging == true && other.gameObject.layer == 18 && other.gameObject.GetComponent<SpringJoint>() != null){
                 health -= 10;
                 Debug.Log("Damage 100");
+
+                GameObject animationInstance = Instantiate(particles, other.transform.position, Quaternion.identity);
+
+                // Play the animation
+                Animator animator = animationInstance.GetComponent<Animator>();
+                animator.Play("particles");
+
         }
     }
 
@@ -303,6 +311,7 @@ public class BossBattle : MonoBehaviour
             dialogueCounter = 0;
         }
         attackPhase += 1;
+
 
         switch((int)attackPhase){
             
@@ -748,6 +757,11 @@ public class BossBattle : MonoBehaviour
         
         myCanvas2.enabled = false;
         battleStage = 10;
+        
+        myCanvas3.enabled = false;
+        myCanvas4.enabled = false;
+        myCanvas5.enabled = false;
+        myCanvas6.enabled = false;
 
     }
 
