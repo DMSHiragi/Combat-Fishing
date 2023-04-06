@@ -24,9 +24,6 @@ public class spawnGarbage : MonoBehaviour
         if(objectCount < 10){
             garbageCount = 1;
         }
-        else{
-            garbageCount = 0;
-        }
 
         for (int i = 0; i < garbageCount; i++)
         {

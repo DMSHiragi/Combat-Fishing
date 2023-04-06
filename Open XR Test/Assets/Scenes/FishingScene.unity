@@ -9949,8 +9949,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10834,7 +10834,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -15023,9 +15023,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1774837652}
   lines:
-  - Dialogue etc
-  - etc
-  - ....
+  - You dare to take my food, human? I am the rule of these waters, and I will not
+    tolerate such disrespect.
+  - Your fishing has made it difficult for me to eat and survive.
+  - Your actions have consequences, and now you will face them.
+  - You have taken from me for the last time. I will not allow you to continue harming
+    my mealtime.
+  - You will now become my food, and I will feast upon your flesh to show you the
+    true cost of your actions.
   textSpeed: 0.011
   startTime: 0
   endTime: 0

@@ -163,6 +163,11 @@ private AudioSource audioSource;
                 fishing = false;
                 if(fishCaught){
                     myTracker.getFish(fishSize, redFish);
+                    
+                    fishScore += 1;
+                    if(fishScore >= fishRequired){
+                        whaleTime = true;
+                    }
                 }
             }
         }
@@ -240,10 +245,6 @@ private AudioSource audioSource;
         {
             // Replace ball with fish model if success
             ReplaceBallMesh();
-            fishScore++;
-            if(fishScore >= fishRequired){
-                whaleTime = true;
-            }
             fishCaught = true;
         }
 

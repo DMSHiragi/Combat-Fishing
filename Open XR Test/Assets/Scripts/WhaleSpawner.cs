@@ -43,7 +43,7 @@ public class WhaleSpawner : MonoBehaviour
     void Update () {
 
         // If enough fish caught
-        if (bobber.fishScore == 1 ) {
+        if (bobber.fishScore == 3 ) {
 
             // When enough fish caught, start water effects
             var emission = myParticleSystem.emission;

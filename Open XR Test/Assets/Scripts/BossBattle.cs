@@ -306,18 +306,11 @@ public class BossBattle : MonoBehaviour
         // Say a random voiceline sometimes
 
 
-        dialogueCounter += 1;
-        if(dialogueCounter == 3){
-            dialogueCounter = 0;
-        }
         attackPhase += 1;
 
 
         switch((int)attackPhase){
             
-            case 6:
-                myCanvas6.enabled = true;
-            break;
             case 3:
                 myCanvas3.enabled = true;
             break;
@@ -328,6 +321,10 @@ public class BossBattle : MonoBehaviour
 
             case 5:
                 myCanvas5.enabled = true;
+            break;
+            
+            case 6:
+                myCanvas6.enabled = true;
             break;
         }
 

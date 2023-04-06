@@ -20,6 +20,7 @@ public class IgnorePlayerCollision : MonoBehaviour
                 Physics.IgnoreCollision(objectCollider, playerCollider, true);
             }
         }
+
     }
 
 }
