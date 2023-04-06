@@ -15,9 +15,15 @@ C:/Users/Matthew/Documents/GitHub/Combat-Fishing/Open XR Test
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
+<<<<<<< Updated upstream
 50554
 Successfully changed project path to: C:/Users/Matthew/Documents/GitHub/Combat-Fishing/Open XR Test
 C:/Users/Matthew/Documents/GitHub/Combat-Fishing/Open XR Test
+=======
+54350
+Successfully changed project path to: C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test
+C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test
+>>>>>>> Stashed changes
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,11 +53,19 @@ C:/Users/Matthew/Documents/GitHub/Combat-Fishing/Open XR Test
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< Updated upstream
 Player connection [10492] Host "[IP] 192.168.1.74 [Port] 0 [Flags] 2 [Guid] 2642946556 [EditorId] 2642946556 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3O4B7R4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [10492] Host "[IP] 192.168.1.74 [Port] 0 [Flags] 2 [Guid] 2642946556 [EditorId] 2642946556 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3O4B7R4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 98.29 ms, found 9 plugins.
+=======
+Player connection [39944] Host "[IP] 192.168.1.90 [Port] 0 [Flags] 2 [Guid] 1109464753 [EditorId] 1109464753 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2VVLPT9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [39944] Host "[IP] 192.168.1.90 [Port] 0 [Flags] 2 [Guid] 1109464753 [EditorId] 1109464753 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2VVLPT9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 173.06 ms, found 10 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.15f1 (e8e88683f834)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
@@ -67,6 +81,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56320
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -80,11 +95,27 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (558ms)
 		BeginReloadAssembly (68ms)
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56224
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007334 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 204.02 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.967 seconds
+Domain Reload Profiling:
+	ReloadAssembly (968ms)
+		BeginReloadAssembly (76ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 		EndReloadAssembly (395ms)
 			LoadAssemblies (66ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -99,12 +130,29 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (112ms)
 				ProcessInitializeOnLoadMethodAttributes (32ms)
+=======
+		EndReloadAssembly (775ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (128ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (534ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (204ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (233ms)
+				ProcessInitializeOnLoadMethodAttributes (84ms)
+>>>>>>> Stashed changes
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.005855 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -149,6 +197,54 @@ Unloading 5280 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 68 unused Assets / (1.7 MB). Loaded Objects now: 5710.
 Memory consumption went from 209.0 MB to 207.3 MB.
 Total: 3.428300 ms (FindLiveObjects: 0.310100 ms CreateObjectMapping: 0.283400 ms MarkObjects: 2.422100 ms  DeleteObjects: 0.411200 ms)
+=======
+Registered in 0.018409 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 176.03 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  1.747 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1748ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1480ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (373ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (111ms)
+			SetupLoadedEditorAssemblies (801ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (176ms)
+				BeforeProcessingInitializeOnLoad (162ms)
+				ProcessInitializeOnLoadAttributes (389ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.53 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6099 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 82 unused Assets / (1.7 MB). Loaded Objects now: 6549.
+Memory consumption went from 332.2 MB to 330.5 MB.
+Total: 4.050900 ms (FindLiveObjects: 0.457500 ms CreateObjectMapping: 0.192100 ms MarkObjects: 2.932400 ms  DeleteObjects: 0.467800 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -162,6 +258,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 689.613198 seconds.
   path: Assets/WhaleV5.fbx
   artifactKey: Guid(f7eb59a86f6038347a8eea843b217b8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -2284,3 +2381,415 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+=======
+  Time since last request: 336613.469191 seconds.
+  path: Assets/Scripts/BossBattle.cs
+  artifactKey: Guid(96bfa87daea3e814897f82a8827e6cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BossBattle.cs using Guid(96bfa87daea3e814897f82a8827e6cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cb82b62b085605f0b90ae7db3954328') in 0.050560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 294.875925 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/MeleeWeapons/SpartanSword.fbx
+  artifactKey: Guid(f12115598c01c8a4d8cce3210f7b53b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/MeleeWeapons/SpartanSword.fbx using Guid(f12115598c01c8a4d8cce3210f7b53b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4c60f7a889b1a7a9277e98337aab037') in 0.212508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyAssets/SimpleNaturePack/Materials/SimpleNaturePack_Texture_01.mat
+  artifactKey: Guid(93caadf4359ae8143aad35b3145d31af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/SimpleNaturePack/Materials/SimpleNaturePack_Texture_01.mat using Guid(93caadf4359ae8143aad35b3145d31af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddc47ef53e9a03c85b7d45a818c32f24') in 0.022756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Diffuse_Blue.mat
+  artifactKey: Guid(b0cfeb8b980746945a0afedcf4ec2880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Diffuse_Blue.mat using Guid(b0cfeb8b980746945a0afedcf4ec2880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc919169b33cc2fec892bc0840bf9874') in 0.194666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Teeth/Teeth Material.mat
+  artifactKey: Guid(bb5fd4e26abf65c48afc2d6bd44cbaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Teeth/Teeth Material.mat using Guid(bb5fd4e26abf65c48afc2d6bd44cbaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c24a538f875b794f38c0d4ff31c24d') in 0.018693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Diffuse_Green.mat
+  artifactKey: Guid(72b60f1b3e5a4b94f88154af53968158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Diffuse_Green.mat using Guid(72b60f1b3e5a4b94f88154af53968158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78cf8ac7a1b2a22ed03a1fca883125c8') in 0.022961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Environment/DemoScene/window_frames.fbx
+  artifactKey: Guid(0c658752a109d5049890a902cb7a6028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Environment/DemoScene/window_frames.fbx using Guid(0c658752a109d5049890a902cb7a6028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b78ffeca66a9346b666ec969810f2a2e') in 0.050893 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  10.mat
+  artifactKey: Guid(7e2a001bc0cf96d4e84b3069df7dd5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  10.mat using Guid(7e2a001bc0cf96d4e84b3069df7dd5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90a14b56f788860ab47510908ce18881') in 0.013789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/EffectExamples/Misc Effects/Materials/Spark2Particle.mat
+  artifactKey: Guid(a6492a173e6c03f48899880b96cca600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/EffectExamples/Misc Effects/Materials/Spark2Particle.mat using Guid(a6492a173e6c03f48899880b96cca600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '719c425d0323ede8faa27d44789bcee3') in 0.231447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/HurricaneVR/Framework/Materials/BuiltIn/TeleportLine.mat
+  artifactKey: Guid(78bbac5520f23f244bb1e3ad3af600d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/Framework/Materials/BuiltIn/TeleportLine.mat using Guid(78bbac5520f23f244bb1e3ad3af600d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f535d5fe6428e77e75d5352b7404f45') in 0.035327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/HurricaneVR/Framework/Materials/SocketRing.mat
+  artifactKey: Guid(ed62fd8c2ff959c4197d53dc44e3fa41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/Framework/Materials/SocketRing.mat using Guid(ed62fd8c2ff959c4197d53dc44e3fa41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b3582bf656eb629e2ec2ba3934613f7') in 0.019614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/HurricaneVR/Framework/Materials/RingSelectMaterial.mat
+  artifactKey: Guid(53400f52deabce9428ad2c6269395850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/Framework/Materials/RingSelectMaterial.mat using Guid(53400f52deabce9428ad2c6269395850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a57c0a65b632e5aa4a21c5946a45e6ff') in 0.015581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/Customizable Skybox/Stylized Sky/Materials/Sunset4.mat
+  artifactKey: Guid(20f6d22d93779de4ea6f62f8ab305593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Customizable Skybox/Stylized Sky/Materials/Sunset4.mat using Guid(20f6d22d93779de4ea6f62f8ab305593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4fc79beaf0b06da7b77fd0b344d38db') in 0.017306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyAssets/SimpleLowPolyNature/Materials/RockMat.mat
+  artifactKey: Guid(5bfbfdebccebf0c45832bef70d1337f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/SimpleLowPolyNature/Materials/RockMat.mat using Guid(5bfbfdebccebf0c45832bef70d1337f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a8e41409d464e463403bdbba4bbd1ab') in 0.017705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Metal_Purple.mat
+  artifactKey: Guid(19f1aca6176a7614f899e6d504abc147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Metal_Purple.mat using Guid(19f1aca6176a7614f899e6d504abc147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00d7a150e44b68e7dc1c985dbdd003ad') in 0.023784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  3.mat
+  artifactKey: Guid(7acaac2f445c8ac48ad41add315bd103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  3.mat using Guid(7acaac2f445c8ac48ad41add315bd103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0605652879f35747c8a85a0d480c699f') in 0.017619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Standard Assets/Standard Assets/Effects/TessellationShaders/Materials/TesselatedBumpSpecularDisplacement.mat
+  artifactKey: Guid(26d8bdbc8646bde48b05fbaacaaa6577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/Effects/TessellationShaders/Materials/TesselatedBumpSpecularDisplacement.mat using Guid(26d8bdbc8646bde48b05fbaacaaa6577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e506dd19c0694c6abdb792a8d48fc6c9') in 0.222790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LowPolyAssets/Cartoon PalmTree and Umbrella/Umbrella/Materials/sombrilla2.mat
+  artifactKey: Guid(3ff6d0c3a16e2124cae70914ebae7f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Cartoon PalmTree and Umbrella/Umbrella/Materials/sombrilla2.mat using Guid(3ff6d0c3a16e2124cae70914ebae7f89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92056e68f091b7b5fd44640e2ceed9ca') in 0.018271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Unlit_Red.mat
+  artifactKey: Guid(c361b9c61d93b424c972e2699e35553d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Unlit_Red.mat using Guid(c361b9c61d93b424c972e2699e35553d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87723b000e41d2a8818330de84c4b314') in 0.047710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  11.mat
+  artifactKey: Guid(7daabbfe43dc5024dbb531df54962d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  11.mat using Guid(7daabbfe43dc5024dbb531df54962d12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11478e9ea110cef73a490e3ef921ce2e') in 0.013881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Standard Assets/SampleScenes/Models/Materials/SpaceshipGlow.mat
+  artifactKey: Guid(c45f0afbf9669834d9bac06fb9f06fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/SampleScenes/Models/Materials/SpaceshipGlow.mat using Guid(c45f0afbf9669834d9bac06fb9f06fb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0d5017cb4bb1a666b3f2e21d1410050') in 0.016878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Unlit_Yellow.mat
+  artifactKey: Guid(ba0a51ddd31b75443b518751ff4cb263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Unlit_Yellow.mat using Guid(ba0a51ddd31b75443b518751ff4cb263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d3efb143de749209f941606a0ff6acf') in 0.020933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/HurricaneVR/Framework/Materials/TeleportMarker.mat
+  artifactKey: Guid(6cee03e677f938a458a441a1d070d3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/Framework/Materials/TeleportMarker.mat using Guid(6cee03e677f938a458a441a1d070d3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a97c09ac7e3edd8d1b02a8c8d43637e0') in 0.015961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyAssets/Sailing Ships/Materials/Stone.mat
+  artifactKey: Guid(56b609e5db4ca054893a9e219bc3072e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Sailing Ships/Materials/Stone.mat using Guid(56b609e5db4ca054893a9e219bc3072e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f01a56ce3d6372351f9c8d270bf7b6d') in 0.058661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Unlit_Purple.mat
+  artifactKey: Guid(35edf0cdeb6723141b37babb56b2ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Unlit_Purple.mat using Guid(35edf0cdeb6723141b37babb56b2ce76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d427b54ca83272540e6eefb33560c3') in 0.018454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/LowPolyAssets/LowPolyDungeon/Materials/Stone_Floor.mat
+  artifactKey: Guid(88056ad3707bb6346ad6e69bf350d54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/LowPolyDungeon/Materials/Stone_Floor.mat using Guid(88056ad3707bb6346ad6e69bf350d54d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3a5669ab869fe36d8dff43383c1a2ca') in 0.019287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Diffuse_Purple.mat
+  artifactKey: Guid(17b827be00b46de49b67f1a66e3c874a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Diffuse_Purple.mat using Guid(17b827be00b46de49b67f1a66e3c874a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab535b54e8c463fb65392a75f8bcd415') in 0.019253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Diffuse_Red.mat
+  artifactKey: Guid(c7d4d55229668c54c9ce656beb9a14a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Diffuse_Red.mat using Guid(c7d4d55229668c54c9ce656beb9a14a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f11961b9b803552493567d4c539e54f') in 0.021051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Standard Assets/Standard Assets/Vehicles/Car/Materials/SkyCarBodyGrey.mat
+  artifactKey: Guid(d425c5c4cb38fd44f95b13e9f94575c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/Vehicles/Car/Materials/SkyCarBodyGrey.mat using Guid(d425c5c4cb38fd44f95b13e9f94575c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5390f3528802354c2b93037a840ca18d') in 0.023912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Standard Assets/SampleScenes/Materials/SkyboxProcedural.mat
+  artifactKey: Guid(bf1bf92a3ce592e40b898be6c21cc2fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/SampleScenes/Materials/SkyboxProcedural.mat using Guid(bf1bf92a3ce592e40b898be6c21cc2fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d4a4852a77f4519a658e4b101328993') in 0.075538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ImportedAssets/AllSkyFree/Cartoon Base BlueSky/Materials/Sky_Day_BlueSky_Equirect.mat
+  artifactKey: Guid(d0e691def1ee64c488eaf9033e715c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/AllSkyFree/Cartoon Base BlueSky/Materials/Sky_Day_BlueSky_Equirect.mat using Guid(d0e691def1ee64c488eaf9033e715c21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c96fa086b38cb5001457123b1aece07') in 0.066257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/ImportedAssets/Customizable Skybox/Stylized Sky/Materials/Sunset3.mat
+  artifactKey: Guid(7ed994c1997814049b44c36a823bba6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Customizable Skybox/Stylized Sky/Materials/Sunset3.mat using Guid(7ed994c1997814049b44c36a823bba6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ef360a93a2623fab8e37d190bf2a34c') in 0.019151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ImportedAssets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/Skybox Cubemap Extended Blend.mat
+  artifactKey: Guid(1cf6f4c6e6e0518419839d3f5448dd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/Skybox Cubemap Extended Blend.mat using Guid(1cf6f4c6e6e0518419839d3f5448dd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00a40dc9c10b6bc98cfdb20cea0a34a1') in 0.582251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  9.mat
+  artifactKey: Guid(85f0e40b4cc544a4a9dcee7f7d4e07e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  9.mat using Guid(85f0e40b4cc544a4a9dcee7f7d4e07e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16590717a0eae4f615040aa99a056e96') in 0.012937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  13.mat
+  artifactKey: Guid(7011dafbf476a1a4b917ac9edc7f1e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  13.mat using Guid(7011dafbf476a1a4b917ac9edc7f1e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60da59f9e0a1155a5c6157ac331f35e5') in 0.014553 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/EffectExamples/Misc Effects/Materials/SandSwirlsParticle.mat
+  artifactKey: Guid(795ab1f41a8fd4142859110cee203fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/EffectExamples/Misc Effects/Materials/SandSwirlsParticle.mat using Guid(795ab1f41a8fd4142859110cee203fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dc4dfe7274d41b6d7788ea9ce169bad') in 0.020503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  7.mat
+  artifactKey: Guid(18313c45a14eaf3468c141d65dbb575d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  7.mat using Guid(18313c45a14eaf3468c141d65dbb575d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e80f035985610d5717d2c6f644ef2903') in 0.014752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/EffectExamples/WaterEffects/Materials/StormCloudParticle.mat
+  artifactKey: Guid(6ed8795ca1a3b714ea3f3d7a204afb7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/EffectExamples/WaterEffects/Materials/StormCloudParticle.mat using Guid(6ed8795ca1a3b714ea3f3d7a204afb7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '986d3a2f64d208baaaf1e50eb97551b6') in 0.171785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Standard Assets/Standard Assets/Vehicles/Car/Materials/SkyCarLightCoversGrey.mat
+  artifactKey: Guid(bf5faaa3a8e23de45bf1350be2893dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/Vehicles/Car/Materials/SkyCarLightCoversGrey.mat using Guid(bf5faaa3a8e23de45bf1350be2893dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5dfe0c29689796c2d2fa9a842d0f9c8') in 0.179798 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Metal_Yellow.mat
+  artifactKey: Guid(42b72ec56c0ab8047879964b928f6fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Metal_Yellow.mat using Guid(42b72ec56c0ab8047879964b928f6fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef2f70d688eea2cb5d671b94896214fc') in 0.017430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  15.mat
+  artifactKey: Guid(dd177f2c7d03f3a4e93efcfe8615ce82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  15.mat using Guid(dd177f2c7d03f3a4e93efcfe8615ce82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b592d4930c6d9ab35989d47f923a9182') in 0.013310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric .mat
+  artifactKey: Guid(f3da7514fc7807c4b8ed80b2700c72be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric .mat using Guid(f3da7514fc7807c4b8ed80b2700c72be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27ba3f53d46e3f27af38b2be75226c19') in 0.014338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/HurricaneVR/Framework/Materials/ScreenFade.mat
+  artifactKey: Guid(2e3aae4fb1f4b0a4298c43e6312a405a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/Framework/Materials/ScreenFade.mat using Guid(2e3aae4fb1f4b0a4298c43e6312a405a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb048260a472ed968e45ea8a0dceebf2') in 0.017431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Standard Assets/Standard Assets/Vehicles/Car/Materials/SkyCarLightCoversWhite.mat
+  artifactKey: Guid(bedcbcc4d577778478a5f01fe1415af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/Vehicles/Car/Materials/SkyCarLightCoversWhite.mat using Guid(bedcbcc4d577778478a5f01fe1415af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '016bccef8c8416449744636e2868a7d6') in 0.017644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Unlit_Green.mat
+  artifactKey: Guid(2c2fa0db6f0ab4e49a518ffedd66cc22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Unlit_Green.mat using Guid(2c2fa0db6f0ab4e49a518ffedd66cc22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3c2c483e5a4b95637395c58d3b4e3a0') in 0.016901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Fish - PolyPack/Scene/ShowcaseFloor.mat
+  artifactKey: Guid(0982336231d4218459d2001ee76293b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Fish - PolyPack/Scene/ShowcaseFloor.mat using Guid(0982336231d4218459d2001ee76293b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2076bf7c8d57036086e83336c0944f27') in 0.017145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Diffuse_Yellow.mat
+  artifactKey: Guid(527353d9e6270254680287bb2593d299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Diffuse_Yellow.mat using Guid(527353d9e6270254680287bb2593d299) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61620f12336a575cf2dc0b1bc0eb4f99') in 0.017638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Metal_Blue.mat
+  artifactKey: Guid(2baa316d3d6d44d44b49de38958c3fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/BrokenVector/LowPolyStoragePack/Materials/Storage_Metal_Blue.mat using Guid(2baa316d3d6d44d44b49de38958c3fcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '422d1b30b38c9acc1583a56faabee4cf') in 0.016772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  6.mat
+  artifactKey: Guid(b09c390c36884234ba42ccccb671205a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/SPF Slate Solid_ Blue Gray, Dusty Blue Solid Fabric  6.mat using Guid(b09c390c36884234ba42ccccb671205a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71e479d0a750c5d40897f3432bb03035') in 0.012677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/LowPolyAssets/Sailing Ships/Materials/Rope.mat
+  artifactKey: Guid(1bf129fabb4601c4a8969d18426e2dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Sailing Ships/Materials/Rope.mat using Guid(1bf129fabb4601c4a8969d18426e2dcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3515e54ed73c1eb9c66ae63bfb9290d') in 0.027217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ImportedAssets/EffectExamples/Shared/Materials/SandSurface.mat
+  artifactKey: Guid(26bc8648a85c6b041a5d5b00ca61062b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/EffectExamples/Shared/Materials/SandSurface.mat using Guid(26bc8648a85c6b041a5d5b00ca61062b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70c77e22c8a3755247351d3f41f5c49a') in 0.019128 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.035571 seconds.
+  path: Assets/HurricaneVR/TechDemo/Materials/mat_red_battery_light.mat
+  artifactKey: Guid(e85eaebfd4fa47a4baca06bfe7b67896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Materials/mat_red_battery_light.mat using Guid(e85eaebfd4fa47a4baca06bfe7b67896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e73ff8901bc3bca47400f98549a85336') in 0.019738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.785645 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/TurnLevers/TurnLever1Handle.fbx
+  artifactKey: Guid(671ced51ffb1fdd478127d40956dcd3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/TurnLevers/TurnLever1Handle.fbx using Guid(671ced51ffb1fdd478127d40956dcd3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfd1cfe026d94df25473f7494491dbea') in 0.059969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/Props/Key.fbx
+  artifactKey: Guid(8c8ad860fb6d4564a83606939e45b438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/Props/Key.fbx using Guid(8c8ad860fb6d4564a83606939e45b438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '832d90ca92b17d23584580a269bb776a') in 0.024980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/Buttons/button_base.fbx
+  artifactKey: Guid(219e51a7c0fc4764bb19b69950aeed40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/Buttons/button_base.fbx using Guid(219e51a7c0fc4764bb19b69950aeed40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e762fa3330feea77d665f3aa8ddaaa46') in 0.050952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/PullLevers/PullLever2.fbx
+  artifactKey: Guid(90e96d4ae5925fe4e801d57eec4c05d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/PullLevers/PullLever2.fbx using Guid(90e96d4ae5925fe4e801d57eec4c05d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a0e97f475b0222a22669c703568ca37') in 0.065361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.947535 seconds.
+  path: Assets/HurricaneVR/TechDemo/Assets/Interactables/Buttons/ResetButton1.fbx
+  artifactKey: Guid(4f12e8db696c1344886715f3f466144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HurricaneVR/TechDemo/Assets/Interactables/Buttons/ResetButton1.fbx using Guid(4f12e8db696c1344886715f3f466144f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c87f85e8e915374cec8cb1ad6fedbcc') in 0.051556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Standard Assets/SampleScenes/Materials/PinkUnlit.mat
+  artifactKey: Guid(a8934a77ad83e0f4a9e9d40b3917880b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/SampleScenes/Materials/PinkUnlit.mat using Guid(a8934a77ad83e0f4a9e9d40b3917880b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3efc66b6582784494e70b0d597d272d6') in 0.024440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Fish - PolyPack/Models/1.2 Version/Fisher_Boat.fbx
+  artifactKey: Guid(17fba420b298c554a9c20e1a8f31e827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Fish - PolyPack/Models/1.2 Version/Fisher_Boat.fbx using Guid(17fba420b298c554a9c20e1a8f31e827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5077e405940ec4e05f29c0df128fee1f') in 0.030062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/LowPolyAssets/PurePoly/Mining_Free_Assets/Materials/PP_Ground.mat
+  artifactKey: Guid(552c07fcf7c5d3245b3d64c6be39a7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/PurePoly/Mining_Free_Assets/Materials/PP_Ground.mat using Guid(552c07fcf7c5d3245b3d64c6be39a7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fb32ab420346d173c91e71e59dde2c6') in 0.018993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Fish - PolyPack/Models/1.2 Version/Paddle.fbx
+  artifactKey: Guid(b990e7958191eca4e89757b013d69fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Fish - PolyPack/Models/1.2 Version/Paddle.fbx using Guid(b990e7958191eca4e89757b013d69fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f383c5ec48502021d91aed6f33fc5f3') in 0.026008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSteam.mat
+  artifactKey: Guid(60d4adad90a8b164abbb7d8ff5b4118a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSteam.mat using Guid(60d4adad90a8b164abbb7d8ff5b4118a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd74eeded514dae851f9d8a1a323b042d') in 0.017195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Fish - PolyPack/Models/1.2 Version/Wood_BoatV2.fbx
+  artifactKey: Guid(506eed4210c3bb0428d5bd0e644c7aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Fish - PolyPack/Models/1.2 Version/Wood_BoatV2.fbx using Guid(506eed4210c3bb0428d5bd0e644c7aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c10263bc78c179b774e6cb1feabfc25') in 0.030433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyAssets/SimpleLowPolyNature/Materials/PlantMat.mat
+  artifactKey: Guid(49f2ecb08a0c38140b335a0a1f7f66f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/SimpleLowPolyNature/Materials/PlantMat.mat using Guid(49f2ecb08a0c38140b335a0a1f7f66f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3118f0dd026b61d69f5a8ea46e8fa95f') in 0.018986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/Alstra Infinite/Fish - PolyPack/Models/1.2 Version/KayakV1.fbx
+  artifactKey: Guid(98b826e178b19df4bbcffe7bb1480f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/Alstra Infinite/Fish - PolyPack/Models/1.2 Version/KayakV1.fbx using Guid(98b826e178b19df4bbcffe7bb1480f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c6b272447dca5b493507d136a4ef32') in 0.025493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/Polyverse Skies - Night Sky.mat
+  artifactKey: Guid(84c12be6c9f019d43ab80a93d71d88a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BOXOPHOBIC/Skybox Cubemap Extended/Demo/Materials/Polyverse Skies - Night Sky.mat using Guid(84c12be6c9f019d43ab80a93d71d88a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d57d947dd120f6923ced57c0c8b58da') in 0.137546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSmokeWhite.mat
+  artifactKey: Guid(c50d77affeb31e14c9c062c282f13fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSmokeWhite.mat using Guid(c50d77affeb31e14c9c062c282f13fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db6e1513ab6dc36bcfd881886a181ebb') in 0.012894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSmokeVertlit.mat
+  artifactKey: Guid(225843b6084e75440a6ea970a17c93aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Standard Assets/ParticleSystems/Materials/ParticleSmokeVertlit.mat using Guid(225843b6084e75440a6ea970a17c93aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9d9efff6f7f602a3586c6f6825fac32') in 0.029534 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
+>>>>>>> Stashed changes

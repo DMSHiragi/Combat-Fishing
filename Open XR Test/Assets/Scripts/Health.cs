@@ -14,7 +14,6 @@ public class Health : MonoBehaviour
     void Start()
     {
         curHealth = maxHealth;
-        psys = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -28,7 +27,7 @@ public class Health : MonoBehaviour
         
         if (curHealth <= 0)
         {
-            Destroy(gameObject);
+            // Destroy(gameObject);
         }
 
     }

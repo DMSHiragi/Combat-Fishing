@@ -27,6 +27,7 @@ public class BossBattle : MonoBehaviour
 =======
     // public EnemySpawner eSpawner;
     public ParticleSystem spout;
+    public spawnGarbage myGarbage;
 
 >>>>>>> Stashed changes
 
@@ -123,6 +124,10 @@ public class BossBattle : MonoBehaviour
                 allCoroutinesFinished = false;
                 break;
             }
+        }
+
+        if(Input.GetMouseButtonDown(0)){
+            myGarbage.createGarbage();
         }
 
 
@@ -237,6 +242,10 @@ public class BossBattle : MonoBehaviour
 
 
 
+
+
+
+
     // CASE 0
                                                 // startConvo1, need to lock playermovement
     private void startConvo1(){
@@ -274,21 +283,21 @@ public class BossBattle : MonoBehaviour
         idleOnce = true;
 
         // Say a random voiceline sometimes
-
-        // Wait for X seconds (attack spam not fun)
+        
+        // Wait for X seconds (if whale constantly attacks it's too much)
         yield return new WaitForSeconds(waitTime);
 
-        // Hide voiceline
+        // Hide voiceline after wait
 
         // Cycle to a new attack
         attackPhase += 1;
-        if (attackPhase == 6) { // Repeat attack cycle when done (change to 6 once minion is done)
+        if (attackPhase == 6) { // Repeat attack cycle when reaching last attack phase
             attackPhase = 3;
         }
         if(!dead){
             battleStage = attackPhase;
         }
-        else{
+        else{   //If dead, go to 8
             battleStage = 8;
         }
         idleOnce = false;
@@ -407,6 +416,8 @@ public class BossBattle : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+
+        myGarbage.createGarbage();
 
         elapsedTime = 0f;
         while (elapsedTime < fallDuration) {

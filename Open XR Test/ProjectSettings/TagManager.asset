@@ -17,6 +17,7 @@ TagManager:
   - Sand
   - Cave
   - Flesh
+  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -42,7 +43,7 @@ TagManager:
   - Hand
   - 
   - Glow
-  - 
+  - BoundingBox
   - 
   - 
   - 
