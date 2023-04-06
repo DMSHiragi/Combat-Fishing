@@ -293,27 +293,28 @@ public class BossBattle : MonoBehaviour
         // Say a random voiceline sometimes
 
 
-        switch((int)dialogueCounter){
-            
-            case 0:
-                myCanvas6.enabled = true;
-            break;
-            case 1:
-                myCanvas3.enabled = true;
-            break;
-
-            case 2:
-                myCanvas4.enabled = true;
-            break;
-
-            case 3:
-                myCanvas5.enabled = true;
-            break;
-        }
-
         dialogueCounter += 1;
         if(dialogueCounter == 3){
             dialogueCounter = 0;
+        }
+        attackPhase += 1;
+
+        switch((int)attackPhase){
+            
+            case 6:
+                myCanvas6.enabled = true;
+            break;
+            case 3:
+                myCanvas3.enabled = true;
+            break;
+
+            case 4:
+                myCanvas4.enabled = true;
+            break;
+
+            case 5:
+                myCanvas5.enabled = true;
+            break;
         }
 
         // Wait for X seconds (if whale constantly attacks it's too much)
@@ -326,10 +327,14 @@ public class BossBattle : MonoBehaviour
 
 
         // Cycle to a new attack
-        attackPhase += 1;
         if (attackPhase == 7) { // Repeat attack cycle when reaching last attack phase
             attackPhase = 3;
         }
+
+
+
+
+
         if(!dead){
             battleStage = attackPhase;
         }
@@ -614,7 +619,7 @@ public class BossBattle : MonoBehaviour
         spoutPlayed = true;
         attackPhase = 5;
 
-        float spoutDown = 10f;
+        float spoutDown = 35f;
         float length = 3f;
         float rotateS = 40f;
 
