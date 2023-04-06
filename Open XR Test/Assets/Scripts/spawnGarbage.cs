@@ -18,13 +18,8 @@ public class spawnGarbage : MonoBehaviour
 
         int objectCount = CountObjectsWithWeaponTag();
 
-        if(objectCount < 6){
-            garbageCount = 2;
-        }
-        if(objectCount < 10){
-            garbageCount = 1;
-        }
-
+        garbageCount = 2;
+        
         for (int i = 0; i < garbageCount; i++)
         {
             Vector3 randomPosition = new Vector3(
