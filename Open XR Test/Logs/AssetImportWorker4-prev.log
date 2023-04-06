@@ -1,0 +1,364 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.15f1 (e8e88683f834) revision 15263878'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 32469 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.15f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+53478
+Successfully changed project path to: C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test
+C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [9776] Host "[IP] 192.168.1.90 [Port] 0 [Flags] 2 [Guid] 333494632 [EditorId] 333494632 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2VVLPT9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [9776] Host "[IP] 192.168.1.90 [Port] 0 [Flags] 2 [Guid] 333494632 [EditorId] 333494632 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2VVLPT9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 199.92 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.15f1 (e8e88683f834)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU (ID=0x24a0)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   31.0.15.3141
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56984
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009771 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 182.14 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.856 seconds
+Domain Reload Profiling:
+	ReloadAssembly (857ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (617ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (119ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (394ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (182ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (151ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.015536 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 157.66 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  9.009 seconds
+Domain Reload Profiling:
+	ReloadAssembly (9010ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (8665ms)
+			LoadAssemblies (6384ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (711ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (1413ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (158ms)
+				BeforeProcessingInitializeOnLoad (157ms)
+				ProcessInitializeOnLoadAttributes (424ms)
+				ProcessInitializeOnLoadMethodAttributes (657ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.51 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6099 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 82 unused Assets / (1.7 MB). Loaded Objects now: 6549.
+Memory consumption went from 332.2 MB to 330.5 MB.
+Total: 4.540300 ms (FindLiveObjects: 0.487200 ms CreateObjectMapping: 0.218400 ms MarkObjects: 3.387000 ms  DeleteObjects: 0.446600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 335006.977868 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Other_Objects/Wood_Car.fbx
+  artifactKey: Guid(3c462c0a1c72f55429c812454ce02d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Other_Objects/Wood_Car.fbx using Guid(3c462c0a1c72f55429c812454ce02d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07dde35b9f4271cd2ca224ed42702ef1') in 0.251310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyAssets/Sailing Ships/Materials/WoodBeams.mat
+  artifactKey: Guid(230023628bab35c41a2204067ee12050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Sailing Ships/Materials/WoodBeams.mat using Guid(230023628bab35c41a2204067ee12050) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5749e81f6271673c45568e3470c94766') in 0.153289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Standard Assets/SampleScenes/Materials/YellowSmooth.mat
+  artifactKey: Guid(61bcea22404bda2469670dd9255037db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/SampleScenes/Materials/YellowSmooth.mat using Guid(61bcea22404bda2469670dd9255037db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd874b06a769efaed51f7e69622a6b7f') in 0.028974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Other_Objects/Chest.fbx
+  artifactKey: Guid(d3b5338bd6552e24cb8bdf920b904821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Other_Objects/Chest.fbx using Guid(d3b5338bd6552e24cb8bdf920b904821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e12b1ee498c8020f94a11c58f9b8415') in 0.027491 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/LowPolyAssets/LowPolyDungeon/Materials/Wax_Candle.mat
+  artifactKey: Guid(608d5ffbcc8ba6d4da4dcc0224fef9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/LowPolyDungeon/Materials/Wax_Candle.mat using Guid(608d5ffbcc8ba6d4da4dcc0224fef9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c72e8e3bc24d878340c3f9cc250068d6') in 0.022355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Field/Empty_Field.fbx
+  artifactKey: Guid(109bde8a96ed0f145a56ddc2fa5250b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Field/Empty_Field.fbx using Guid(109bde8a96ed0f145a56ddc2fa5250b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1452af4b8220197cdef842c97b25d9fe') in 0.029805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Tree/Tree_03.fbx
+  artifactKey: Guid(c8c72a4430ea72949981c541f489d45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Tree/Tree_03.fbx using Guid(c8c72a4430ea72949981c541f489d45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50dd59cd57d0a00cd4e65e623a1910c1') in 0.024441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Barn/Barn_01.fbx
+  artifactKey: Guid(d7fda846133b8074f94cdc65d9303010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Barn/Barn_01.fbx using Guid(d7fda846133b8074f94cdc65d9303010) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2937bdd9879903b150604bd834880263') in 0.024702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/LowPolyAssets/LowPolyWater_Pack/Materials/LowPolyWaterMaterial.mat
+  artifactKey: Guid(8538bd626cb3e80478f62e319f75e337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/LowPolyWater_Pack/Materials/LowPolyWaterMaterial.mat using Guid(8538bd626cb3e80478f62e319f75e337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d1a85a4ca05a334126b65309c2e478') in 0.028931 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Billet/Billet_01.fbx
+  artifactKey: Guid(f7558539144e70c4aae85e2f726ef3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Billet/Billet_01.fbx using Guid(f7558539144e70c4aae85e2f726ef3a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97ffb7cd4826a4e8bde98195666bcea5') in 0.029037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/LowPolyAssets/Sailing Ships/FBX/onepole.fbx
+  artifactKey: Guid(d773e2912ffe4b54f815b4d2bf845de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Sailing Ships/FBX/onepole.fbx using Guid(d773e2912ffe4b54f815b4d2bf845de7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ee78d6df3c2567bab25158296570aa') in 0.031592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/House/House_05.fbx
+  artifactKey: Guid(6f3c96e1c8fb50946899c94eb00593cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/House/House_05.fbx using Guid(6f3c96e1c8fb50946899c94eb00593cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77bfa139c8019dea5265860896f2be22') in 0.030008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/LowPolyAssets/Sailing Ships/Prefabs/onepole.fbx
+  artifactKey: Guid(5354b6019ef6a8641b395ee40db1dbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Sailing Ships/Prefabs/onepole.fbx using Guid(5354b6019ef6a8641b395ee40db1dbf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b17e8b56ff9e447a19f3effc887bc63f') in 0.022599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Flowers/Flower_Yellow.fbx
+  artifactKey: Guid(8e0580e685e6d0c47891726fe619725c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Flowers/Flower_Yellow.fbx using Guid(8e0580e685e6d0c47891726fe619725c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20cf6054411e80d35ecd2d5603b4192d') in 0.027936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Bank/Bank_02.fbx
+  artifactKey: Guid(d995b826105a52a44aa3f2de5602705a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Bank/Bank_02.fbx using Guid(d995b826105a52a44aa3f2de5602705a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adbd537315935feed5c4374cd1459aa4') in 0.028420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Bushes/Bushes_01.fbx
+  artifactKey: Guid(b7076b3e7b6b0d84aa05a7902d4e22ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Bushes/Bushes_01.fbx using Guid(b7076b3e7b6b0d84aa05a7902d4e22ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '496e2935d33c328c20439777c1ab149f') in 0.028057 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Stone/Stone_02.fbx
+  artifactKey: Guid(f763f62f5490a154abb38c29dbffa501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Stone/Stone_02.fbx using Guid(f763f62f5490a154abb38c29dbffa501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e6858d7a0d88d9292c99ed80412ed03') in 0.028356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Fence/Fence_Bold.fbx
+  artifactKey: Guid(5db15f164b0bc1b41ac6db7d1f56c80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Fence/Fence_Bold.fbx using Guid(5db15f164b0bc1b41ac6db7d1f56c80b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b60548d0b3385a59778f9aaaa1abff6') in 0.029688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Other_Objects/Street_Lamp.fbx
+  artifactKey: Guid(359ee090241a9714a8212555d3db9365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Other_Objects/Street_Lamp.fbx using Guid(359ee090241a9714a8212555d3db9365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4cdcfda69b2198c9d3c2f99b9abc090') in 0.029133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Other_Objects/Woods.fbx
+  artifactKey: Guid(8001415a0c2d1ce44b31ddc0f7a7e8fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Other_Objects/Woods.fbx using Guid(8001415a0c2d1ce44b31ddc0f7a7e8fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21f829aa725fab02c751380b332c0ead') in 0.029428 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Other_Objects/Watch_Tower.fbx
+  artifactKey: Guid(7c8d9bbd011a1f24182350b5d604b4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Other_Objects/Watch_Tower.fbx using Guid(7c8d9bbd011a1f24182350b5d604b4c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5cfd6751cceba2f8c19b939cbf9ba6') in 0.028309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Billet/Billet_02.fbx
+  artifactKey: Guid(ea8b986a432fae142b43e08886989597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Billet/Billet_02.fbx using Guid(ea8b986a432fae142b43e08886989597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7325a1a9e6370240cec42b2ed6ed13e9') in 0.029529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Field/Corn_Field.fbx
+  artifactKey: Guid(caa08a5e9f8b03341826d967752568f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Field/Corn_Field.fbx using Guid(caa08a5e9f8b03341826d967752568f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c96579ecef5e9e0404dd38d455398a0') in 0.033543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Tree/Tree_01.fbx
+  artifactKey: Guid(fbb754b1c3f53e44f86c0dfb7f33ac7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ImportedAssets/BasAssetStore/LowPolyVillage/Meshes/Tree/Tree_01.fbx using Guid(fbb754b1c3f53e44f86c0dfb7f33ac7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c113768949fb4100360ac6479a9e4e3') in 0.029235 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014283 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.73 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.410 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1411ms)
+		BeginReloadAssembly (156ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1143ms)
+			LoadAssemblies (116ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (333ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (557ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (126ms)
+				ProcessInitializeOnLoadAttributes (352ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.74 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5993 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 66 unused Assets / (1.7 MB). Loaded Objects now: 6598.
+Memory consumption went from 326.6 MB to 325.0 MB.
+Total: 4.044100 ms (FindLiveObjects: 0.412100 ms CreateObjectMapping: 0.196700 ms MarkObjects: 3.017200 ms  DeleteObjects: 0.416800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

@@ -30,7 +30,7 @@ public class EnemyHealth : MonoBehaviour
     {
         curHealth -= d;
         rb.AddForce((transform.position - grappling.gameObject.transform.position).normalized * 10f, ForceMode.Impulse);
-        AudioManager.instance.Play("SharkDamage");
+        //AudioManager.instance.Play("SharkDamage");
         if (curHealth <= 0)
         {
             animator.SetTrigger("Defeat");
@@ -45,16 +45,14 @@ public class EnemyHealth : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Rod")){
-            if(grappling.swinging == true){
+        if (grappling.swinging == true && other.gameObject.layer == 18){
                 Damage(100);
                 psys.Play();
                 Debug.Log("Damage 100");
-            }else {
+        }else if (other.gameObject.CompareTag("Rod")) {
                 Damage(10);
                 psys.Play();
-            }
-        } 
+          } 
     }
 
     IEnumerator waiter(){
