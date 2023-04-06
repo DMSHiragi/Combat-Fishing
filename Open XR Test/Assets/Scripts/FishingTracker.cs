@@ -9,6 +9,9 @@ using System;
 public class FishingTracker : MonoBehaviour
 {
 
+    //Used in beach scene
+    //This script updates the paper with what fish were caught
+
     private bool newFish;
     private bool fishColour;
     private float fishSize;

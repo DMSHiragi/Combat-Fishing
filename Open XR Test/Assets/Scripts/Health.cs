@@ -28,17 +28,17 @@ public class Health : MonoBehaviour
     public void Damage(int d)
     {
         curHealth -= d;
-        
+
         if (curHealth <= 0)
         {
-            Destroy(gameObject);
+            // Destroy(gameObject);
         }
 
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (grappling.swinging == true && other.gameObject.layer == 18){
+        if (grappling.swinging == true && other.gameObject.layer == 18 && other.gameObject.GetComponent<SpringJoint>() != null){
                 Damage(100);
                 hitSfx.Play();
                 psys.Play();
@@ -48,6 +48,5 @@ public class Health : MonoBehaviour
                 psys.Play();
                 hitSfx.Play();
           }
-        } 
+        }
     }
-

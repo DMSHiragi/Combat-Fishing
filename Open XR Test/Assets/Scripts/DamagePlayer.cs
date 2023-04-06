@@ -6,10 +6,12 @@ using UnityEngine;
 public class DamagePlayer : MonoBehaviour
 {
     private Collider myCollider;
-    void Start()
-    {
-    }
+    public PlayerHealth phealth;
+    public float damageValue;
 
+
+    // If this script is placed onto something, it will damage the player
+    // Must have a rigid body, mesh collider, and Is Trigger must be checked
     
     private void OnTriggerEnter(Collider collision)
     {

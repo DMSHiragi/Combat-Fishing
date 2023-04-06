@@ -30,7 +30,6 @@ public class EnemyHealth : MonoBehaviour
     {
         curHealth -= d;
         rb.AddForce((transform.position - grappling.gameObject.transform.position).normalized * 10f, ForceMode.Impulse);
-        AudioManager.instance.Play("SharkDamage");
         if (curHealth <= 0)
         {
             animator.SetTrigger("Defeat");

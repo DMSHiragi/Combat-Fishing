@@ -39,7 +39,6 @@
      <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoLockedDoor.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\AudioManager\AudioManager.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoKeypadButton.cs" />
      <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
@@ -47,7 +46,6 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoFullStabConfetti.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoKeypad.cs" />
      <Compile Include="Assets\Scripts\BossBattle.cs" />
-     <Compile Include="Assets\AudioManager\Sound.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Projectile.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSocketables.cs" />
@@ -64,6 +62,7 @@
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoManualTeleport.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Footsteps.cs" />
      <Compile Include="Assets\Scripts\Grappling.cs" />
+     <Compile Include="Assets\Scripts\spawnGarbage.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoSafeDoor.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoUIManager.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoBackpack.cs" />
@@ -119,6 +118,7 @@
      <Compile Include="Assets\ImportedAssets\EffectExamples\Shared\Scripts\GunShoot.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\ControlsScreen.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\LightIntensityRandom.cs" />
+     <Compile Include="Assets\LowPolyAssets\Low poly Garbage Pack\Scripts\Rotator.cs" />
      <Compile Include="Assets\HurricaneVR\TechDemo\Scripts\DemoGlassRotate.cs" />
      <Compile Include="Assets\LowPolyAssets\Low Poly Cave Environment\Assets\Scripts\Flashlight.cs" />
      <Compile Include="Assets\Scripts\DamagePlayer.cs" />
@@ -132,6 +132,7 @@
      <None Include="Assets\ImportedAssets\HurricaneVR\Third-Party Notices.txt" />
      <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\ImportedAssets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
+     <None Include="Assets\LowPolyAssets\Low poly Garbage Pack\Document.txt" />
      <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\ImportedAssets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\QuickOutline\Resources\Shaders\OutlineMask.shader" />

@@ -1,0 +1,716 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.15f1 (e8e88683f834) revision 15263878'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 32469 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.15f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+59903
+Successfully changed project path to: C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test
+C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [47948] Host "[IP] 192.168.1.90 [Port] 0 [Flags] 2 [Guid] 2944363448 [EditorId] 2944363448 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2VVLPT9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [47948] Host "[IP] 192.168.1.90 [Port] 0 [Flags] 2 [Guid] 2944363448 [EditorId] 2944363448 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-2VVLPT9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 163.95 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.15f1 (e8e88683f834)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Z/Documents/GitHub/localfork/Combat-Fishing/Open XR Test/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU (ID=0x24a0)
+    Vendor:   NVIDIA
+    VRAM:     8031 MB
+    Driver:   31.0.15.3141
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56756
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007984 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 161.41 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.752 seconds
+Domain Reload Profiling:
+	ReloadAssembly (752ms)
+		BeginReloadAssembly (76ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (556ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (99ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (369ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (161ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (150ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.012854 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 165.60 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  1.571 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1572ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1350ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (328ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (761ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (166ms)
+				BeforeProcessingInitializeOnLoad (154ms)
+				ProcessInitializeOnLoadAttributes (377ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.55 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6099 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 82 unused Assets / (1.7 MB). Loaded Objects now: 6552.
+Memory consumption went from 332.5 MB to 330.8 MB.
+Total: 4.514500 ms (FindLiveObjects: 0.438800 ms CreateObjectMapping: 0.204300 ms MarkObjects: 3.433800 ms  DeleteObjects: 0.436600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013161 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.71 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.492 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1492ms)
+		BeginReloadAssembly (171ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1195ms)
+			LoadAssemblies (134ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (370ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (552ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (126ms)
+				ProcessInitializeOnLoadAttributes (349ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 9.56 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5993 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 66 unused Assets / (1.7 MB). Loaded Objects now: 6556.
+Memory consumption went from 322.4 MB to 320.7 MB.
+Total: 6.446000 ms (FindLiveObjects: 0.554600 ms CreateObjectMapping: 0.526700 ms MarkObjects: 4.709600 ms  DeleteObjects: 0.653500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013471 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.68 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.365 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1365ms)
+		BeginReloadAssembly (162ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1086ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (342ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (509ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (116ms)
+				ProcessInitializeOnLoadAttributes (320ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.46 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5993 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 66 unused Assets / (1.7 MB). Loaded Objects now: 6560.
+Memory consumption went from 322.4 MB to 320.7 MB.
+Total: 4.631900 ms (FindLiveObjects: 0.455200 ms CreateObjectMapping: 0.209800 ms MarkObjects: 3.438700 ms  DeleteObjects: 0.527200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016329 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.71 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.422 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1423ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1144ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (345ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (537ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (338ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 9.17 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5993 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 66 unused Assets / (1.7 MB). Loaded Objects now: 6564.
+Memory consumption went from 322.4 MB to 320.7 MB.
+Total: 4.820600 ms (FindLiveObjects: 0.446200 ms CreateObjectMapping: 0.247400 ms MarkObjects: 3.587300 ms  DeleteObjects: 0.538400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 353946.009616 seconds.
+  path: Assets/Scripts/BossBattle.cs
+  artifactKey: Guid(96bfa87daea3e814897f82a8827e6cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/BossBattle.cs using Guid(96bfa87daea3e814897f82a8827e6cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d0ad80bd84b2dbc5de77f603ead1c6c') in 0.053696 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012842 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.66 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.383 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1384ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1108ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (354ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (502ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (122ms)
+				ProcessInitializeOnLoadAttributes (311ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 9.62 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5993 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 66 unused Assets / (1.7 MB). Loaded Objects now: 6568.
+Memory consumption went from 322.4 MB to 320.7 MB.
+Total: 6.536100 ms (FindLiveObjects: 0.529800 ms CreateObjectMapping: 0.273400 ms MarkObjects: 3.845800 ms  DeleteObjects: 1.886000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016320 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.62 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.363 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1363ms)
+		BeginReloadAssembly (159ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (1085ms)
+			LoadAssemblies (123ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (346ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (490ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (305ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 9.59 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5993 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 66 unused Assets / (1.7 MB). Loaded Objects now: 6572.
+Memory consumption went from 322.4 MB to 320.8 MB.
+Total: 5.053000 ms (FindLiveObjects: 0.524800 ms CreateObjectMapping: 0.267300 ms MarkObjects: 3.728100 ms  DeleteObjects: 0.531600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015916 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Z\Documents\GitHub\localfork\Combat-Fishing\Open XR Test\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.72 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.361 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1362ms)
+		BeginReloadAssembly (161ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (46ms)
+		EndReloadAssembly (1081ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (324ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (517ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (329ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.03 ms, found 10 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5993 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 66 unused Assets / (1.7 MB). Loaded Objects now: 6576.
+Memory consumption went from 322.2 MB to 320.5 MB.
+Total: 4.847900 ms (FindLiveObjects: 0.503200 ms CreateObjectMapping: 0.250400 ms MarkObjects: 3.529100 ms  DeleteObjects: 0.564200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 235.349323 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-1exit-02.fbx
+  artifactKey: Guid(10971ff3f0661474db05ef5bf4a4cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-1exit-02.fbx using Guid(10971ff3f0661474db05ef5bf4a4cde9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01ce3f7e3c83f84fa2c37e4007b5c37b') in 0.174789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-F06.fbx
+  artifactKey: Guid(d24f2f3c1a12c3d4caea9bcbfaf83ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-F06.fbx using Guid(d24f2f3c1a12c3d4caea9bcbfaf83ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8282d33f6ed9eb803eec129c65aa9a65') in 0.028807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-B05.fbx
+  artifactKey: Guid(c865c983a647e784796b05dd96d4e025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-B05.fbx using Guid(c865c983a647e784796b05dd96d4e025) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f697efeb7692d7e367c402290fe6511f') in 0.027256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-3exits-03.fbx
+  artifactKey: Guid(63e4937ed276b2941be9bc9fe570ae14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-3exits-03.fbx using Guid(63e4937ed276b2941be9bc9fe570ae14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b5bf27a7e240eaac1dd9b300543cbd') in 0.029508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-Y01.fbx
+  artifactKey: Guid(a08b688f2d929ba42ab278c77fce43bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-Y01.fbx using Guid(a08b688f2d929ba42ab278c77fce43bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e769d86b5252762c369407d5403aa80f') in 0.029706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-C02.fbx
+  artifactKey: Guid(48b11797a807ce3499c8ace9f7c1c896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-C02.fbx using Guid(48b11797a807ce3499c8ace9f7c1c896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c0fd27351f1993365c94adc06767f76') in 0.027769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/DomeExit-adapter-03.fbx
+  artifactKey: Guid(7026c9b71ffe9384ea709180bfb739d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/DomeExit-adapter-03.fbx using Guid(7026c9b71ffe9384ea709180bfb739d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b187fa9c75c3c9eaf6235837607ea5cd') in 0.027876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/DomeExit-adapter-05.fbx
+  artifactKey: Guid(76628378ca4b95643b456d2034856a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/DomeExit-adapter-05.fbx using Guid(76628378ca4b95643b456d2034856a63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74292ad46fffcd2b98a6be646cb4eb93') in 0.025674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-A03.fbx
+  artifactKey: Guid(a39e5ab6c26bed944b5e1aded2c42e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-A03.fbx using Guid(a39e5ab6c26bed944b5e1aded2c42e64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f323d3576920f18743d4710068ffdb') in 0.027795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-3exits-02.fbx
+  artifactKey: Guid(cfc4b680a55ddba4eb375ef552ddac39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-3exits-02.fbx using Guid(cfc4b680a55ddba4eb375ef552ddac39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fcdc6bb04dc7aad4d71c0cb848f8911') in 0.042166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-2exits-03.fbx
+  artifactKey: Guid(03b52990fcd5d5d44a049d4050fa5148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-2exits-03.fbx using Guid(03b52990fcd5d5d44a049d4050fa5148) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf9e99af40584ebcee698deb7bc7961b') in 0.026015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-Y05.fbx
+  artifactKey: Guid(e60b1d127a93f7c408f482246c48dfdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-Y05.fbx using Guid(e60b1d127a93f7c408f482246c48dfdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e98c4338ec7796a96dd33223ba0db2') in 0.023366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-C08.fbx
+  artifactKey: Guid(9167de661c7ff8845b22b63b3a0b616e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-C08.fbx using Guid(9167de661c7ff8845b22b63b3a0b616e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4822ee85fa4e88f4e269c1c2574cd276') in 0.021635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-B08.fbx
+  artifactKey: Guid(3df68fb0e8ba1a142a352ce677342441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-B08.fbx using Guid(3df68fb0e8ba1a142a352ce677342441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2188aef602d044f3cf9713b4f6936b6c') in 0.023887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-F07.fbx
+  artifactKey: Guid(c672d498dcbb7fb42bc5628178d65374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-F07.fbx using Guid(c672d498dcbb7fb42bc5628178d65374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb75132173f7bb93e22b08ec741860e') in 0.022961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-3exits-07.fbx
+  artifactKey: Guid(b8eaca2deb6927c4bbded48614adf552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-3exits-07.fbx using Guid(b8eaca2deb6927c4bbded48614adf552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63f053bd312c3424b94d8b414a0ef482') in 0.025059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-A08.fbx
+  artifactKey: Guid(9f75fc2262aae2a4cb7ea80adeb41042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-A08.fbx using Guid(9f75fc2262aae2a4cb7ea80adeb41042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b49f30328ab0992b210f26e64af892c') in 0.024733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-3exits-06.fbx
+  artifactKey: Guid(7e666bcba29f60246a6cb3da9f8bf869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-3exits-06.fbx using Guid(7e666bcba29f60246a6cb3da9f8bf869) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22d819541d27b08e8560f4cb951c7c21') in 0.025291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-3exits-04.fbx
+  artifactKey: Guid(f7b8c6416cb51054d8ad9ef25c54ff48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-3exits-04.fbx using Guid(f7b8c6416cb51054d8ad9ef25c54ff48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d2dbd19a84edfb763cdbcc9240cc648') in 0.025561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-B03.fbx
+  artifactKey: Guid(1e74a2a1733f5a94f93e74eb4a0f8076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-B03.fbx using Guid(1e74a2a1733f5a94f93e74eb4a0f8076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99de372a77a3097b7754bd3c4e3fbae2') in 0.025360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-2exits-04.fbx
+  artifactKey: Guid(18de964c7574efb439f35e44cdacc3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-2exits-04.fbx using Guid(18de964c7574efb439f35e44cdacc3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9d594ea94e938ce59b159ce68f448d') in 0.020094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-1exit-08.fbx
+  artifactKey: Guid(4ee5db0027bb2d3459cc461713a2d15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-1exit-08.fbx using Guid(4ee5db0027bb2d3459cc461713a2d15f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e0d6078dc2b0c0feab22424d7c75d50') in 0.026207 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-Y06.fbx
+  artifactKey: Guid(21eab31ccafd4234f8eb3ead70b7fcf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-Y06.fbx using Guid(21eab31ccafd4234f8eb3ead70b7fcf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a595e43d93431f5963509271e7d3f5') in 0.026805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-Y02.fbx
+  artifactKey: Guid(faa69c8881e841e42bf948b9ca25ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-Y02.fbx using Guid(faa69c8881e841e42bf948b9ca25ffb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a77c8cd3660ea4b5afa1aa4544cd9f10') in 0.029403 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/DomeExit-adapter-06.fbx
+  artifactKey: Guid(9d1763e09243d3d4fa921a4676a68e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/DomeExit-adapter-06.fbx using Guid(9d1763e09243d3d4fa921a4676a68e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc496bf8f7ee06c7da57406c7552e16') in 0.027094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-B02.fbx
+  artifactKey: Guid(8ae4e90ef7371a848923686751532c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-B02.fbx using Guid(8ae4e90ef7371a848923686751532c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d05fd3baca95e15409da2e8f518e1d9') in 0.028460 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-Y03.fbx
+  artifactKey: Guid(d7aa7ebdd5147ce4ead9f93dd4165c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-Y03.fbx using Guid(d7aa7ebdd5147ce4ead9f93dd4165c7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad41abcad10fba8159fc8af2fbec714') in 0.025500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/DomeExit-adapter-02.fbx
+  artifactKey: Guid(1cf75aeaea536f54483e527e2f4f5239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/DomeExit-adapter-02.fbx using Guid(1cf75aeaea536f54483e527e2f4f5239) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa3245b2641c1f71935098e5ac4addc7') in 0.025669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-F01.fbx
+  artifactKey: Guid(2860b31c05e67f24189ea7ed6f3ca678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-F01.fbx using Guid(2860b31c05e67f24189ea7ed6f3ca678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd8b8b83e5c2b8ac25758fb1d8c36cd9') in 0.026708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-C06.fbx
+  artifactKey: Guid(518225dd11ba6674b93a4a163253c5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-C06.fbx using Guid(518225dd11ba6674b93a4a163253c5fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b5fdcad3d2838f6762580baa5d1dcb') in 0.025058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-1exit-04.fbx
+  artifactKey: Guid(8b853347de6097447aa2613fe6b8fbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-1exit-04.fbx using Guid(8b853347de6097447aa2613fe6b8fbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df226b87d2db78eae68ef005d6a41938') in 0.019699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-C05.fbx
+  artifactKey: Guid(5c5f36dc357d83b4aa474991336bfe58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-C05.fbx using Guid(5c5f36dc357d83b4aa474991336bfe58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd76aae84599400fae09b57620780e73') in 0.026825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-F04.fbx
+  artifactKey: Guid(c7a15de0c579c8f4f83286da49805dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-F04.fbx using Guid(c7a15de0c579c8f4f83286da49805dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39a14fc330d2aa40d960865bdf1a5b07') in 0.020268 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-A01.fbx
+  artifactKey: Guid(c30d3a966f8b45544a62610c69a51cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Tunnel-A01.fbx using Guid(c30d3a966f8b45544a62610c69a51cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ae646a4b2dbaa2b76c3deb7f8fca533') in 0.026960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-3exits-01.fbx
+  artifactKey: Guid(76a2df089c116614780f9a4049c8c452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LowPolyAssets/Low Poly Cave Environment/Assets/Models/Domes and Tunnels/Dome-3exits-01.fbx using Guid(76a2df089c116614780f9a4049c8c452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef36cb26dbdfaccbf5aa3e735acd8fb9') in 0.024308 seconds 
