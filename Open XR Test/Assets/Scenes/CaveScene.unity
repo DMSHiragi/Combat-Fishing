@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.1448469, g: 0.4065024, b: 0.990566, a: 1}
   m_FogMode: 2
-  m_FogDensity: 0.005
+  m_FogDensity: 0.003
   m_LinearFogStart: 0
   m_LinearFogEnd: 1000
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -27,7 +27,7 @@ RenderSettings:
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: ed1387202b1349540a5d6464f0f27488, type: 2}
-  m_HaloStrength: 0.5
+  m_HaloStrength: 0.178
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -1581,8 +1581,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173142706}
   m_LocalRotation: {x: -0.020851636, y: -0, z: -0, w: 0.9997826}
-  m_LocalPosition: {x: 485.3, y: 53.7, z: -612.9}
-  m_LocalScale: {x: 155.49785, y: 68.189, z: 1}
+  m_LocalPosition: {x: 485.3, y: 53.7, z: -616.67}
+  m_LocalScale: {x: 155.49785, y: 68.189, z: 5.5436}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1873,7 +1873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 1
   outlineColor: {r: 0.972549, g: 1, b: 0, a: 1}
-  outlineWidth: 5.53
+  outlineWidth: 1.79
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -3100,7 +3100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 1
   outlineColor: {r: 0.972549, g: 1, b: 0, a: 1}
-  outlineWidth: 5.53
+  outlineWidth: 1.79
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -4301,6 +4301,10 @@ PrefabInstance:
     - target: {fileID: 1480788666727428, guid: b547f5744937f824b988961181ffab83, type: 3}
       propertyPath: m_Name
       value: Pillar-C07
+      objectReference: {fileID: 0}
+    - target: {fileID: 1480788666727428, guid: b547f5744937f824b988961181ffab83, type: 3}
+      propertyPath: m_Layer
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4482762833626914, guid: b547f5744937f824b988961181ffab83, type: 3}
       propertyPath: m_RootOrder
@@ -6816,7 +6820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 1
   outlineColor: {r: 0.972549, g: 1, b: 0, a: 1}
-  outlineWidth: 5.53
+  outlineWidth: 1.79
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -7373,15 +7377,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a984a0e38a885442a20cd6633c8b296, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.594666
+      value: -4.34
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a984a0e38a885442a20cd6633c8b296, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -32.629314
+      value: -31.29
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a984a0e38a885442a20cd6633c8b296, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 675.85376
+      value: 684.48
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8a984a0e38a885442a20cd6633c8b296, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8122,7 +8126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.6856322, b: 1, a: 1}
+  m_Color: {r: 0.9528302, g: 0.3593633, b: 0.24869463, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8773,8 +8777,6 @@ Transform:
   - {fileID: 1241070318}
   - {fileID: 42131698}
   - {fileID: 1207930678}
-  - {fileID: 1951311487}
-  - {fileID: 1709562535}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10635,7 +10637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3383452564896943784, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3383452564896943784, guid: 6df542c3fd51b484db73d75c81206395, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12041,7 +12043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.6856322, b: 1, a: 1}
+  m_Color: {r: 0.9528302, g: 0.3593633, b: 0.24869463, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12187,6 +12189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar-C07 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1480788666727428, guid: b547f5744937f824b988961181ffab83, type: 3}
+      propertyPath: m_Layer
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 4482762833626914, guid: b547f5744937f824b988961181ffab83, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -12261,7 +12267,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30184
+  m_Name: pb_Mesh30188
   serializedVersion: 10
   m_SubMeshes: []
   m_Shapes:
@@ -13215,7 +13221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 1
   outlineColor: {r: 0.972549, g: 1, b: 0, a: 1}
-  outlineWidth: 5.53
+  outlineWidth: 1.79
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -13362,7 +13368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   waitTime: 6
-  battleStage: 5
+  battleStage: 0
   player: {fileID: 7319858965830799790}
   playerVR: {fileID: 7319858965830799790}
   startDialogue: {fileID: 1837939892}
@@ -15347,7 +15353,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4056034274927632386, guid: 99ac2d86baa2bcf40bf0200e6e9e66ef, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4056034274927632386, guid: 99ac2d86baa2bcf40bf0200e6e9e66ef, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20970,7 +20976,7 @@ Transform:
   m_Children:
   - {fileID: 823229243}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1681579187
 PrefabInstance:
@@ -21114,7 +21120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.6856322, b: 1, a: 1}
+  m_Color: {r: 0.9528302, g: 0.3593633, b: 0.24869463, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21675,7 +21681,7 @@ Transform:
   - {fileID: 1800388377}
   - {fileID: 1513809054}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1745320071
 PrefabInstance:
@@ -22600,7 +22606,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.6856322, b: 1, a: 1}
+  m_Color: {r: 0.9528302, g: 0.3593633, b: 0.24869463, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -23255,9 +23261,6 @@ MonoBehaviour:
   garbage2: {fileID: 356407683}
   garbage3: {fileID: 205288164}
   garbage4: {fileID: 746560924}
-  sodacanCount: 2
-  glassbottleCount: 3
-  plasticbottleCount: 3
 --- !u!4 &1947290068
 Transform:
   m_ObjectHideFlags: 0
@@ -24797,7 +24800,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: af1098f756f3af64f84f5d17855d8039, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af1098f756f3af64f84f5d17855d8039, type: 3}
       propertyPath: m_LocalScale.x
@@ -25380,7 +25383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2076732173792197040, guid: 06de6c5ba770193419b0aca42b10953e, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2076732173792197040, guid: 06de6c5ba770193419b0aca42b10953e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25392,7 +25395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2076732173792197040, guid: 06de6c5ba770193419b0aca42b10953e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -562.4
+      value: -528.1
       objectReference: {fileID: 0}
     - target: {fileID: 2076732173792197040, guid: 06de6c5ba770193419b0aca42b10953e, type: 3}
       propertyPath: m_LocalRotation.w

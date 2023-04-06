@@ -135,10 +135,6 @@ public class BossBattle : MonoBehaviour
             }
         }
 
-        if(Input.GetMouseButtonDown(0)){
-            myGarbage.createGarbage();
-        }
-
 
         switch ((int)battleStage)       //This controls what the boss is currently doing
         {
