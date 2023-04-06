@@ -14,15 +14,6 @@ public class FishingBobber : MonoBehaviour
     public GameObject fish1;
     public GameObject fish2;
 
-    public GameObject boundingBoxes;
-    public GameObject boundingBoxes2;
-    public GameObject boundingBoxes3;
-    public GameObject boundingBoxes4;
-    public GameObject boundingBoxes5;
-    public GameObject boundingBoxes6;
-    public GameObject boundingBoxes7C;
-    public GameObject boundingBoxes8C;
-    public GameObject boundingBoxes9C;
 
     public float minWaitTime = 3f;
     public float maxWaitTime = 6f;
@@ -199,25 +190,6 @@ public class FishingBobber : MonoBehaviour
             GameObject fishingPlayer = GameObject.Find("FishingPlayer");
             CapsuleCollider capsuleCollider = fishingPlayer.GetComponent<CapsuleCollider>();
             Physics.IgnoreCollision(ballCollider, capsuleCollider, true);
-
-            BoxCollider boxColliders = boundingBoxes.GetComponent<BoxCollider>();
-            Physics.IgnoreCollision(ballCollider, boxColliders, true);
-            BoxCollider boxColliders2 = boundingBoxes2.GetComponent<BoxCollider>();
-            Physics.IgnoreCollision(ballCollider, boxColliders2, true);
-            BoxCollider boxColliders3 = boundingBoxes3.GetComponent<BoxCollider>();
-            Physics.IgnoreCollision(ballCollider, boxColliders3, true);
-            BoxCollider boxColliders4 = boundingBoxes4.GetComponent<BoxCollider>();
-            Physics.IgnoreCollision(ballCollider, boxColliders4, true);
-            BoxCollider boxColliders5 = boundingBoxes5.GetComponent<BoxCollider>();
-            Physics.IgnoreCollision(ballCollider, boxColliders5, true);
-            BoxCollider boxColliders6 = boundingBoxes6.GetComponent<BoxCollider>();
-            Physics.IgnoreCollision(ballCollider, boxColliders6, true);
-            CapsuleCollider boxColliders7C = boundingBoxes7C.GetComponent<CapsuleCollider>();
-            Physics.IgnoreCollision(ballCollider, boxColliders7C, true);
-            CapsuleCollider boxColliders8C = boundingBoxes8C.GetComponent<CapsuleCollider>();
-            Physics.IgnoreCollision(ballCollider, boxColliders8C, true);
-            CapsuleCollider boxColliders9C = boundingBoxes9C.GetComponent<CapsuleCollider>();
-            Physics.IgnoreCollision(ballCollider, boxColliders9C, true);
 
             // Throw based on where the player is looking
             Vector3 throwDirection = mainCamera.transform.forward;

@@ -8,10 +8,10 @@ public class DamagePlayer : MonoBehaviour
     private Collider myCollider;
     public PlayerHealth phealth;
     public float damageValue;
-    void Start()
-    {
-    }
 
+
+    // If this script is placed onto something, it will damage the player
+    // Must have a rigid body, mesh collider, and Is Trigger must be checked
     
     private void OnTriggerEnter(Collider collision)
     {
